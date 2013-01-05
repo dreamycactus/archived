@@ -1,0 +1,55 @@
+package com.macse1.utils;
+
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
+
+public class Animation {
+	// Members
+	protected int				slowness_		= 8;
+	protected float				last_draw_time_ = 0.f;
+	
+	protected TextureRegion[]	clips_;
+	protected int 				max_frames_;
+	protected int 				current_frame_ 	= 0;
+	protected int				frame_offset_	= 0;
+	
+	protected boolean 			paused_ 		= false;
+	
+	// Methods
+	public Animation(TextureRegion[] clips, int frame_count) {
+		max_frames_ = frame_count;
+	}
+	public Animation(TextureRegion texture, int start_x, int start_y, int frame_w, int frame_h, int frame_count) {
+		clips_ = new TextureRegion[frame_count];
+		for (int x=0; x<frame_count; ++x) {
+			clips_[x] = new TextureRegion(texture);
+			clips_[x].setRegion(start_x + x*frame_w, start_y+frame_h, frame_w, -frame_h);
+			//clips_[x].flip(false, true);
+		}
+		max_frames_ = frame_count;
+	}
+	
+	public void nextFrame() {
+		current_frame_ = ++frame_offset_ / slowness_ % max_frames_;
+	}
+	public void incrementFrame(int i) {
+		current_frame_ += i;
+		current_frame_ = current_frame_ % max_frames_;
+	}
+	public void tick() { // Need this because of frame skipping
+		nextFrame();
+	}
+	public TextureRegion getKeyFrame() {
+	    return clips_[current_frame_];
+	}
+	
+	// Getter & Setters .. Kinda
+	public void pause() 				{ paused_ = true; }
+	public void resume() 				{ paused_ = false; }
+	public boolean isPaused() 			{ return paused_; }
+	
+	public void setCurrentFrame(int i) 	{ current_frame_ = i; }
+	public int getCurrentFrame() 		{ return current_frame_; }
+	public int getMaxFrames() 			{ return max_frames_; }
+	
+}

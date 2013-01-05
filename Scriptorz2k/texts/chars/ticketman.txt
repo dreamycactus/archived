@@ -1,0 +1,43 @@
+<names>
+ticket man
+the ticket man
+</names>
+<states>
+normal
+</states>
+<look>
+One eye stares at the television, the other at the entrance. Freaky. Going to be a tough one sneaking in. Have to distract him.
+</look>
+
+<char>
+<id/>
+hello
+<message>
+Ticket man: Do you have a ticket?
+</message>
+<resps>
+<op>
+<outid/>
+bye
+<label/>
+No...
+</op>
+</resps>
+</char>
+
+<player>
+<id/>
+bye
+<outid/>
+end1
+</player>
+
+<end>
+<id/>
+end1
+<message>
+Ticket man: Then would you kindly... GET OUT!!!
+</message>
+<outid/>
+hello
+</end>

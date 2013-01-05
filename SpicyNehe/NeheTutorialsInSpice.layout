@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="include\Bitmaps3D.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="399" topLine="9" />
+	</File>
+	<File name="include\lesson5Blending_state.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="290" topLine="7" />
+	</File>
+	<File name="main.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="1712" topLine="25" />
+	</File>
+	<File name="src\Bitmaps3D.cpp" open="1" top="1" tabpos="12">
+		<Cursor position="4863" topLine="115" />
+	</File>
+	<File name="src\CORE_cGame.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="1909" topLine="70" />
+	</File>
+	<File name="src\lesson5Blending_state.cpp" open="1" top="0" tabpos="11">
+		<Cursor position="1605" topLine="14" />
+	</File>
+	<File name="..\..\spice\include\CORE_Input.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="841" topLine="14" />
+	</File>
+	<File name="..\..\spice\include\CORE_cGame.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="149" topLine="14" />
+	</File>
+	<File name="..\..\spice\include\CORE_cSDLState.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="1652" topLine="51" />
+	</File>
+	<File name="..\..\spice\include\CORE_iApplication.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="273" topLine="0" />
+	</File>
+	<File name="..\..\spice\include\CORE_keycodes.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="286" topLine="0" />
+	</File>
+	<File name="..\..\spice\include\GFX_cImage.hpp" open="0" top="0" tabpos="3">
+		<Cursor position="1228" topLine="8" />
+	</File>
+	<File name="..\..\spice\include\GFX_cTextureMesh.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="3057" topLine="0" />
+	</File>
+	<File name="..\..\spice\include\MATH_LinearAlgebra.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="605" topLine="0" />
+	</File>
+	<File name="..\..\spice\src\CORE_cSDLState.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="678" topLine="28" />
+	</File>
+	<File name="..\..\spice\src\GFX_cImage.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="233" topLine="0" />
+	</File>
+	<File name="..\..\spice\src\GFX_cTexture.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="262" topLine="0" />
+	</File>
+	<File name="..\..\spice\src\GFX_cTextureMesh.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="110" topLine="0" />
+	</File>
+	<File name="..\..\spice\src\demo_cPlayState.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="879" topLine="30" />
+	</File>
+</CodeBlocks_layout_file>

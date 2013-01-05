@@ -1,0 +1,8 @@
+.\\texts\\chars\\santa.txt
+.\\texts\\chars\\ticketman.txt
+.\\texts\\chars\\sam.txt
+.\\texts\\chars\\operator.txt
+.\\texts\\chars\\caretaker.txt
+.\\texts\\chars\\clown.txt
+.\\texts\\chars\\kids.txt
+.\\texts\\chars\\mothergoose.txt

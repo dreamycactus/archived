@@ -1,0 +1,70 @@
+package com.macse1;
+
+import com.badlogic.gdx.ApplicationListener;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.GL10;
+import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.macse1.resources.Art;
+import com.macse1.stateManagement.GameState;
+import com.macse1.stateManagement.StateManager;
+import com.macse1.states.DungeonState;
+import com.macse1.states.SlidingFadeTransition;
+import com.macse1.states.MiniGame1State;
+import com.macse1.tiles.Node;
+import com.macse1.tiles.Pathfinder;
+import com.macse1.tiles.TileBoard;
+import com.macse1.utils.Vec2i;
+
+public class Game implements ApplicationListener {
+	//Methods
+	
+	
+	private StateManager state_manager_;
+	
+	public void create() {
+		Art.load();
+		state_manager_ = new StateManager();
+		state_manager_.registerGameState("SDungeon", new DungeonState());
+		state_manager_.registerGameState("SMiniGame1", new MiniGame1State());
+		state_manager_.registerTransitionState("TFade", new SlidingFadeTransition());
+		
+		state_manager_.pushState("SDungeon");
+	}
+
+	
+	public void resume() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	static final float FPS = 0.06f; // Misnomer. Actually more like spf... 
+	float delta = 0.f;
+	
+	public void render() {
+		Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
+		//System.out.print(Gdx.graphics.getFramesPerSecond()+"\n");
+		delta = Math.min(Gdx.graphics.getDeltaTime(), FPS);
+		
+		state_manager_.tick(delta);
+		state_manager_.render(delta);
+	}
+
+	
+	public void resize(int width, int height) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	public void pause() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	public void dispose() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

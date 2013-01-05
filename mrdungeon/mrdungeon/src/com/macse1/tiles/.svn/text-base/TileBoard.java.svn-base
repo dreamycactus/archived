@@ -1,0 +1,117 @@
+package com.macse1.tiles;
+
+import java.util.ArrayList;
+
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.GL10;
+import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.Pixmap;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.SpriteCache;
+import com.macse1.resources.Art;
+import com.macse1.stateManagement.SceneNode;
+import com.macse1.utils.Vec2i;
+
+public class TileBoard {
+	// Members
+	public 	  Tile[][] map_;
+	protected int draw_x_, draw_y_;
+	protected int width_, height_;
+	protected SpriteCache cache_;
+	protected int cache_id_;
+	
+	protected final int MINI_WIDTH = 4;
+	
+	protected int mini_cache_id_;
+	public Vec2i treasure;
+	
+	// Methods
+	public TileBoard(Pixmap pixmap){
+		width_ 	= pixmap.getWidth();
+		height_ = pixmap.getHeight();
+		map_ 	= new Tile[width_][height_];
+		cache_ = new SpriteCache(width_*height_*2, false);
+		cache_.beginCache();
+		for (int x=0; x<width_; ++x) {
+			for (int y=0; y<height_; ++y) {
+				int col = pixmap.getPixel(x, height_-y-1) >>> 8;
+				switch (col) {
+					case Tile.EMPTY:
+						map_[x][y] = new Tile(x, y, Tile.EMPTY);
+						cache_.add(Art.tile, (float)x*Tile.WIDTH, (float)y*Tile.WIDTH, (float)Tile.WIDTH, (float)Tile.WIDTH);
+						break;
+					case Tile.WALL:
+						map_[x][y] = new Tile(x, y, Tile.WALL);
+						cache_.add(Art.tilewall, (float)x*Tile.WIDTH, (float)y*Tile.WIDTH, (float)Tile.WIDTH, (float)Tile.WIDTH);
+						break;
+					case Tile.GOAL:
+						map_[x][y] = new Tile(x, y, Tile.GOAL);
+						cache_.add(Art.tilegoal, (float)x*Tile.WIDTH, (float)y*Tile.WIDTH, (float)Tile.WIDTH, (float)Tile.WIDTH);
+						treasure = new Vec2i(x, y);
+						break;
+				}
+			}
+		}
+		cache_id_ = cache_.endCache();
+		
+	}
+	public void ReCache(int[][] new_map) {
+		
+	}
+	public Node[] FindAdjacentTiles(Vec2i node) {		
+		Node adjacent_nodes[] = new Node[4];
+		Vec2i m;
+		
+		m = new Vec2i(node.x-1, node.y); 		// Left
+		if (WithinBounds(m)) 	{ adjacent_nodes[0] = new Node(m, map_[m.x][m.y].getType()); }
+		else					{ adjacent_nodes[0] = null;	}
+
+		m = new Vec2i(node.x+1, node.y);							// Right
+		if (WithinBounds(m)) 	{ adjacent_nodes[1] = new Node(m, map_[m.x][m.y].getType()); }
+		else					{ adjacent_nodes[1] = null;	}
+		
+		m = new Vec2i(node.x, node.y-1);				// Up
+		if (WithinBounds(m)) 	{ adjacent_nodes[2] = new Node(m, map_[m.x][m.y].getType()); }
+		else					{ adjacent_nodes[2] = null;	}
+		
+		m = new Vec2i(node.x, node.y+1);							// Down
+		if (WithinBounds(m)) 	{ adjacent_nodes[3] = new Node(m, map_[m.x][m.y].getType()); }
+		else					{ adjacent_nodes[3] = null;	}
+		
+		return adjacent_nodes;
+				
+	}
+	private boolean WithinBounds(Vec2i node) {
+		return (node.x >= 0 && node.x < width_ && node.y >= 0 && node.y < height_);
+	}
+	
+	public void render(float delta, SpriteBatch batch, OrthographicCamera cam) {
+		cache_.setProjectionMatrix(cam.combined);
+		Gdx.gl.glDisable(GL10.GL_BLEND);
+		cache_.begin();
+			cache_.draw(cache_id_);
+		cache_.end();
+		
+	}
+	public void renderMinimap(OrthographicCamera cam) {
+		cam.position.x -= 50;
+		cam.position.y -= 50;
+		cam.update();
+		cache_.setProjectionMatrix(cam.combined);
+		cache_.begin();
+		cache_.draw(mini_cache_id_);
+		cache_.end();
+		cam.position.x += 50;
+		cam.position.y += 50;
+		cam.update();
+	}
+	public Tile get(int r, int c) 		{ return map_[r][c]; }
+	public Tile get(Vec2i m) 			{ return map_[m.x][m.y]; }
+	public int get_width() 				{ return width_; }
+	public int get_height() 			{ return height_; }
+	
+	public void dispose () {
+		cache_.dispose();
+	}
+		
+}

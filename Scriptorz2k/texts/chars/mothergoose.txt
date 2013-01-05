@@ -1,0 +1,200 @@
+<names>
+Mother Goose
+motherly goose
+</names>
+<states>
+normal
+dead
+</states>
+<look>
+She’s sewing what looked like a nest with...hair. She's humming something to herself. Something is wrong with this picture.
+</look>
+
+<char>
+<id/>
+hello
+<message>
+Mother Goose: Oh! It's you. I've been waiting for you!
+</message>
+<resps>
+<op>
+<outid/>
+pwait
+<label/>
+Uh... you have?
+</resps>
+</char>
+
+<char>
+<id/>
+ccut
+<message>
+Mother Goose: Yes, yes! Let's all be a family now. 
+(Mother Goose advances on you, grabbing a rusty hand saw from the table)
+</message>
+<resps>
+<op>
+<outid/>
+prun
+<label/>
+(run)
+</op>
+<op>
+<outid/>
+pkill
+<label/>
+(Shoot her with Chekov)
+</op>
+</resps>
+</char>
+
+<char>
+<id/>
+cchase
+<message>
+Mother Goose: Where are you going? I am going to help you, dear!
+</message>
+<resps>
+<op>
+<outid/>
+prun
+<label/>
+(run)
+</op>
+<op>
+<outid/>
+pkill
+<label/>
+(Shoot her with Chekov)
+</op>
+</resps>
+</char>
+
+<char>
+<id/>
+cdead
+<message>
+I don't think she is going to be in any nursery rhymes anymore.
+</message>
+<resps>
+<op>
+<outid/>
+prun
+<label/>
+(leave)
+</op>
+</resps>
+</char>
+
+<player>
+<id/>
+pwait
+<outid/>
+ccut
+</player>
+
+<player>
+<id/>
+prun
+<outid/>
+cchase
+</player>
+
+<player>
+<id/>
+pkill
+<outid/>
+ekill
+</player>
+
+
+<end>
+<id/>
+ekill
+<message>
+*Bang* You fire a shot from your gun which puts a clean hole through Mother Goose's thin neck. 
+The sound of the gun transpires down the tunnel, and you hear in return the sound of a sharp shrill cry. You quickly cover your ears from the noise as she flaps around in a mindless craze, and pecking at anything within reach. The veins in her eyes erupt, colouring her eyes red. Blood seeped out from her nostrils. And then all of a sudden, she fell, twitching a few times on the watery floor. Her blood slowly speeps through the surface of the floor, embedding itself into crevices. As the echo of the gunshots die, you believe you hear the sound of laughter from above.
+</message>
+<outid/>
+cdead
+<effect>
+<targetName/>
+Mother Goose
+<targetType/>
+char
+<parameter/>
+dead
+<targetEffect/>
+true
+</effect>
+<effect>
+<targetName/>
+Mother Goose
+<targetType/>
+char
+<parameter/>
+look
+<targetEffect/>
+A dead goose lying in a pool of blood. What goes around comes around. You take one of the feathers she dropped as a memento.
+</effect>
+<effect>
+<targetName/>
+feather
+<targetType/>
+item
+<parameter/>
+ownership
+<targetEffect/>
+create
+</effect>
+<effect>
+<targetName/>
+amusement park
+<targetType/>
+env
+<parameter/>
+liberate
+<targetEffect/>
+true
+</effect>
+<effect>
+<targetName/>
+amusement park
+<targetType/>
+env
+<parameter/>
+descrip
+<targetEffect/>
+The park became lit with warm lights. Several families walked by with their face in a slight grin, reflecting the good times. You can hear the occasion scream of surprise as the rollercoaster drops from a hill, and Choco the clown is jogging along the entrance of his store, playing with the kids. Amidst all these excitement, you notice a woman sitting by the fountain, motionless. And you see Sam from the entrance crying out in a loud voice in front of her but he is getting no response. A little later you spot Choco the Clown waving a hand at you from by candy store, beckoning you.
+</effect>
+<effect>
+<targetName/>
+chamber
+<targetType/>
+env
+<parameter/>
+descrip
+<targetEffect/>
+It is warm and humid in this room, and you might have been quite at ease  were it not for the strong stench of decaying meat and the dead Mother Goose perhaps. Dead, skinned geese are hanging by some hook on the wall, laid around the circumference of the giant circle which seems to be the dwelling of the Mother Goose. The ground is covered with feathers, providing an uneasy carpet. In the middle of the room, alone under a single hanging light bulb, Is the corpse of that sick goose lying in a puddle of her own blood.
+</effect>
+<effect>
+<targetName/>
+candy shop
+<targetType/>
+env
+<parameter/>
+descrip
+<targetEffect/>
+A bustling and busy place. Rolls after rolls of candy jars filled the shelves around them in any shape and colour possible. However, half the goods are missing as people are scrambling to buy. You could almost say the place itself was alive. However, there was indeed something that hadn't changed. Choco stands by the register, waiting for you. 
+</effect>
+<effect>
+<targetName/>
+clown
+<targetType/>
+char
+<parameter/>
+look
+<targetEffect/>
+He looks upset.
+</effect>
+</end>

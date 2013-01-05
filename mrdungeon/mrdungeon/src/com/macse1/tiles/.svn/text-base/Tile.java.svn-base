@@ -1,0 +1,46 @@
+package com.macse1.tiles;
+
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.macse1.resources.Art;
+import com.macse1.utils.Vec2i;
+
+public class Tile {
+	// Members
+	public static final int EMPTY 		= 0xffffff;
+	public static final int WALL 		= 0x000000;
+	public static final int GOAL 		= 0xff0000;
+	public static final int END 		= 0xff00ff;
+	public static final int DISPENSER 	= 0xff0100;
+	public static final int SPIKES	 	= 0x00ff00;
+	public static final int ROCKET 		= 0x0000ff;
+	public static final int LASER 		= 0x00ffff;
+	
+	public static final int WIDTH = 64, HEIGHT = 64;
+	
+	protected Vec2i 	pos_ 		= Vec2i.Zero; // This is grid position. x and y are reversed
+	protected boolean 	isSolid_ 	= false;
+	protected int		type_;
+	protected Tile		parent_;
+	
+	// Methods
+	public Tile(int type) { type_ = type; }
+	public Tile(int x, int y, int type) {
+		pos_ = new Vec2i(x, y);
+		type_ = type;
+	}
+	
+	public void render(SpriteBatch batch, int offset_x, int offset_y) {
+		batch.draw(Art.tile, pos_.y*WIDTH, pos_.x*WIDTH);
+	}
+
+	
+	// Getter & Setter
+	public boolean isSolid() 		{ return isSolid_; }
+	public void setSolid(boolean s) { isSolid_ = s; }
+	public Vec2i getPos()			{ return pos_; }
+	public void setPos(Vec2i p)		{ pos_ = p; }
+	public int getType()			{ return type_; }
+	public void setParent(Tile p)	{ parent_ = p; }
+	public Tile getParent()			{ return parent_; }
+	
+}

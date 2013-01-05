@@ -1,0 +1,100 @@
+<names>
+the caretaker
+caretaker
+</names>
+<states>
+normal
+</states>
+<look>
+He's sweeping the floor. The ground is sparkly clean, but he's still sweeping.
+</look>
+
+<char>
+<id/>
+hello
+<message>
+Caretaker: Anything you want? I'm busy, so make it fast.
+</message>
+<resps>
+<op>
+<outid/>
+pfount
+<label/>
+Yes, the fountain over there is broken. No water is running.
+<cond>
+<condType/>
+obj
+<condTarget/>
+fountain
+<condPara/>
+working
+<condVal/>
+false
+<condMess/>
+Shouldn't show.
+</cond>
+</op>
+<op>
+<outid/>
+pbye1
+<label/>
+Not really...
+</op>
+</resps>
+</char>
+
+<player>
+<id/>
+pfount
+<outid/>
+ebye2
+</player>
+
+<player>
+<id/>
+pbye1
+<outid/>
+ebye1
+</player>
+
+
+
+<end>
+<id/>
+ebye2
+<message>
+Caretaker: The fountain's broken? Hmm, let me see. *Wack* *Wack* *WACK*. Okay, it's fixed. Now go away, I'm busy.
+</message>
+<effect>
+<targetType/>
+obj
+<targetName/>
+fountain
+<parameter/>
+working
+<targetEffect/>
+true
+</effect>
+<effect>
+<targetType/>
+obj
+<targetName/>
+fountain
+<parameter/>
+look
+<targetEffect/>
+You are sure there is laughter coming from it. Is there someone inside? You see a little <keyhole> in the eye of the face.
+</effect>
+<outid/>
+hello
+</end>
+
+<end>
+<id/>
+ebye1
+<message>
+Then get away, you are making the street dirty.
+</message>
+<outid/>
+hello
+</end>

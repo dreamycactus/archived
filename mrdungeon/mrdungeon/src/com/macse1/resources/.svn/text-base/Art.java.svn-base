@@ -1,0 +1,62 @@
+// Code based on Metagun's Art class
+package com.macse1.resources;
+
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Pixmap;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
+
+public class Art {
+	public static TextureRegion test_image;
+	public static TextureRegion test_image1;
+	public static TextureRegion bg;
+	public static TextureRegion bg2;
+	public static TextureRegion black;
+	public static TextureRegion tilegoal;
+	public static TextureRegion tile;
+	public static TextureRegion tilewall;
+	
+	public static Pixmap tilemap;
+	
+	public static void load () {
+		test_image  = load("sprites/test_image.png", 4, 4);
+		test_image1 = load("sprites/test_image1.png", 128, 128);
+		bg			= load("sprites/bg.png", 512, 512);
+		bg2			= load("sprites/bg2.png", 512, 512);
+		bg2.setRegionWidth(480); //sweet!
+		black		= load("sprites/bigblackDscreen.png", 512, 512);
+		tilegoal	= load("sprites/tilegoal.png", 64, 64);
+		tile		= load("sprites/tile.png", 64, 64);
+		tilewall	= load("sprites/tilewall.png", 64, 64);
+		
+		tilemap		= new Pixmap(Gdx.files.internal("sprites/tilemap.png"));
+		
+	}
+
+	private static TextureRegion[][] split (String name, int width, int height) {
+		return split(name, width, height, false);
+	}
+
+	private static TextureRegion[][] split (String name, int width, int height, boolean flipX) {
+		Texture texture = new Texture(Gdx.files.internal(name));
+		int xSlices = texture.getWidth() / width;
+		int ySlices = texture.getHeight() / height;
+		TextureRegion[][] res = new TextureRegion[xSlices][ySlices];
+		for (int x = 0; x < xSlices; x++) {
+			for (int y = 0; y < ySlices; y++) {
+				res[x][y] = new TextureRegion(texture, x * width, y * height, width, height);
+				res[x][y].flip(flipX, true);
+			}
+		}
+		return res;
+	}
+
+	public static TextureRegion load (String name, int width, int height) {
+		Texture texture = new Texture(Gdx.files.internal(name));
+		TextureRegion region = new TextureRegion(texture, 0, 0, width, height);
+		region.flip(false, true);
+		return region;
+	}
+	public void dispose() {
+	}
+}

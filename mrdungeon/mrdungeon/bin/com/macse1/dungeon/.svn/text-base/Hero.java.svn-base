@@ -1,0 +1,52 @@
+package com.macse1.dungeon;
+
+import java.util.ArrayList;
+
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.macse1.resources.Art;
+import com.macse1.tiles.Node;
+import com.macse1.tiles.NodeEvaluator;
+import com.macse1.tiles.Pathfinder;
+import com.macse1.tiles.Tile;
+import com.macse1.tiles.TileBoard;
+import com.macse1.utils.Vec2i;
+
+public class Hero implements NodeEvaluator {
+	protected ArrayList<Vec2i> goals;
+	public Vec2i pos = new Vec2i(0, 0);
+	public int life;
+	protected ArrayList<Vec2i> path;
+	
+	protected int path_index = 0;
+	protected int quickmod = 5000;
+	protected int step = 0;
+	
+	public Hero() {
+		
+	}
+	public boolean pathfindGoal(TileBoard map) {
+		path = Pathfinder.FindPath(map, pos, map.treasure, this);
+		return true;
+	}
+	public void tick(float delta) {
+		
+		if (step % quickmod == 0 && path_index < path.size()) {
+			pos = path.get(path_index).cpy().mul(Tile.WIDTH);
+			++path_index;
+		}
+		++step;
+		
+	}
+	public void render(SpriteBatch batch) {
+		batch.draw(Art.test_image1, pos.x, pos.y);
+	}
+	public float adjustNodeCost(Node node) {
+		switch (node.get_type()) {
+			case Tile.EMPTY:
+				node.node_cost = 1.f;
+				return node.node_cost;
+		}
+		return 0;
+	}
+	
+}

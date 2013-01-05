@@ -1,0 +1,1314 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00     9354     0.00     0.00  __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::stdio_sync_filebuf(_iobuf*)
+  0.00      0.00     0.00     9182     0.00     0.00  std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_first_of(std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > const&, unsigned int) const
+  0.00      0.00     0.00     7754     0.00     0.00  std::moneypunct<char, false>::moneypunct(std::__moneypunct_cache<char, false>*, unsigned int)
+  0.00      0.00     0.00     7680     0.00     0.00  std::codecvt<wchar_t, char, int>::do_out(int&, wchar_t const*, wchar_t const*, wchar_t const*&, char*, char*, char*&) const
+  0.00      0.00     0.00     6160     0.00     0.00  int std::__int_to_char<wchar_t, unsigned long long>(wchar_t*, unsigned long long, wchar_t const*, std::_Ios_Fmtflags, bool)
+  0.00      0.00     0.00     3048     0.00     0.00  int std::__int_to_char<char, unsigned long long>(char*, unsigned long long, char const*, std::_Ios_Fmtflags, bool)
+  0.00      0.00     0.00     2322     0.00     0.00  std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_first_of(wchar_t const*, unsigned int) const
+  0.00      0.00     0.00     1969     0.00     0.00  __cxxabiv1::__si_class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__upcast_result&) const
+  0.00      0.00     0.00     1578     0.00     0.00  std::__timepunct<char>::_M_initialize_timepunct(int*)
+  0.00      0.00     0.00     1564     0.00     0.00  bool std::has_facet<std::ctype<wchar_t> >(std::locale const&)
+  0.00      0.00     0.00     1562     0.00     0.00  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, int)
+  0.00      0.00     0.00     1524     0.00     0.00  STATE::cGameStateManager::GetCurrent() const
+  0.00      0.00     0.00     1524     0.00     0.00  std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> >& std::forward<std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> >&>(std::remove_reference<std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> >&>::type&)
+  0.00      0.00     0.00     1349     0.00     0.00  void std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> >::_M_insert_aux<GFX::cTextureWrapper const&>(__gnu_cxx::__normal_iterator<GFX::cTextureWrapper*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >, GFX::cTextureWrapper const&)
+  0.00      0.00     0.00     1154     0.00     0.00  __cxa_call_unexpected
+  0.00      0.00     0.00     1136     0.00     0.00  __gnu_cxx::__normal_iterator<STATE::iGameState**, std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> > >::operator-(int const&) const
+  0.00      0.00     0.00      892     0.00     0.00  std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_first_of(wchar_t const*, unsigned int, unsigned int) const
+  0.00      0.00     0.00      852     0.00     0.00  __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::stdio_sync_filebuf(_iobuf*)
+  0.00      0.00     0.00      839     0.00     0.00  std::__basic_file<char>::xsputn_2(char const*, int, char const*, int)
+  0.00      0.00     0.00      819     0.00     0.00  std::_Vector_base<STATE::iGameState*, std::allocator<STATE::iGameState*> >::~_Vector_base()
+  0.00      0.00     0.00      818     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl()
+  0.00      0.00     0.00      783     0.00     0.00  bool std::has_facet<std::codecvt<wchar_t, char, int> >(std::locale const&)
+  0.00      0.00     0.00      782     0.00     0.00  std::_Vector_base<STATE::iGameState*, std::allocator<STATE::iGameState*> >::_Vector_base()
+  0.00      0.00     0.00      782     0.00     0.00  bool std::has_facet<std::collate<char> >(std::locale const&)
+  0.00      0.00     0.00      779     0.00     0.00  cPlayState::HandleInput()
+  0.00      0.00     0.00      764     0.00     0.00  std::collate<char>::do_compare(char const*, char const*, char const*, char const*) const
+  0.00      0.00     0.00      763     0.00     0.00  GFX::cTextureMesh::Destroy()
+  0.00      0.00     0.00      763     0.00     0.00  std::codecvt<char, char, int>::codecvt(unsigned int)
+  0.00      0.00     0.00      763     0.00     0.00  std::codecvt<wchar_t, char, int>::codecvt(unsigned int)
+  0.00      0.00     0.00      762     0.00     0.00  GFX::G2D::cSpriteBatch::End()
+  0.00      0.00     0.00      762     0.00     0.00  GFX::G2D::cSpriteBatch::Begin()
+  0.00      0.00     0.00      762     0.00     0.00  CORE::cGame::EndGame()
+  0.00      0.00     0.00      762     0.00     0.00  __gnu_cxx::new_allocator<GFX::cTextureMesh::Vertex>::construct(GFX::cTextureMesh::Vertex*, GFX::cTextureMesh::Vertex const&)
+  0.00      0.00     0.00      762     0.00     0.00  __dyn_tls_init@12
+  0.00      0.00     0.00      762     0.00     0.00  fpreset
+  0.00      0.00     0.00      568     0.00     0.00  MATH::cos_deg(float)
+  0.00      0.00     0.00      568     0.00     0.00  MATH::CloseTof(float, float)
+  0.00      0.00     0.00      568     0.00     0.00  __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> > >::deallocate(std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> >*, unsigned int)
+  0.00      0.00     0.00      568     0.00     0.00  __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::~stdio_filebuf()
+  0.00      0.00     0.00      568     0.00     0.00  std::collate<char>::collate(int*, unsigned int)
+  0.00      0.00     0.00      444     0.00     0.00  std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::back() const
+  0.00      0.00     0.00      429     0.00     0.00  std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_last_of(wchar_t const*, unsigned int) const
+  0.00      0.00     0.00      426     0.00     0.00  __gnu_cxx::__normal_iterator<GFX::cTextureWrapper*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >::operator*() const
+  0.00      0.00     0.00      426     0.00     0.00  std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::size() const
+  0.00      0.00     0.00      426     0.00     0.00  std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::begin() const
+  0.00      0.00     0.00      426     0.00     0.00  std::vector<int, std::allocator<int> >::_M_check_len(unsigned int, char const*) const
+  0.00      0.00     0.00      284     0.00     0.00  GFX::G2D::cSpriteBatch::RenderMesh()
+  0.00      0.00     0.00      170     0.00     0.00  std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_M_check_length(unsigned int, unsigned int, char const*) const
+  0.00      0.00     0.00      143     0.00     0.00  __gnu_cxx::__concurrence_lock_error::what() const
+  0.00      0.00     0.00      143     0.00     0.00  std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_M_disjunct(wchar_t const*) const
+  0.00      0.00     0.00      142     0.00     0.00  GFX::cTextureMesh::Render()
+  0.00      0.00     0.00      142     0.00     0.00  GFX::G2D::cSpriteBatch::DrawTexture(GFX::cTextureWrapper const&, float, float, float, float)
+  0.00      0.00     0.00      142     0.00     0.00  GFX::G2D::cSpriteBatch::ChangeTexture(GFX::cTextureWrapper const&)
+  0.00      0.00     0.00      130     0.00     0.00  int std::__int_to_char<wchar_t, unsigned long>(wchar_t*, unsigned long, wchar_t const*, std::_Ios_Fmtflags, bool)
+  0.00      0.00     0.00      109     0.00     0.00  std::__pad<char, std::char_traits<char> >::_S_pad(std::ios_base&, char, char*, char const*, int, int)
+  0.00      0.00     0.00      104     0.00     0.00  void std::vector<int, std::allocator<int> >::_M_insert_aux<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&)
+  0.00      0.00     0.00      103     0.00     0.00  std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> >::_M_at_eof() const
+  0.00      0.00     0.00       90     0.00     0.00  std::ios_base::sync_with_stdio(bool)
+  0.00      0.00     0.00       68     0.00     0.00  std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_last_of(wchar_t const*, unsigned int, unsigned int) const
+  0.00      0.00     0.00       68     0.00     0.00  std::ctype<wchar_t>::_M_convert_to_wmask(unsigned short) const
+  0.00      0.00     0.00       60     0.00     0.00  std::moneypunct<char, false>::moneypunct(unsigned int)
+  0.00      0.00     0.00       54     0.00     0.00  std::__timepunct_cache<char>::~__timepunct_cache()
+  0.00      0.00     0.00       51     0.00     0.00  std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_last_of(std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > const&, unsigned int) const
+  0.00      0.00     0.00       40     0.00     0.00  std::ctype<char>::do_toupper(char*, char const*) const
+  0.00      0.00     0.00       40     0.00     0.00  std::__throw_domain_error(char const*)
+  0.00      0.00     0.00       36     0.00     0.00  std::ctype<char>::do_tolower(char*, char const*) const
+  0.00      0.00     0.00       36     0.00     0.00  std::__basic_file<char>::sys_open(int, std::_Ios_Openmode)
+  0.00      0.00     0.00       36     0.00     0.00  std::basic_ifstream<char, std::char_traits<char> >::open(std::string const&, std::_Ios_Openmode)
+  0.00      0.00     0.00       36     0.00     0.00  std::basic_ifstream<char, std::char_traits<char> >::is_open()
+  0.00      0.00     0.00       36     0.00     0.00  std::_Rb_tree_rotate_left(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*&)
+  0.00      0.00     0.00       35     0.00     0.00  __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(_iobuf*, std::_Ios_Openmode, unsigned int)
+  0.00      0.00     0.00       35     0.00     0.00  std::ios_base::_M_grow_words(int, bool)
+  0.00      0.00     0.00       34     0.00     0.00  GFX::cImage::ConvertPixelFormat()
+  0.00      0.00     0.00       34     0.00     0.00  std::moneypunct<char, true>::do_positive_sign() const
+  0.00      0.00     0.00       34     0.00     0.00  std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char> >(std::basic_istream<char, std::char_traits<char> >&, char*)
+  0.00      0.00     0.00       24     0.00     0.00  std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char)
+  0.00      0.00     0.00       20     0.00     0.00  std::istreambuf_iterator<char, std::char_traits<char> >::_M_at_eof() const
+  0.00      0.00     0.00       20     0.00     0.00  std::__throw_future_error(int)
+  0.00      0.00     0.00       20     0.00     0.00  std::__throw_bad_function_call()
+  0.00      0.00     0.00       19     0.00     0.00  Color4::set(float, float, float, float)
+  0.00      0.00     0.00       19     0.00     0.00  void __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> > >::construct<std::pair<std::string, STATE::iGameState* (*)()> >(std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> >*, std::pair<std::string, STATE::iGameState* (*)()>&&)
+  0.00      0.00     0.00       19     0.00     0.00  __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::~stdio_filebuf()
+  0.00      0.00     0.00       19     0.00     0.00  wchar_t* std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_S_construct<__gnu_cxx::__normal_iterator<wchar_t*, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >(__gnu_cxx::__normal_iterator<wchar_t*, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, __gnu_cxx::__normal_iterator<wchar_t*, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<wchar_t> const&, std::forward_iterator_tag)
+  0.00      0.00     0.00       19     0.00     0.00  wchar_t* std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_S_construct<wchar_t*>(wchar_t*, wchar_t*, std::allocator<wchar_t> const&, std::forward_iterator_tag)
+  0.00      0.00     0.00       19     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl()
+  0.00      0.00     0.00       19     0.00     0.00  std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> >::_M_erase_at_end(GFX::cTextureWrapper*)
+  0.00      0.00     0.00       19     0.00     0.00  std::collate<char>::~collate()
+  0.00      0.00     0.00       18     0.00     0.00  GFX::cTextureMesh::cTextureMesh()
+  0.00      0.00     0.00       18     0.00     0.00  GFX::cTextureMesh::~cTextureMesh()
+  0.00      0.00     0.00       18     0.00     0.00  GFX::G2D::cAnimation::SetTicksPerFrame(float)
+  0.00      0.00     0.00       18     0.00     0.00  GFX::G2D::cSpriteBatch::cSpriteBatch(int)
+  0.00      0.00     0.00       18     0.00     0.00  MATH::DegToRad(float)
+  0.00      0.00     0.00       18     0.00     0.00  STATE::cGameTransition::SetOldAndNewState(STATE::iGameState*, STATE::iGameState*)
+  0.00      0.00     0.00       18     0.00     0.00  __gnu_cxx::__atomic_add(int volatile*, int)
+  0.00      0.00     0.00       18     0.00     0.00  __gnu_cxx::new_allocator<STATE::iGameState*>::allocate(unsigned int, void const*)
+  0.00      0.00     0.00       18     0.00     0.00  __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<std::string const, GFX::cTextureWrapper>, false>*>::allocate(unsigned int, void const*)
+  0.00      0.00     0.00       18     0.00     0.00  __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf()
+  0.00      0.00     0.00       18     0.00     0.00  __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::base() const
+  0.00      0.00     0.00       18     0.00     0.00  __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::operator*() const
+  0.00      0.00     0.00       18     0.00     0.00  std::ctype<char>::do_narrow(char const*, char const*, char, char*) const
+  0.00      0.00     0.00       18     0.00     0.00  std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::empty() const
+  0.00      0.00     0.00       18     0.00     0.00  std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::max_size() const
+  0.00      0.00     0.00       18     0.00     0.00  std::__timepunct<char>::__timepunct(std::__timepunct_cache<char>*, unsigned int)
+  0.00      0.00     0.00       18     0.00     0.00  std::codecvt<char, char, int>::~codecvt()
+  0.00      0.00     0.00       18     0.00     0.00  std::codecvt<wchar_t, char, int>::~codecvt()
+  0.00      0.00     0.00       18     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::find(std::string const&)
+  0.00      0.00     0.00       18     0.00     0.00  GFX::cTextureMesh::Vertex* std::move_backward<GFX::cTextureMesh::Vertex*, GFX::cTextureMesh::Vertex*>(GFX::cTextureMesh::Vertex*, GFX::cTextureMesh::Vertex*, GFX::cTextureMesh::Vertex*)
+  0.00      0.00     0.00       18     0.00     0.00  STATE::iGameState** std::move_backward<STATE::iGameState**, STATE::iGameState**>(STATE::iGameState**, STATE::iGameState**, STATE::iGameState**)
+  0.00      0.00     0.00       18     0.00     0.00  std::__throw_length_error(char const*)
+  0.00      0.00     0.00       18     0.00     0.00  std::__throw_invalid_argument(char const*)
+  0.00      0.00     0.00       18     0.00     0.00  bool&& std::forward<bool>(std::remove_reference<bool>::type&)
+  0.00      0.00     0.00       17     0.00     0.00  cPlayState::CreateInstance()
+  0.00      0.00     0.00       17     0.00     0.00  cPlayState::OnExit()
+  0.00      0.00     0.00       17     0.00     0.00  cPlayState::cPlayState()
+  0.00      0.00     0.00       17     0.00     0.00  GFX::cCameraBase::~cCameraBase()
+  0.00      0.00     0.00       17     0.00     0.00  GFX::cTextureWrapper::SetUV(float, float, float, float)
+  0.00      0.00     0.00       17     0.00     0.00  GFX::cImage::cImage(std::string const&)
+  0.00      0.00     0.00       17     0.00     0.00  GFX::cTexture::~cTexture()
+  0.00      0.00     0.00       17     0.00     0.00  __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<std::string const, GFX::cTextureWrapper>, false> >::~new_allocator()
+  0.00      0.00     0.00       17     0.00     0.00  __cxxabiv1::__class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void**) const
+  0.00      0.00     0.00       17     0.00     0.00  GFX::cImage::IsTransparent() const
+  0.00      0.00     0.00       17     0.00     0.00  GFX::cTexture::operator==(GFX::cTexture const&) const
+  0.00      0.00     0.00       17     0.00     0.00  std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_last_of(wchar_t, unsigned int) const
+  0.00      0.00     0.00       17     0.00     0.00  std::domain_error::~domain_error()
+  0.00      0.00     0.00       17     0.00     0.00  std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(std::string const&, std::_Ios_Openmode)
+  0.00      0.00     0.00       17     0.00     0.00  std::basic_streambuf<char, std::char_traits<char> >::xsputn(char const*, int)
+  0.00      0.00     0.00       17     0.00     0.00  std::__numpunct_cache<char>::_M_cache(std::locale const&)
+  0.00      0.00     0.00       17     0.00     0.00  std::vector<int, std::allocator<int> >::_M_erase_at_end(int*)
+  0.00      0.00     0.00       17     0.00     0.00  GFX::cTextureMesh::Vertex&& std::forward<GFX::cTextureMesh::Vertex>(std::remove_reference<GFX::cTextureMesh::Vertex>::type&)
+  0.00      0.00     0.00       16     0.00     0.00  CORE::cGame::GetInput()
+  0.00      0.00     0.00       16     0.00     0.00  STATE::cGameStateManager::ReplaceState(STATE::iGameState*)
+  0.00      0.00     0.00       13     0.00     0.00  std::basic_istream<wchar_t, std::char_traits<wchar_t> >& std::getline<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >(std::basic_istream<wchar_t, std::char_traits<wchar_t> >&, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&)
+  0.00      0.00     0.00        5     0.00     0.00  std::__pad<wchar_t, std::char_traits<wchar_t> >::_S_pad(std::ios_base&, wchar_t, wchar_t*, wchar_t const*, int, int)
+  0.00      0.00     0.00        4     0.00     0.00  std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::get_allocator() const
+  0.00      0.00     0.00        4     0.00     0.00  std::__basic_file<char>::sys_open(_iobuf*, std::_Ios_Openmode)
+  0.00      0.00     0.00        4     0.00     0.00  std::basic_ifstream<char, std::char_traits<char> >::close()
+  0.00      0.00     0.00        4     0.00     0.00  std::pair<std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> >, bool> std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::_M_insert_unique<std::pair<std::string, STATE::iGameState* (*)()> >(std::pair<std::string, STATE::iGameState* (*)()>&&)
+  0.00      0.00     0.00        2     0.00     0.00  CORE::cGame::SetupSDL()
+  0.00      0.00     0.00        2     0.00     0.00  __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(_iobuf*, std::_Ios_Openmode, unsigned int)
+  0.00      0.00     0.00        2     0.00     0.00  __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(int, std::_Ios_Openmode, unsigned int)
+  0.00      0.00     0.00        2     0.00     0.00  std::codecvt<wchar_t, char, int>::do_length(int&, char const*, char const*, unsigned int) const
+  0.00      0.00     0.00        2     0.00     0.00  wchar_t* std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_S_construct<wchar_t const*>(wchar_t const*, wchar_t const*, std::allocator<wchar_t> const&, std::forward_iterator_tag)
+  0.00      0.00     0.00        2     0.00     0.00  std::__basic_file<char>::xsputn(char const*, int)
+  0.00      0.00     0.00        2     0.00     0.00  GFX::cTextureWrapper* std::move_backward<GFX::cTextureWrapper*, GFX::cTextureWrapper*>(GFX::cTextureWrapper*, GFX::cTextureWrapper*, GFX::cTextureWrapper*)
+  0.00      0.00     0.00        2     0.00     0.00  std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
+  0.00      0.00     0.00        2     0.00     0.00  std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+  0.00      0.00     0.00        2     0.00     0.00  bool std::has_facet<std::collate<wchar_t> >(std::locale const&)
+  0.00      0.00     0.00        1     0.00     0.00  GFX::cTextureMesh::cTextureMesh(int)
+  0.00      0.00     0.00        1     0.00     0.00  GFX::cTextureMesh::~cTextureMesh()
+  0.00      0.00     0.00        1     0.00     0.00  GFX::G2D::cSpriteBatch::SetColor(Color4)
+  0.00      0.00     0.00        1     0.00     0.00  GFX::G2D::cSpriteBatch::~cSpriteBatch()
+  0.00      0.00     0.00        1     0.00     0.00  GFX::G2D::cTextureRegion::cTextureRegion(GFX::cTextureWrapper const&)
+  0.00      0.00     0.00        1     0.00     0.00  GFX::G2D::cTextureRegion::cTextureRegion(GFX::cTextureWrapper const&, float, float, float, float)
+  0.00      0.00     0.00        1     0.00     0.00  CORE::Input::Initialise()
+  0.00      0.00     0.00        1     0.00     0.00  CORE::Input::Update()
+  0.00      0.00     0.00        1     0.00     0.00  CORE::cGame::Initialise()
+  0.00      0.00     0.00        1     0.00     0.00  CORE::cGame::SetupGL()
+  0.00      0.00     0.00        1     0.00     0.00  CORE::cGame::MainLoop()
+  0.00      0.00     0.00        1     0.00     0.00  CORE::cGame::Terminate()
+  0.00      0.00     0.00        1     0.00     0.00  CORE::cGame::cGame()
+  0.00      0.00     0.00        1     0.00     0.00  CORE::cSDLState::SetGL()
+  0.00      0.00     0.00        1     0.00     0.00  CORE::cSDLState::cSDLState(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  CORE::cSDLState::~cSDLState()
+  0.00      0.00     0.00        1     0.00     0.00  STATE::cGameStateManager::ClearAll()
+  0.00      0.00     0.00        1     0.00     0.00  STATE::cGameStateManager::PushState(STATE::iGameState*)
+  0.00      0.00     0.00        1     0.00     0.00  STATE::cGameStateManager::cGameStateManager()
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<GFX::cTextureMesh::Vertex>::deallocate(GFX::cTextureMesh::Vertex*, unsigned int)
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<GFX::cTextureMesh::Vertex>::destroy(GFX::cTextureMesh::Vertex*)
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<GFX::cTextureWrapper>::destroy(GFX::cTextureWrapper*)
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<std::string const, GFX::cTextureWrapper>, false>*>::deallocate(std::__detail::_Hash_node<std::pair<std::string const, GFX::cTextureWrapper>, false>**, unsigned int)
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(int, std::_Ios_Openmode, unsigned int)
+  0.00      0.00     0.00        1     0.00     0.00  __cxxabiv1::__si_class_type_info::__do_dyncast(int, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
+  0.00      0.00     0.00        1     0.00     0.00  std::codecvt<wchar_t, char, int>::do_in(int&, char const*, char const*, char const*&, wchar_t*, wchar_t*, wchar_t*&) const
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned int)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned int)
+  0.00      0.00     0.00        1     0.00     0.00  std::__basic_file<char>::seekoff(long long, std::_Ios_Seekdir)
+  0.00      0.00     0.00        1     0.00     0.00  std::basic_filebuf<char, std::char_traits<char> >::_M_convert_to_external(char*, int)
+  0.00      0.00     0.00        1     0.00     0.00  void std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::_M_insert_aux<STATE::iGameState*>(__gnu_cxx::__normal_iterator<STATE::iGameState**, std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> > >, STATE::iGameState*&&)
+  0.00      0.00     0.00        1     0.00     0.00  int* std::vector<int, std::allocator<int> >::_M_allocate_and_copy<std::move_iterator<int*> >(unsigned int, std::move_iterator<int*>, std::move_iterator<int*>)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::_M_erase(std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> >*)
+  0.00      0.00     0.00        1     0.00     0.00  GFX::cTextureWrapper&& std::forward<GFX::cTextureWrapper>(std::remove_reference<GFX::cTextureWrapper>::type&)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) no time propagated
+
+index % time    self  children    called     name
+[1]      0.0    0.00    0.00    4595+3087    <cycle 1 as a whole> [1]
+                0.00    0.00    7680+3049        std::codecvt<wchar_t, char, int>::do_out(int&, wchar_t const*, wchar_t const*, wchar_t const*&, char*, char*, char*&) const <cycle 1> [7]
+                0.00    0.00       2             std::codecvt<wchar_t, char, int>::do_length(int&, char const*, char const*, unsigned int) const <cycle 1> [144]
+-----------------------------------------------
+[2]      0.0    0.00    0.00     130+132     <cycle 2 as a whole> [2]
+                0.00    0.00      90+34          std::ios_base::sync_with_stdio(bool) <cycle 2> [61]
+                0.00    0.00     109             std::__pad<char, std::char_traits<char> >::_S_pad(std::ios_base&, char, char*, char const*, int, int) <cycle 2> [58]
+                0.00    0.00      35+17          std::ios_base::_M_grow_words(int, bool) <cycle 2> [75]
+                0.00    0.00      18             std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::find(std::string const&) <cycle 2> [109]
+                0.00    0.00       4             std::pair<std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> >, bool> std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::_M_insert_unique<std::pair<std::string, STATE::iGameState* (*)()> >(std::pair<std::string, STATE::iGameState* (*)()>&&) <cycle 2> [140]
+                0.00    0.00       2             wchar_t* std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_S_construct<wchar_t const*>(wchar_t const*, wchar_t const*, std::allocator<wchar_t> const&, std::forward_iterator_tag) <cycle 2> [145]
+                0.00    0.00       2             __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(int, std::_Ios_Openmode, unsigned int) <cycle 2> [143]
+                0.00    0.00       1             std::basic_filebuf<char, std::char_traits<char> >::_M_convert_to_external(char*, int) <cycle 2> [180]
+                0.00    0.00       1             std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::_M_erase(std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> >*) <cycle 2> [183]
+-----------------------------------------------
+                0.00    0.00      85/9354        std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_last_not_of(wchar_t const*, unsigned int) const [547]
+                0.00    0.00      87/9354        void std::vector<int, std::allocator<int> >::_M_insert_aux<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [59]
+                0.00    0.00    3048/9354        std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_first_of(wchar_t, unsigned int) const [546]
+                0.00    0.00    6134/9354        std::codecvt<wchar_t, char, int>::do_out(int&, wchar_t const*, wchar_t const*, wchar_t const*&, char*, char*, char*&) const <cycle 1> [7]
+[4]      0.0    0.00    0.00    9354         __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::stdio_sync_filebuf(_iobuf*) [4]
+-----------------------------------------------
+                0.00    0.00    3086/9182        __cxxabiv1::__si_class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__upcast_result&) const [11]
+                0.00    0.00    6096/9182        std::codecvt<wchar_t, char, int>::do_out(int&, wchar_t const*, wchar_t const*, wchar_t const*&, char*, char*, char*&) const <cycle 1> [7]
+[5]      0.0    0.00    0.00    9182         std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_first_of(std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > const&, unsigned int) const [5]
+-----------------------------------------------
+                0.00    0.00    3124/7754        int std::__int_to_char<wchar_t, unsigned long>(wchar_t*, unsigned long, wchar_t const*, std::_Ios_Fmtflags, bool) [57]
+                0.00    0.00    4630/7754        int std::__int_to_char<wchar_t, unsigned long long>(wchar_t*, unsigned long long, wchar_t const*, std::_Ios_Fmtflags, bool) [8]
+[6]      0.0    0.00    0.00    7754         std::moneypunct<char, false>::moneypunct(std::__moneypunct_cache<char, false>*, unsigned int) [6]
+                0.00    0.00      36/36          std::ctype<char>::do_tolower(char*, char const*) const [69]
+                0.00    0.00       4/40          std::ctype<char>::do_toupper(char*, char const*) const [67]
+-----------------------------------------------
+                                3049             std::codecvt<wchar_t, char, int>::do_out(int&, wchar_t const*, wchar_t const*, wchar_t const*&, char*, char*, char*&) const <cycle 1> [7]
+                                3086             std::codecvt<wchar_t, char, int>::do_length(int&, char const*, char const*, unsigned int) const <cycle 1> [144]
+                0.00    0.00       1/4595        STATE::cGameStateManager::PushState(STATE::iGameState*) [168]
+                0.00    0.00       2/4595        STATE::cGameStateManager::ClearAll() [167]
+                0.00    0.00       3/4595        std::codecvt<wchar_t, char, int>::do_in(int&, char const*, char const*, char const*&, wchar_t*, wchar_t*, wchar_t*&) const [176]
+                0.00    0.00      16/4595        STATE::cGameStateManager::ReplaceState(STATE::iGameState*) [134]
+                0.00    0.00    4572/4595        STATE::cGameStateManager::GetCurrent() const [15]
+[7]      0.0    0.00    0.00    7680+3049    std::codecvt<wchar_t, char, int>::do_out(int&, wchar_t const*, wchar_t const*, wchar_t const*&, char*, char*, char*&) const <cycle 1> [7]
+                0.00    0.00    6134/9354        __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::stdio_sync_filebuf(_iobuf*) [4]
+                0.00    0.00    6096/9182        std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_first_of(std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > const&, unsigned int) const [5]
+                0.00    0.00       1/1           GFX::cTextureWrapper&& std::forward<GFX::cTextureWrapper>(std::remove_reference<GFX::cTextureWrapper>::type&) [184]
+                                   1             std::codecvt<wchar_t, char, int>::do_length(int&, char const*, char const*, unsigned int) const <cycle 1> [144]
+                                3049             std::codecvt<wchar_t, char, int>::do_out(int&, wchar_t const*, wchar_t const*, wchar_t const*&, char*, char*, char*&) const <cycle 1> [7]
+-----------------------------------------------
+                0.00    0.00       4/6160        std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) [79]
+                0.00    0.00    6156/6160        std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, int) [14]
+[8]      0.0    0.00    0.00    6160         int std::__int_to_char<wchar_t, unsigned long long>(wchar_t*, unsigned long long, wchar_t const*, std::_Ios_Fmtflags, bool) [8]
+                0.00    0.00    4630/7754        std::moneypunct<char, false>::moneypunct(std::__moneypunct_cache<char, false>*, unsigned int) [6]
+                0.00    0.00      60/60          std::moneypunct<char, false>::moneypunct(unsigned int) [64]
+-----------------------------------------------
+                0.00    0.00    1524/3048        std::string&& std::forward<std::string>(std::remove_reference<std::string>::type&) [2571]
+                0.00    0.00    1524/3048        std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> >&& std::forward<std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> > >(std::remove_reference<std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> > >::type&) [2572]
+[9]      0.0    0.00    0.00    3048         int std::__int_to_char<char, unsigned long long>(char*, unsigned long long, char const*, std::_Ios_Fmtflags, bool) [9]
+-----------------------------------------------
+                0.00    0.00      18/2322        __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<std::string const, GFX::cTextureWrapper>, false>*>::allocate(unsigned int, void const*) [99]
+                0.00    0.00      18/2322        std::vector<int, std::allocator<int> >::_M_check_len(unsigned int, char const*) const [49]
+                0.00    0.00    2286/2322        __write_memory [2872]
+[10]     0.0    0.00    0.00    2322         std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_first_of(wchar_t const*, unsigned int) const [10]
+-----------------------------------------------
+                0.00    0.00     426/1969        std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::empty() const [104]
+                0.00    0.00    1543/1969        std::codecvt<wchar_t, char, int>::do_length(int&, char const*, char const*, unsigned int) const <cycle 1> [144]
+[11]     0.0    0.00    0.00    1969         __cxxabiv1::__si_class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__upcast_result&) const [11]
+                0.00    0.00    3086/9182        std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_first_of(std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > const&, unsigned int) const [5]
+                0.00    0.00     852/892         std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_first_of(wchar_t const*, unsigned int, unsigned int) const [20]
+-----------------------------------------------
+                0.00    0.00      17/1578        GFX::cTexture::cTexture(std::string const&) [350]
+                0.00    0.00      17/1578        std::__numpunct_cache<char>::_M_cache(std::locale const&) [130]
+                0.00    0.00      20/1578        GFX::cTextureWrapper* std::move_backward<GFX::cTextureWrapper*, GFX::cTextureWrapper*>(GFX::cTextureWrapper*, GFX::cTextureWrapper*, GFX::cTextureWrapper*) [147]
+                0.00    0.00    1524/1578        GFX::cTextureMesh::Vertex* std::move_backward<GFX::cTextureMesh::Vertex*, GFX::cTextureMesh::Vertex*>(GFX::cTextureMesh::Vertex*, GFX::cTextureMesh::Vertex*, GFX::cTextureMesh::Vertex*) [110]
+[12]     0.0    0.00    0.00    1578         std::__timepunct<char>::_M_initialize_timepunct(int*) [12]
+                0.00    0.00      17/17          std::domain_error::~domain_error() [127]
+                0.00    0.00      17/17          __cxxabiv1::__class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void**) const [123]
+-----------------------------------------------
+                0.00    0.00       1/1564        GFX::cTextureWrapper* std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<GFX::cTextureWrapper const*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > > >(unsigned int, __gnu_cxx::__normal_iterator<GFX::cTextureWrapper const*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >, __gnu_cxx::__normal_iterator<GFX::cTextureWrapper const*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >) [2216]
+                0.00    0.00     781/1564        void std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> >::_M_insert_aux<GFX::cTextureWrapper const&>(__gnu_cxx::__normal_iterator<GFX::cTextureWrapper*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >, GFX::cTextureWrapper const&) [17]
+                0.00    0.00     782/1564        bool std::has_facet<std::codecvt<char, char, int> >(std::locale const&) [2597]
+[13]     0.0    0.00    0.00    1564         bool std::has_facet<std::ctype<wchar_t> >(std::locale const&) [13]
+                0.00    0.00     782/782         std::_Vector_base<STATE::iGameState*, std::allocator<STATE::iGameState*> >::_Vector_base() [26]
+-----------------------------------------------
+                0.00    0.00      18/1562        std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) [79]
+                0.00    0.00      20/1562        std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&) [149]
+                0.00    0.00    1524/1562        std::pair<std::string, STATE::iGameState* (*)()>&& std::forward<std::pair<std::string, STATE::iGameState* (*)()> >(std::remove_reference<std::pair<std::string, STATE::iGameState* (*)()> >::type&) [2573]
+[14]     0.0    0.00    0.00    1562         std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, int) [14]
+                0.00    0.00    6156/6160        int std::__int_to_char<wchar_t, unsigned long long>(wchar_t*, unsigned long long, wchar_t const*, std::_Ios_Fmtflags, bool) [8]
+                0.00    0.00      54/130         int std::__int_to_char<wchar_t, unsigned long>(wchar_t*, unsigned long, wchar_t const*, std::_Ios_Fmtflags, bool) [57]
+                0.00    0.00      18/18          GFX::cTextureMesh::Vertex* std::move_backward<GFX::cTextureMesh::Vertex*, GFX::cTextureMesh::Vertex*>(GFX::cTextureMesh::Vertex*, GFX::cTextureMesh::Vertex*, GFX::cTextureMesh::Vertex*) [110]
+                0.00    0.00      18/18          STATE::iGameState** std::move_backward<STATE::iGameState**, STATE::iGameState**>(STATE::iGameState**, STATE::iGameState**, STATE::iGameState**) [111]
+                0.00    0.00       2/2           GFX::cTextureWrapper* std::move_backward<GFX::cTextureWrapper*, GFX::cTextureWrapper*>(GFX::cTextureWrapper*, GFX::cTextureWrapper*, GFX::cTextureWrapper*) [147]
+-----------------------------------------------
+                0.00    0.00    1524/1524        CORE::cGame::MainLoop() [161]
+[15]     0.0    0.00    0.00    1524         STATE::cGameStateManager::GetCurrent() const [15]
+                0.00    0.00    4572/4595        std::codecvt<wchar_t, char, int>::do_out(int&, wchar_t const*, wchar_t const*, wchar_t const*&, char*, char*, char*&) const <cycle 1> [7]
+-----------------------------------------------
+                0.00    0.00     762/1524        __gnu_cxx::new_allocator<GFX::cTextureMesh::Vertex>::construct(GFX::cTextureMesh::Vertex*, GFX::cTextureMesh::Vertex const&) [36]
+                0.00    0.00     762/1524        void __gnu_cxx::new_allocator<GFX::cTextureMesh::Vertex>::construct<GFX::cTextureMesh::Vertex>(GFX::cTextureMesh::Vertex*, GFX::cTextureMesh::Vertex&&) [386]
+[16]     0.0    0.00    0.00    1524         std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> >& std::forward<std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> >&>(std::remove_reference<std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> >&>::type&) [16]
+-----------------------------------------------
+                                 781             void std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> >::_M_insert_aux<GFX::cTextureWrapper const&>(__gnu_cxx::__normal_iterator<GFX::cTextureWrapper*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >, GFX::cTextureWrapper const&) [17]
+                0.00    0.00      18/1349        GFX::cTextureMesh::Initialise(int) [320]
+                0.00    0.00     568/1349        MATH::DegToRad(float) [95]
+                0.00    0.00     763/1349        GFX::cTextureMesh::Destroy() [30]
+[17]     0.0    0.00    0.00    1349+781     void std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> >::_M_insert_aux<GFX::cTextureWrapper const&>(__gnu_cxx::__normal_iterator<GFX::cTextureWrapper*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >, GFX::cTextureWrapper const&) [17]
+                0.00    0.00     799/818         std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [24]
+                0.00    0.00     781/1564        bool std::has_facet<std::ctype<wchar_t> >(std::locale const&) [13]
+                0.00    0.00     568/568         __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> > >::deallocate(std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> >*, unsigned int) [41]
+                0.00    0.00      36/36          std::_Rb_tree_rotate_left(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*&) [73]
+                0.00    0.00      18/819         std::_Vector_base<STATE::iGameState*, std::allocator<STATE::iGameState*> >::~_Vector_base() [23]
+                0.00    0.00      18/18          std::__throw_invalid_argument(char const*) [113]
+                0.00    0.00      18/18          std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::max_size() const [105]
+                0.00    0.00      18/18          std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::empty() const [104]
+                0.00    0.00      18/444         std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::back() const [44]
+                0.00    0.00      18/19          std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl() [88]
+                                 781             void std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> >::_M_insert_aux<GFX::cTextureWrapper const&>(__gnu_cxx::__normal_iterator<GFX::cTextureWrapper*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >, GFX::cTextureWrapper const&) [17]
+-----------------------------------------------
+                0.00    0.00       1/1154        __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(int, std::_Ios_Openmode, unsigned int) <cycle 2> [143]
+                0.00    0.00      17/1154        __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(int, std::_Ios_Openmode, unsigned int) [174]
+                0.00    0.00     568/1154        __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> > >::destroy(std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> >*) [406]
+                0.00    0.00     568/1154        __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::~stdio_filebuf() [42]
+[18]     0.0    0.00    0.00    1154         __cxa_call_unexpected [18]
+-----------------------------------------------
+                0.00    0.00     568/1136        GFX::cTextureMesh::Render() [54]
+                0.00    0.00     568/1136        MATH::CloseTof(float, float) [40]
+[19]     0.0    0.00    0.00    1136         __gnu_cxx::__normal_iterator<STATE::iGameState**, std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> > >::operator-(int const&) const [19]
+                0.00    0.00     710/764         std::collate<char>::do_compare(char const*, char const*, char const*, char const*) const [29]
+                0.00    0.00     426/426         std::vector<int, std::allocator<int> >::_M_check_len(unsigned int, char const*) const [49]
+-----------------------------------------------
+                0.00    0.00       1/892         __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(_iobuf*, std::_Ios_Openmode, unsigned int) [74]
+                0.00    0.00       1/892         __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(_iobuf*, std::_Ios_Openmode, unsigned int) [142]
+                0.00    0.00       2/892         std::codecvt<wchar_t, char, int>::do_length(int&, char const*, char const*, unsigned int) const <cycle 1> [144]
+                0.00    0.00      18/892         __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::~stdio_filebuf() [42]
+                0.00    0.00      18/892         std::collate<char>::do_compare(char const*, char const*, char const*, char const*) const [29]
+                0.00    0.00     852/892         __cxxabiv1::__si_class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__upcast_result&) const [11]
+[20]     0.0    0.00    0.00     892         std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_first_of(wchar_t const*, unsigned int, unsigned int) const [20]
+-----------------------------------------------
+                0.00    0.00     426/852         std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::back() const [44]
+                0.00    0.00     426/852         std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::begin() const [48]
+[21]     0.0    0.00    0.00     852         __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::stdio_sync_filebuf(_iobuf*) [21]
+-----------------------------------------------
+                0.00    0.00       1/839         std::collate<char>::~collate() [2248]
+                0.00    0.00       2/839         std::__basic_file<char>::showmanyc() [1628]
+                0.00    0.00      18/839         std::codecvt<char, char, int>::~codecvt() [2242]
+                0.00    0.00      18/839         std::collate<char>::collate(int*, unsigned int) [2245]
+                0.00    0.00      18/839         std::collate<char>::collate(unsigned int) [2246]
+                0.00    0.00      19/839         std::collate<char>::~collate() [90]
+                0.00    0.00     763/839         std::codecvt<char, char, int>::~codecvt() [107]
+[22]     0.0    0.00    0.00     839         std::__basic_file<char>::xsputn_2(char const*, int, char const*, int) [22]
+                0.00    0.00      18/36          std::__basic_file<char>::sys_open(int, std::_Ios_Openmode) [70]
+                0.00    0.00       1/19          wchar_t* std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_S_construct<wchar_t*>(wchar_t*, wchar_t*, std::allocator<wchar_t> const&, std::forward_iterator_tag) [87]
+                0.00    0.00       1/130         __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(int, std::_Ios_Openmode, unsigned int) <cycle 2> [143]
+-----------------------------------------------
+                0.00    0.00      18/819         std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned int) [178]
+                0.00    0.00      18/819         void std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> >::_M_insert_aux<GFX::cTextureWrapper const&>(__gnu_cxx::__normal_iterator<GFX::cTextureWrapper*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >, GFX::cTextureWrapper const&) [17]
+                0.00    0.00     783/819         bool std::has_facet<std::codecvt<wchar_t, char, int> >(std::locale const&) [25]
+[23]     0.0    0.00    0.00     819         std::_Vector_base<STATE::iGameState*, std::allocator<STATE::iGameState*> >::~_Vector_base() [23]
+                0.00    0.00      18/18          __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<std::string const, GFX::cTextureWrapper>, false>*>::allocate(unsigned int, void const*) [99]
+-----------------------------------------------
+                0.00    0.00       1/818         GFX::cTextureWrapper* std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<GFX::cTextureWrapper const*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > > >(unsigned int, __gnu_cxx::__normal_iterator<GFX::cTextureWrapper const*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >, __gnu_cxx::__normal_iterator<GFX::cTextureWrapper const*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >) [2216]
+                0.00    0.00      18/818         std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> >::_M_erase_at_end(GFX::cTextureWrapper*) [89]
+                0.00    0.00     799/818         void std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> >::_M_insert_aux<GFX::cTextureWrapper const&>(__gnu_cxx::__normal_iterator<GFX::cTextureWrapper*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >, GFX::cTextureWrapper const&) [17]
+[24]     0.0    0.00    0.00     818         std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [24]
+-----------------------------------------------
+                                   1             bool std::has_facet<std::codecvt<wchar_t, char, int> >(std::locale const&) [25]
+                0.00    0.00       1/783         std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::end() [2226]
+                0.00    0.00     782/783         bool std::has_facet<std::collate<char> >(std::locale const&) [27]
+[25]     0.0    0.00    0.00     783+1       bool std::has_facet<std::codecvt<wchar_t, char, int> >(std::locale const&) [25]
+                0.00    0.00     783/819         std::_Vector_base<STATE::iGameState*, std::allocator<STATE::iGameState*> >::~_Vector_base() [23]
+                                   1             bool std::has_facet<std::codecvt<wchar_t, char, int> >(std::locale const&) [25]
+-----------------------------------------------
+                0.00    0.00     782/782         bool std::has_facet<std::ctype<wchar_t> >(std::locale const&) [13]
+[26]     0.0    0.00    0.00     782         std::_Vector_base<STATE::iGameState*, std::allocator<STATE::iGameState*> >::_Vector_base() [26]
+-----------------------------------------------
+                0.00    0.00       1/782         std::collate<char>::~collate() [2248]
+                0.00    0.00      18/782         std::collate<char>::collate(int*, unsigned int) [2245]
+                0.00    0.00     763/782         std::codecvt<char, char, int>::~codecvt() [107]
+[27]     0.0    0.00    0.00     782         bool std::has_facet<std::collate<char> >(std::locale const&) [27]
+                0.00    0.00     782/783         bool std::has_facet<std::codecvt<wchar_t, char, int> >(std::locale const&) [25]
+-----------------------------------------------
+                0.00    0.00       1/779         STATE::cGameStateManager::ClearAll() [167]
+                0.00    0.00      16/779         STATE::cGameStateManager::ReplaceState(STATE::iGameState*) [134]
+                0.00    0.00     762/779         CORE::cGame::MainLoop() [161]
+[28]     0.0    0.00    0.00     779         cPlayState::HandleInput() [28]
+-----------------------------------------------
+                0.00    0.00      18/764         std::codecvt<wchar_t, char, int>::~codecvt() [2244]
+                0.00    0.00      36/764         std::codecvt<wchar_t, char, int>::~codecvt() [108]
+                0.00    0.00     710/764         __gnu_cxx::__normal_iterator<STATE::iGameState**, std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> > >::operator-(int const&) const [19]
+[29]     0.0    0.00    0.00     764         std::collate<char>::do_compare(char const*, char const*, char const*, char const*) const [29]
+                0.00    0.00      18/103         std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> >::_M_at_eof() const [60]
+                0.00    0.00      18/892         std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_first_of(wchar_t const*, unsigned int, unsigned int) const [20]
+-----------------------------------------------
+                0.00    0.00       1/763         GFX::cTextureMesh::cTextureMesh(int) [151]
+                0.00    0.00     762/763         GFX::G2D::cSpriteBatch::Begin() [34]
+[30]     0.0    0.00    0.00     763         GFX::cTextureMesh::Destroy() [30]
+                0.00    0.00     763/1349        void std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> >::_M_insert_aux<GFX::cTextureWrapper const&>(__gnu_cxx::__normal_iterator<GFX::cTextureWrapper*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >, GFX::cTextureWrapper const&) [17]
+                0.00    0.00     763/763         std::codecvt<wchar_t, char, int>::codecvt(unsigned int) [32]
+-----------------------------------------------
+                0.00    0.00     763/763         std::codecvt<wchar_t, char, int>::~codecvt() [108]
+[31]     0.0    0.00    0.00     763         std::codecvt<char, char, int>::codecvt(unsigned int) [31]
+-----------------------------------------------
+                0.00    0.00     763/763         GFX::cTextureMesh::Destroy() [30]
+[32]     0.0    0.00    0.00     763         std::codecvt<wchar_t, char, int>::codecvt(unsigned int) [32]
+-----------------------------------------------
+                0.00    0.00     762/762         __report_error [2847]
+[33]     0.0    0.00    0.00     762         GFX::G2D::cSpriteBatch::End() [33]
+                0.00    0.00     142/284         GFX::G2D::cSpriteBatch::RenderMesh() [50]
+-----------------------------------------------
+                0.00    0.00     762/762         __cpu_features_init [2745]
+[34]     0.0    0.00    0.00     762         GFX::G2D::cSpriteBatch::Begin() [34]
+                0.00    0.00     762/763         GFX::cTextureMesh::Destroy() [30]
+-----------------------------------------------
+                0.00    0.00     762/762         __write_memory [2872]
+[35]     0.0    0.00    0.00     762         CORE::cGame::EndGame() [35]
+-----------------------------------------------
+                0.00    0.00     762/762         CORE::cGame::MainLoop() [161]
+[36]     0.0    0.00    0.00     762         __gnu_cxx::new_allocator<GFX::cTextureMesh::Vertex>::construct(GFX::cTextureMesh::Vertex*, GFX::cTextureMesh::Vertex const&) [36]
+                0.00    0.00     762/1524        std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> >& std::forward<std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> >&>(std::remove_reference<std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> >&>::type&) [16]
+                0.00    0.00       1/24          std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) [79]
+-----------------------------------------------
+                0.00    0.00     762/762         CORE::cGame::MainLoop() [161]
+[37]     0.0    0.00    0.00     762         __dyn_tls_init@12 [37]
+                0.00    0.00     762/762         fpreset [38]
+                0.00    0.00       1/1           GFX::G2D::cSpriteBatch::~cSpriteBatch() [154]
+                0.00    0.00       1/1           GFX::G2D::cSpriteBatch::SetColor(Color4) [153]
+                0.00    0.00       1/18          GFX::G2D::cAnimation::SetTicksPerFrame(float) [93]
+-----------------------------------------------
+                0.00    0.00     762/762         __dyn_tls_init@12 [37]
+[38]     0.0    0.00    0.00     762         fpreset [38]
+-----------------------------------------------
+                0.00    0.00     568/568         GFX::G2D::cSpriteBatch::DrawTexture(GFX::cTextureWrapper const&, float, float, float, float) [55]
+[39]     0.0    0.00    0.00     568         MATH::cos_deg(float) [39]
+-----------------------------------------------
+                0.00    0.00     568/568         MATH::sin_deg(float) [374]
+[40]     0.0    0.00    0.00     568         MATH::CloseTof(float, float) [40]
+                0.00    0.00     568/1136        __gnu_cxx::__normal_iterator<STATE::iGameState**, std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> > >::operator-(int const&) const [19]
+                0.00    0.00     568/568         std::collate<char>::collate(int*, unsigned int) [43]
+-----------------------------------------------
+                0.00    0.00     568/568         void std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> >::_M_insert_aux<GFX::cTextureWrapper const&>(__gnu_cxx::__normal_iterator<GFX::cTextureWrapper*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >, GFX::cTextureWrapper const&) [17]
+[41]     0.0    0.00    0.00     568         __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> > >::deallocate(std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> >*, unsigned int) [41]
+-----------------------------------------------
+                0.00    0.00     568/568         std::collate<char>::collate(unsigned int) [2247]
+[42]     0.0    0.00    0.00     568         __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::~stdio_filebuf() [42]
+                0.00    0.00     568/1154        __cxa_call_unexpected [18]
+                0.00    0.00      18/892         std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_first_of(wchar_t const*, unsigned int, unsigned int) const [20]
+-----------------------------------------------
+                0.00    0.00     568/568         MATH::CloseTof(float, float) [40]
+[43]     0.0    0.00    0.00     568         std::collate<char>::collate(int*, unsigned int) [43]
+-----------------------------------------------
+                0.00    0.00      18/444         void std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> >::_M_insert_aux<GFX::cTextureWrapper const&>(__gnu_cxx::__normal_iterator<GFX::cTextureWrapper*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >, GFX::cTextureWrapper const&) [17]
+                0.00    0.00     426/444         std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::begin() const [48]
+[44]     0.0    0.00    0.00     444         std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::back() const [44]
+                0.00    0.00     426/852         __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::stdio_sync_filebuf(_iobuf*) [21]
+-----------------------------------------------
+                0.00    0.00       1/429         GFX::G2D::cTextureRegion::CopyTextureWrapper(GFX::cTextureWrapper const&) [340]
+                0.00    0.00       2/429         GFX::G2D::cTextureRegion::cTextureRegion(GFX::cTextureWrapper const&) [155]
+                0.00    0.00     142/429         GFX::G2D::cSpriteBatch::RenderMesh() [50]
+                0.00    0.00     284/429         GFX::G2D::cSpriteBatch::DrawTexture(GFX::cTextureWrapper const&, float, float, float, float) [55]
+[45]     0.0    0.00    0.00     429         std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_last_of(wchar_t const*, unsigned int) const [45]
+-----------------------------------------------
+                0.00    0.00     426/426         GFX::cTextureMesh::Render() [54]
+[46]     0.0    0.00    0.00     426         __gnu_cxx::__normal_iterator<GFX::cTextureWrapper*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >::operator*() const [46]
+-----------------------------------------------
+                0.00    0.00     426/426         std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::empty() const [104]
+[47]     0.0    0.00    0.00     426         std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::size() const [47]
+-----------------------------------------------
+                0.00    0.00     426/426         __gnu_cxx::__normal_iterator<STATE::iGameState**, std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> > >::base() const [543]
+[48]     0.0    0.00    0.00     426         std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::begin() const [48]
+                0.00    0.00     426/852         __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::stdio_sync_filebuf(_iobuf*) [21]
+                0.00    0.00     426/444         std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::back() const [44]
+-----------------------------------------------
+                0.00    0.00     426/426         __gnu_cxx::__normal_iterator<STATE::iGameState**, std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> > >::operator-(int const&) const [19]
+[49]     0.0    0.00    0.00     426         std::vector<int, std::allocator<int> >::_M_check_len(unsigned int, char const*) const [49]
+                0.00    0.00      18/2322        std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_first_of(wchar_t const*, unsigned int) const [10]
+-----------------------------------------------
+                0.00    0.00     142/284         GFX::G2D::cSpriteBatch::End() [33]
+                0.00    0.00     142/284         GFX::G2D::cSpriteBatch::DrawTexture(GFX::cTextureWrapper const&, float, float, float, float) [55]
+[50]     0.0    0.00    0.00     284         GFX::G2D::cSpriteBatch::RenderMesh() [50]
+                0.00    0.00     142/429         std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_last_of(wchar_t const*, unsigned int) const [45]
+                0.00    0.00     142/142         GFX::cTextureMesh::Render() [54]
+-----------------------------------------------
+                0.00    0.00     170/170         void std::vector<int, std::allocator<int> >::_M_insert_aux<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [59]
+[51]     0.0    0.00    0.00     170         std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_M_check_length(unsigned int, unsigned int, char const*) const [51]
+-----------------------------------------------
+                0.00    0.00       1/143         GFX::G2D::cTextureRegion::CopyTextureWrapper(GFX::cTextureWrapper const&) [340]
+                0.00    0.00     142/143         GFX::G2D::cSpriteBatch::DrawTexture(GFX::cTextureWrapper const&, float, float, float, float) [55]
+[52]     0.0    0.00    0.00     143         __gnu_cxx::__concurrence_lock_error::what() const [52]
+-----------------------------------------------
+                0.00    0.00       1/143         GFX::G2D::cTextureRegion::cTextureRegion(GFX::cTextureWrapper const&) [155]
+                0.00    0.00     142/143         GFX::G2D::cSpriteBatch::DrawTexture(GFX::cTextureWrapper const&, float, float, float, float) [55]
+[53]     0.0    0.00    0.00     143         std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_M_disjunct(wchar_t const*) const [53]
+-----------------------------------------------
+                0.00    0.00     142/142         GFX::G2D::cSpriteBatch::RenderMesh() [50]
+[54]     0.0    0.00    0.00     142         GFX::cTextureMesh::Render() [54]
+                0.00    0.00     568/1136        __gnu_cxx::__normal_iterator<STATE::iGameState**, std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> > >::operator-(int const&) const [19]
+                0.00    0.00     426/426         __gnu_cxx::__normal_iterator<GFX::cTextureWrapper*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >::operator*() const [46]
+-----------------------------------------------
+                0.00    0.00     142/142         __report_error [2847]
+[55]     0.0    0.00    0.00     142         GFX::G2D::cSpriteBatch::DrawTexture(GFX::cTextureWrapper const&, float, float, float, float) [55]
+                0.00    0.00     568/568         MATH::cos_deg(float) [39]
+                0.00    0.00     284/429         std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_last_of(wchar_t const*, unsigned int) const [45]
+                0.00    0.00     142/142         GFX::G2D::cSpriteBatch::ChangeTexture(GFX::cTextureWrapper const&) [56]
+                0.00    0.00     142/284         GFX::G2D::cSpriteBatch::RenderMesh() [50]
+                0.00    0.00     142/143         __gnu_cxx::__concurrence_lock_error::what() const [52]
+                0.00    0.00     142/143         std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_M_disjunct(wchar_t const*) const [53]
+-----------------------------------------------
+                0.00    0.00     142/142         GFX::G2D::cSpriteBatch::DrawTexture(GFX::cTextureWrapper const&, float, float, float, float) [55]
+[56]     0.0    0.00    0.00     142         GFX::G2D::cSpriteBatch::ChangeTexture(GFX::cTextureWrapper const&) [56]
+-----------------------------------------------
+                0.00    0.00      18/130         int&& std::forward<int>(std::remove_reference<int>::type&) [2574]
+                0.00    0.00      22/130         std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&) [149]
+                0.00    0.00      36/130         std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) [79]
+                0.00    0.00      54/130         std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, int) [14]
+[57]     0.0    0.00    0.00     130         int std::__int_to_char<wchar_t, unsigned long>(wchar_t*, unsigned long, wchar_t const*, std::_Ios_Fmtflags, bool) [57]
+                0.00    0.00    3124/7754        std::moneypunct<char, false>::moneypunct(std::__moneypunct_cache<char, false>*, unsigned int) [6]
+-----------------------------------------------
+                                   1             std::basic_filebuf<char, std::char_traits<char> >::_M_convert_to_external(char*, int) <cycle 2> [180]
+                0.00    0.00       2/130         CORE::Input::Update() [158]
+                0.00    0.00      18/130         std::__throw_future_error(int) [81]
+                0.00    0.00      20/130         std::__throw_length_error(char const*) [112]
+                0.00    0.00      34/130         GFX::cImage::~cImage() [347]
+                0.00    0.00      34/130         GFX::cImage::~cImage() [348]
+[58]     0.0    0.00    0.00     109         std::__pad<char, std::char_traits<char> >::_S_pad(std::ios_base&, char, char*, char const*, int, int) <cycle 2> [58]
+                0.00    0.00      18/18          bool&& std::forward<bool>(std::remove_reference<bool>::type&) [114]
+                0.00    0.00      18/24          std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) [79]
+                0.00    0.00       2/2           std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&) [149]
+                0.00    0.00       1/13          std::basic_istream<wchar_t, std::char_traits<wchar_t> >& std::getline<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >(std::basic_istream<wchar_t, std::char_traits<wchar_t> >&, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&) [135]
+                0.00    0.00       1/5           std::__pad<wchar_t, std::char_traits<wchar_t> >::_S_pad(std::ios_base&, wchar_t, wchar_t*, wchar_t const*, int, int) [136]
+                                  34             std::ios_base::_M_grow_words(int, bool) <cycle 2> [75]
+                                   1             std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::_M_erase(std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> >*) <cycle 2> [183]
+                                   1             std::ios_base::sync_with_stdio(bool) <cycle 2> [61]
+-----------------------------------------------
+                                  85             void std::vector<int, std::allocator<int> >::_M_insert_aux<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [59]
+                0.00    0.00       1/104         STATE::cGameStateManager::PushState(STATE::iGameState*) [168]
+                0.00    0.00       1/104         void std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::_M_insert_aux<STATE::iGameState*>(__gnu_cxx::__normal_iterator<STATE::iGameState**, std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> > >, STATE::iGameState*&&) [181]
+                0.00    0.00       1/104         int* std::vector<int, std::allocator<int> >::_M_allocate_and_copy<std::move_iterator<int*> >(unsigned int, std::move_iterator<int*>, std::move_iterator<int*>) [182]
+                0.00    0.00       5/104         STATE::cGameStateManager::ClearAll() [167]
+                0.00    0.00      96/104         STATE::cGameStateManager::ReplaceState(STATE::iGameState*) [134]
+[59]     0.0    0.00    0.00     104+85      void std::vector<int, std::allocator<int> >::_M_insert_aux<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [59]
+                0.00    0.00     170/170         std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_M_check_length(unsigned int, unsigned int, char const*) const [51]
+                0.00    0.00      87/9354        __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::stdio_sync_filebuf(_iobuf*) [4]
+                0.00    0.00      17/35          __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(_iobuf*, std::_Ios_Openmode, unsigned int) [74]
+                                  85             void std::vector<int, std::allocator<int> >::_M_insert_aux<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [59]
+-----------------------------------------------
+                0.00    0.00      18/103         std::collate<char>::do_compare(char const*, char const*, char const*, char const*) const [29]
+                0.00    0.00      34/103         GFX::cTexture::RegisterGL() [349]
+                0.00    0.00      51/103         GFX::cTexture::cTexture(std::string const&) [350]
+[60]     0.0    0.00    0.00     103         std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> >::_M_at_eof() const [60]
+-----------------------------------------------
+                                  34             std::ios_base::sync_with_stdio(bool) <cycle 2> [61]
+                                   1             std::__pad<char, std::char_traits<char> >::_S_pad(std::ios_base&, char, char*, char const*, int, int) <cycle 2> [58]
+                                   1             std::pair<std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> >, bool> std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::_M_insert_unique<std::pair<std::string, STATE::iGameState* (*)()> >(std::pair<std::string, STATE::iGameState* (*)()>&&) <cycle 2> [140]
+                                   2             std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::_M_erase(std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> >*) <cycle 2> [183]
+                                  17             std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::find(std::string const&) <cycle 2> [109]
+                                  51             std::ios_base::_M_grow_words(int, bool) <cycle 2> [75]
+                0.00    0.00       1/130         std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::~_Rb_tree() [2298]
+                0.00    0.00      17/130         std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::_M_end() [2289]
+[61]     0.0    0.00    0.00      90+34      std::ios_base::sync_with_stdio(bool) <cycle 2> [61]
+                0.00    0.00      34/34          std::moneypunct<char, true>::do_positive_sign() const [77]
+                0.00    0.00       1/54          std::__timepunct_cache<char>::~__timepunct_cache() [65]
+                                   1             std::pair<std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> >, bool> std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::_M_insert_unique<std::pair<std::string, STATE::iGameState* (*)()> >(std::pair<std::string, STATE::iGameState* (*)()>&&) <cycle 2> [140]
+                                  34             std::ios_base::sync_with_stdio(bool) <cycle 2> [61]
+-----------------------------------------------
+                0.00    0.00      17/68          GFX::cImage::cImage(std::string const&) [120]
+                0.00    0.00      51/68          std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_last_of(std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > const&, unsigned int) const [66]
+[62]     0.0    0.00    0.00      68         std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_last_of(wchar_t const*, unsigned int, unsigned int) const [62]
+-----------------------------------------------
+                0.00    0.00      17/68          GFX::cImage::~cImage() [348]
+                0.00    0.00      17/68          CORE::iApplication::iApplication() [352]
+                0.00    0.00      17/68          std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::begin() [2288]
+                0.00    0.00      17/68          std::ios_base::_M_grow_words(int, bool) <cycle 2> [75]
+[63]     0.0    0.00    0.00      68         std::ctype<wchar_t>::_M_convert_to_wmask(unsigned short) const [63]
+                0.00    0.00      34/34          std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char> >(std::basic_istream<char, std::char_traits<char> >&, char*) [78]
+-----------------------------------------------
+                0.00    0.00      60/60          int std::__int_to_char<wchar_t, unsigned long long>(wchar_t*, unsigned long long, wchar_t const*, std::_Ios_Fmtflags, bool) [8]
+[64]     0.0    0.00    0.00      60         std::moneypunct<char, false>::moneypunct(unsigned int) [64]
+-----------------------------------------------
+                0.00    0.00       1/54          std::pair<std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> >, bool> std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::_M_insert_unique<std::pair<std::string, STATE::iGameState* (*)()> >(std::pair<std::string, STATE::iGameState* (*)()>&&) <cycle 2> [140]
+                0.00    0.00       1/54          std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::_Rb_tree() [2297]
+                0.00    0.00       1/54          std::ios_base::sync_with_stdio(bool) <cycle 2> [61]
+                0.00    0.00      17/54          std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::_S_key(std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> > const*) [2290]
+                0.00    0.00      34/54          std::ios_base::_M_grow_words(int, bool) <cycle 2> [75]
+[65]     0.0    0.00    0.00      54         std::__timepunct_cache<char>::~__timepunct_cache() [65]
+-----------------------------------------------
+                0.00    0.00      17/51          GFX::cTexture::RegisterGL() [349]
+                0.00    0.00      34/51          GFX::cTexture::cTexture(std::string const&) [350]
+[66]     0.0    0.00    0.00      51         std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_last_of(std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > const&, unsigned int) const [66]
+                0.00    0.00      51/68          std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_last_of(wchar_t const*, unsigned int, unsigned int) const [62]
+-----------------------------------------------
+                0.00    0.00       4/40          std::moneypunct<char, false>::moneypunct(std::__moneypunct_cache<char, false>*, unsigned int) [6]
+                0.00    0.00      36/40          std::moneypunct<char, false>::moneypunct(int*, char const*, unsigned int) [1527]
+[67]     0.0    0.00    0.00      40         std::ctype<char>::do_toupper(char*, char const*) const [67]
+-----------------------------------------------
+                0.00    0.00       4/40          std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&) [148]
+                0.00    0.00      36/40          std::codecvt<wchar_t, char, int>::~codecvt() [2244]
+[68]     0.0    0.00    0.00      40         std::__throw_domain_error(char const*) [68]
+                0.00    0.00      36/36          std::basic_ifstream<char, std::char_traits<char> >::is_open() [72]
+                0.00    0.00       4/4           std::basic_ifstream<char, std::char_traits<char> >::close() [139]
+-----------------------------------------------
+                0.00    0.00      36/36          std::moneypunct<char, false>::moneypunct(std::__moneypunct_cache<char, false>*, unsigned int) [6]
+[69]     0.0    0.00    0.00      36         std::ctype<char>::do_tolower(char*, char const*) const [69]
+-----------------------------------------------
+                0.00    0.00      18/36          std::__basic_file<char>::xsputn_2(char const*, int, char const*, int) [22]
+                0.00    0.00      18/36          std::codecvt<char, char, int>::~codecvt() [107]
+[70]     0.0    0.00    0.00      36         std::__basic_file<char>::sys_open(int, std::_Ios_Openmode) [70]
+                0.00    0.00      18/18          __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf() [100]
+                0.00    0.00      18/19          wchar_t* std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_S_construct<wchar_t*>(wchar_t*, wchar_t*, std::allocator<wchar_t> const&, std::forward_iterator_tag) [87]
+-----------------------------------------------
+                0.00    0.00      36/36          std::_Rb_tree_rotate_left(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*&) [73]
+[71]     0.0    0.00    0.00      36         std::basic_ifstream<char, std::char_traits<char> >::open(std::string const&, std::_Ios_Openmode) [71]
+-----------------------------------------------
+                0.00    0.00      36/36          std::__throw_domain_error(char const*) [68]
+[72]     0.0    0.00    0.00      36         std::basic_ifstream<char, std::char_traits<char> >::is_open() [72]
+-----------------------------------------------
+                0.00    0.00      36/36          void std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> >::_M_insert_aux<GFX::cTextureWrapper const&>(__gnu_cxx::__normal_iterator<GFX::cTextureWrapper*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >, GFX::cTextureWrapper const&) [17]
+[73]     0.0    0.00    0.00      36         std::_Rb_tree_rotate_left(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*&) [73]
+                0.00    0.00      36/36          std::basic_ifstream<char, std::char_traits<char> >::open(std::string const&, std::_Ios_Openmode) [71]
+-----------------------------------------------
+                0.00    0.00       1/35          std::__basic_file<char>::xsputn(char const*, int) [146]
+                0.00    0.00       1/35          void std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::_M_insert_aux<STATE::iGameState*>(__gnu_cxx::__normal_iterator<STATE::iGameState**, std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> > >, STATE::iGameState*&&) [181]
+                0.00    0.00      16/35          int* std::vector<int, std::allocator<int> >::_M_allocate_and_copy<std::move_iterator<int*> >(unsigned int, std::move_iterator<int*>, std::move_iterator<int*>) [182]
+                0.00    0.00      17/35          void std::vector<int, std::allocator<int> >::_M_insert_aux<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [59]
+[74]     0.0    0.00    0.00      35         __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(_iobuf*, std::_Ios_Openmode, unsigned int) [74]
+                0.00    0.00       1/892         std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_first_of(wchar_t const*, unsigned int, unsigned int) const [20]
+-----------------------------------------------
+                                  17             std::ios_base::_M_grow_words(int, bool) <cycle 2> [75]
+                                   1             std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::find(std::string const&) <cycle 2> [109]
+                                  34             std::__pad<char, std::char_traits<char> >::_S_pad(std::ios_base&, char, char*, char const*, int, int) <cycle 2> [58]
+[75]     0.0    0.00    0.00      35+17      std::ios_base::_M_grow_words(int, bool) <cycle 2> [75]
+                0.00    0.00      34/54          std::__timepunct_cache<char>::~__timepunct_cache() [65]
+                0.00    0.00      17/18          std::ctype<char>::do_narrow(char const*, char const*, char, char*) const [103]
+                0.00    0.00      17/68          std::ctype<wchar_t>::_M_convert_to_wmask(unsigned short) const [63]
+                                  51             std::ios_base::sync_with_stdio(bool) <cycle 2> [61]
+                                  17             std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::find(std::string const&) <cycle 2> [109]
+                                  17             std::ios_base::_M_grow_words(int, bool) <cycle 2> [75]
+-----------------------------------------------
+                0.00    0.00      34/34          __cxxabiv1::__class_type_info::__do_dyncast(int, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const [496]
+[76]     0.0    0.00    0.00      34         GFX::cImage::ConvertPixelFormat() [76]
+-----------------------------------------------
+                0.00    0.00      34/34          std::ios_base::sync_with_stdio(bool) <cycle 2> [61]
+[77]     0.0    0.00    0.00      34         std::moneypunct<char, true>::do_positive_sign() const [77]
+-----------------------------------------------
+                0.00    0.00      34/34          std::ctype<wchar_t>::_M_convert_to_wmask(unsigned short) const [63]
+[78]     0.0    0.00    0.00      34         std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char> >(std::basic_istream<char, std::char_traits<char> >&, char*) [78]
+-----------------------------------------------
+                0.00    0.00       1/24          __gnu_cxx::new_allocator<GFX::cTextureMesh::Vertex>::allocate(unsigned int, void const*) [385]
+                0.00    0.00       1/24          __gnu_cxx::new_allocator<GFX::cTextureMesh::Vertex>::construct(GFX::cTextureMesh::Vertex*, GFX::cTextureMesh::Vertex const&) [36]
+                0.00    0.00       1/24          void std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::_M_insert_aux<STATE::iGameState*>(__gnu_cxx::__normal_iterator<STATE::iGameState**, std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> > >, STATE::iGameState*&&) [181]
+                0.00    0.00       3/24          std::__pad<wchar_t, std::char_traits<wchar_t> >::_S_pad(std::ios_base&, wchar_t, wchar_t*, wchar_t const*, int, int) [136]
+                0.00    0.00      18/24          std::__pad<char, std::char_traits<char> >::_S_pad(std::ios_base&, char, char*, char const*, int, int) <cycle 2> [58]
+[79]     0.0    0.00    0.00      24         std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) [79]
+                0.00    0.00      36/130         int std::__int_to_char<wchar_t, unsigned long>(wchar_t*, unsigned long, wchar_t const*, std::_Ios_Fmtflags, bool) [57]
+                0.00    0.00      18/1562        std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, int) [14]
+                0.00    0.00       4/6160        int std::__int_to_char<wchar_t, unsigned long long>(wchar_t*, unsigned long long, wchar_t const*, std::_Ios_Fmtflags, bool) [8]
+                0.00    0.00       2/2           bool std::has_facet<std::collate<wchar_t> >(std::locale const&) [150]
+-----------------------------------------------
+                0.00    0.00       2/20          std::codecvt<wchar_t, char, int>::do_length(int&, char const*, char const*, unsigned int) const <cycle 1> [144]
+                0.00    0.00      18/20          std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::max_size() const [105]
+[80]     0.0    0.00    0.00      20         std::istreambuf_iterator<char, std::char_traits<char> >::_M_at_eof() const [80]
+-----------------------------------------------
+                0.00    0.00       2/20          std::__throw_bad_function_call() [82]
+                0.00    0.00      18/20          std::__throw_invalid_argument(char const*) [113]
+[81]     0.0    0.00    0.00      20         std::__throw_future_error(int) [81]
+                0.00    0.00      18/130         std::__pad<char, std::char_traits<char> >::_S_pad(std::ios_base&, char, char*, char const*, int, int) <cycle 2> [58]
+-----------------------------------------------
+                0.00    0.00       2/20          std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&) [148]
+                0.00    0.00      18/20          std::codecvt<char, char, int>::~codecvt() [2242]
+[82]     0.0    0.00    0.00      20         std::__throw_bad_function_call() [82]
+                0.00    0.00       2/20          std::__throw_future_error(int) [81]
+-----------------------------------------------
+                0.00    0.00       1/19          GFX::G2D::cTextureRegion::cTextureRegion(GFX::cTextureWrapper const&) [155]
+                0.00    0.00       1/19          GFX::G2D::cTextureRegion::CopyTextureWrapper(GFX::cTextureWrapper const&) [340]
+                0.00    0.00      17/19          GFX::cTexture::cTexture(std::string const&) [350]
+[83]     0.0    0.00    0.00      19         Color4::set(float, float, float, float) [83]
+-----------------------------------------------
+                0.00    0.00       1/19          wchar_t* std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_S_construct<wchar_t const*>(wchar_t const*, wchar_t const*, std::allocator<wchar_t> const&, std::forward_iterator_tag) <cycle 2> [145]
+                0.00    0.00      18/19          wchar_t* std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_S_construct<__gnu_cxx::__normal_iterator<wchar_t*, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >(__gnu_cxx::__normal_iterator<wchar_t*, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, __gnu_cxx::__normal_iterator<wchar_t*, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<wchar_t> const&, std::forward_iterator_tag) [86]
+[84]     0.0    0.00    0.00      19         void __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> > >::construct<std::pair<std::string, STATE::iGameState* (*)()> >(std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> >*, std::pair<std::string, STATE::iGameState* (*)()>&&) [84]
+-----------------------------------------------
+                0.00    0.00      19/19          wchar_t* std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_S_construct<wchar_t*>(wchar_t*, wchar_t*, std::allocator<wchar_t> const&, std::forward_iterator_tag) [87]
+[85]     0.0    0.00    0.00      19         __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::~stdio_filebuf() [85]
+-----------------------------------------------
+                0.00    0.00       1/19          std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl() [88]
+                0.00    0.00      18/19          std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned int) [177]
+[86]     0.0    0.00    0.00      19         wchar_t* std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_S_construct<__gnu_cxx::__normal_iterator<wchar_t*, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >(__gnu_cxx::__normal_iterator<wchar_t*, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, __gnu_cxx::__normal_iterator<wchar_t*, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<wchar_t> const&, std::forward_iterator_tag) [86]
+                0.00    0.00      18/19          void __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> > >::construct<std::pair<std::string, STATE::iGameState* (*)()> >(std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> >*, std::pair<std::string, STATE::iGameState* (*)()>&&) [84]
+-----------------------------------------------
+                0.00    0.00       1/19          std::__basic_file<char>::xsputn_2(char const*, int, char const*, int) [22]
+                0.00    0.00      18/19          std::__basic_file<char>::sys_open(int, std::_Ios_Openmode) [70]
+[87]     0.0    0.00    0.00      19         wchar_t* std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_S_construct<wchar_t*>(wchar_t*, wchar_t*, std::allocator<wchar_t> const&, std::forward_iterator_tag) [87]
+                0.00    0.00      19/19          __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::~stdio_filebuf() [85]
+-----------------------------------------------
+                0.00    0.00       1/19          std::_Vector_base<int, std::allocator<int> >::_Vector_base() [1620]
+                0.00    0.00      18/19          void std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> >::_M_insert_aux<GFX::cTextureWrapper const&>(__gnu_cxx::__normal_iterator<GFX::cTextureWrapper*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >, GFX::cTextureWrapper const&) [17]
+[88]     0.0    0.00    0.00      19         std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl() [88]
+                0.00    0.00       1/19          wchar_t* std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_S_construct<__gnu_cxx::__normal_iterator<wchar_t*, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >(__gnu_cxx::__normal_iterator<wchar_t*, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, __gnu_cxx::__normal_iterator<wchar_t*, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<wchar_t> const&, std::forward_iterator_tag) [86]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<std::string const, GFX::cTextureWrapper>, false>*>::deallocate(std::__detail::_Hash_node<std::pair<std::string const, GFX::cTextureWrapper>, false>**, unsigned int) [173]
+-----------------------------------------------
+                0.00    0.00       1/19          GFX::cTextureMesh::~cTextureMesh() [152]
+                0.00    0.00      18/19          GFX::cTextureMesh::cTextureMesh() [91]
+[89]     0.0    0.00    0.00      19         std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> >::_M_erase_at_end(GFX::cTextureWrapper*) [89]
+                0.00    0.00      18/818         std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [24]
+-----------------------------------------------
+                0.00    0.00       1/19          GFX::cTextureMesh::~cTextureMesh() [152]
+                0.00    0.00      18/19          GFX::cTextureMesh::cTextureMesh(int) [151]
+[90]     0.0    0.00    0.00      19         std::collate<char>::~collate() [90]
+                0.00    0.00      19/839         std::__basic_file<char>::xsputn_2(char const*, int, char const*, int) [22]
+-----------------------------------------------
+                0.00    0.00      18/18          GFX::G2D::cSpriteBatch::Initialise(int) [334]
+[91]     0.0    0.00    0.00      18         GFX::cTextureMesh::cTextureMesh() [91]
+                0.00    0.00      18/19          std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> >::_M_erase_at_end(GFX::cTextureWrapper*) [89]
+-----------------------------------------------
+                0.00    0.00      18/18          GFX::cTextureMesh::cTextureMesh(int) [151]
+[92]     0.0    0.00    0.00      18         GFX::cTextureMesh::~cTextureMesh() [92]
+-----------------------------------------------
+                0.00    0.00       1/18          __dyn_tls_init@12 [37]
+                0.00    0.00      17/18          cPlayState::cPlayState() [117]
+[93]     0.0    0.00    0.00      18         GFX::G2D::cAnimation::SetTicksPerFrame(float) [93]
+-----------------------------------------------
+                0.00    0.00      18/18          GFX::G2D::cSpriteBatch::cSpriteBatch() [337]
+[94]     0.0    0.00    0.00      18         GFX::G2D::cSpriteBatch::cSpriteBatch(int) [94]
+-----------------------------------------------
+                0.00    0.00       1/18          GFX::G2D::cTextureRegion::CopyTextureWrapper(GFX::cTextureWrapper const&) [340]
+                0.00    0.00      17/18          GFX::cTexture::cTexture(std::string const&) [350]
+[95]     0.0    0.00    0.00      18         MATH::DegToRad(float) [95]
+                0.00    0.00     568/1349        void std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> >::_M_insert_aux<GFX::cTextureWrapper const&>(__gnu_cxx::__normal_iterator<GFX::cTextureWrapper*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >, GFX::cTextureWrapper const&) [17]
+-----------------------------------------------
+                0.00    0.00       1/18          GFX::G2D::cTextureRegion::CopyTextureWrapper(GFX::cTextureWrapper const&) [340]
+                0.00    0.00      17/18          GFX::cTexture::cTexture(std::string const&) [350]
+[96]     0.0    0.00    0.00      18         STATE::cGameTransition::SetOldAndNewState(STATE::iGameState*, STATE::iGameState*) [96]
+-----------------------------------------------
+                0.00    0.00       1/18          GFX::G2D::cTextureRegion::cTextureRegion(GFX::cTextureWrapper const&, float, float, float, float) [156]
+                0.00    0.00      17/18          GFX::cTexture::~cTexture() [121]
+[97]     0.0    0.00    0.00      18         __gnu_cxx::__atomic_add(int volatile*, int) [97]
+-----------------------------------------------
+                0.00    0.00      18/18          GFX::G2D::cSpriteBatch::Initialise(int) [334]
+[98]     0.0    0.00    0.00      18         __gnu_cxx::new_allocator<STATE::iGameState*>::allocate(unsigned int, void const*) [98]
+-----------------------------------------------
+                0.00    0.00      18/18          std::_Vector_base<STATE::iGameState*, std::allocator<STATE::iGameState*> >::~_Vector_base() [23]
+[99]     0.0    0.00    0.00      18         __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<std::string const, GFX::cTextureWrapper>, false>*>::allocate(unsigned int, void const*) [99]
+                0.00    0.00      18/2322        std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_first_of(wchar_t const*, unsigned int) const [10]
+-----------------------------------------------
+                0.00    0.00      18/18          std::__basic_file<char>::sys_open(int, std::_Ios_Openmode) [70]
+[100]    0.0    0.00    0.00      18         __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf() [100]
+-----------------------------------------------
+                0.00    0.00       1/18          GFX::G2D::cTextureRegion::CopyTextureWrapper(GFX::cTextureWrapper const&) [340]
+                0.00    0.00      17/18          GFX::cTexture::RegisterGL() [349]
+[101]    0.0    0.00    0.00      18         __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::base() const [101]
+-----------------------------------------------
+                0.00    0.00       1/18          GFX::G2D::cTextureRegion::CopyTextureWrapper(GFX::cTextureWrapper const&) [340]
+                0.00    0.00      17/18          GFX::cTexture::RegisterGL() [349]
+[102]    0.0    0.00    0.00      18         __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::operator*() const [102]
+-----------------------------------------------
+                0.00    0.00       1/18          std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::~_Rb_tree() [2298]
+                0.00    0.00      17/18          std::ios_base::_M_grow_words(int, bool) <cycle 2> [75]
+[103]    0.0    0.00    0.00      18         std::ctype<char>::do_narrow(char const*, char const*, char, char*) const [103]
+-----------------------------------------------
+                0.00    0.00      18/18          void std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> >::_M_insert_aux<GFX::cTextureWrapper const&>(__gnu_cxx::__normal_iterator<GFX::cTextureWrapper*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >, GFX::cTextureWrapper const&) [17]
+[104]    0.0    0.00    0.00      18         std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::empty() const [104]
+                0.00    0.00     426/426         std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::size() const [47]
+                0.00    0.00     426/1969        __cxxabiv1::__si_class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__upcast_result&) const [11]
+-----------------------------------------------
+                0.00    0.00      18/18          void std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> >::_M_insert_aux<GFX::cTextureWrapper const&>(__gnu_cxx::__normal_iterator<GFX::cTextureWrapper*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >, GFX::cTextureWrapper const&) [17]
+[105]    0.0    0.00    0.00      18         std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::max_size() const [105]
+                0.00    0.00      18/20          std::istreambuf_iterator<char, std::char_traits<char> >::_M_at_eof() const [80]
+-----------------------------------------------
+                0.00    0.00      18/18          STATE::iGameState** std::move_backward<STATE::iGameState**, STATE::iGameState**>(STATE::iGameState**, STATE::iGameState**, STATE::iGameState**) [111]
+[106]    0.0    0.00    0.00      18         std::__timepunct<char>::__timepunct(std::__timepunct_cache<char>*, unsigned int) [106]
+-----------------------------------------------
+                0.00    0.00      18/18          std::codecvt<wchar_t, char, int>::~codecvt() [2244]
+[107]    0.0    0.00    0.00      18         std::codecvt<char, char, int>::~codecvt() [107]
+                0.00    0.00     763/839         std::__basic_file<char>::xsputn_2(char const*, int, char const*, int) [22]
+                0.00    0.00     763/782         bool std::has_facet<std::collate<char> >(std::locale const&) [27]
+                0.00    0.00      18/36          std::__basic_file<char>::sys_open(int, std::_Ios_Openmode) [70]
+-----------------------------------------------
+                0.00    0.00      18/18          GFX::cTextureMesh::Initialise(int) [320]
+[108]    0.0    0.00    0.00      18         std::codecvt<wchar_t, char, int>::~codecvt() [108]
+                0.00    0.00     763/763         std::codecvt<char, char, int>::codecvt(unsigned int) [31]
+                0.00    0.00      36/764         std::collate<char>::do_compare(char const*, char const*, char const*, char const*) const [29]
+-----------------------------------------------
+                                   1             std::pair<std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> >, bool> std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::_M_insert_unique<std::pair<std::string, STATE::iGameState* (*)()> >(std::pair<std::string, STATE::iGameState* (*)()>&&) <cycle 2> [140]
+                                  17             std::ios_base::_M_grow_words(int, bool) <cycle 2> [75]
+[109]    0.0    0.00    0.00      18         std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::find(std::string const&) <cycle 2> [109]
+                0.00    0.00       1/13          std::basic_istream<wchar_t, std::char_traits<wchar_t> >& std::getline<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >(std::basic_istream<wchar_t, std::char_traits<wchar_t> >&, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&) [135]
+                0.00    0.00       1/2           __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(_iobuf*, std::_Ios_Openmode, unsigned int) [142]
+                                  17             std::ios_base::sync_with_stdio(bool) <cycle 2> [61]
+                                   1             std::pair<std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> >, bool> std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::_M_insert_unique<std::pair<std::string, STATE::iGameState* (*)()> >(std::pair<std::string, STATE::iGameState* (*)()>&&) <cycle 2> [140]
+                                   1             std::ios_base::_M_grow_words(int, bool) <cycle 2> [75]
+-----------------------------------------------
+                0.00    0.00      18/18          std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, int) [14]
+[110]    0.0    0.00    0.00      18         GFX::cTextureMesh::Vertex* std::move_backward<GFX::cTextureMesh::Vertex*, GFX::cTextureMesh::Vertex*>(GFX::cTextureMesh::Vertex*, GFX::cTextureMesh::Vertex*, GFX::cTextureMesh::Vertex*) [110]
+                0.00    0.00    1524/1578        std::__timepunct<char>::_M_initialize_timepunct(int*) [12]
+-----------------------------------------------
+                0.00    0.00      18/18          std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, int) [14]
+[111]    0.0    0.00    0.00      18         STATE::iGameState** std::move_backward<STATE::iGameState**, STATE::iGameState**>(STATE::iGameState**, STATE::iGameState**, STATE::iGameState**) [111]
+                0.00    0.00      18/18          std::__timepunct<char>::__timepunct(std::__timepunct_cache<char>*, unsigned int) [106]
+-----------------------------------------------
+                0.00    0.00      18/18          std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&) [148]
+[112]    0.0    0.00    0.00      18         std::__throw_length_error(char const*) [112]
+                0.00    0.00      20/130         std::__pad<char, std::char_traits<char> >::_S_pad(std::ios_base&, char, char*, char const*, int, int) <cycle 2> [58]
+-----------------------------------------------
+                0.00    0.00      18/18          void std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> >::_M_insert_aux<GFX::cTextureWrapper const&>(__gnu_cxx::__normal_iterator<GFX::cTextureWrapper*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >, GFX::cTextureWrapper const&) [17]
+[113]    0.0    0.00    0.00      18         std::__throw_invalid_argument(char const*) [113]
+                0.00    0.00      18/20          std::__throw_future_error(int) [81]
+-----------------------------------------------
+                0.00    0.00      18/18          std::__pad<char, std::char_traits<char> >::_S_pad(std::ios_base&, char, char*, char const*, int, int) <cycle 2> [58]
+[114]    0.0    0.00    0.00      18         bool&& std::forward<bool>(std::remove_reference<bool>::type&) [114]
+-----------------------------------------------
+                0.00    0.00      17/17          CORE::iApplication::iApplication() [352]
+[115]    0.0    0.00    0.00      17         cPlayState::CreateInstance() [115]
+                0.00    0.00      17/17          cPlayState::cPlayState() [117]
+-----------------------------------------------
+                0.00    0.00       1/17          STATE::cGameStateManager::PushState(STATE::iGameState*) [168]
+                0.00    0.00      16/17          STATE::cGameStateManager::ReplaceState(STATE::iGameState*) [134]
+[116]    0.0    0.00    0.00      17         cPlayState::OnExit() [116]
+-----------------------------------------------
+                0.00    0.00      17/17          cPlayState::CreateInstance() [115]
+[117]    0.0    0.00    0.00      17         cPlayState::cPlayState() [117]
+                0.00    0.00      17/17          __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<std::string const, GFX::cTextureWrapper>, false> >::~new_allocator() [122]
+                0.00    0.00      17/18          GFX::G2D::cAnimation::SetTicksPerFrame(float) [93]
+-----------------------------------------------
+                0.00    0.00      17/17          GFX::cTexture::cTexture(std::string const&) [350]
+[118]    0.0    0.00    0.00      17         GFX::cCameraBase::~cCameraBase() [118]
+-----------------------------------------------
+                0.00    0.00       1/17          CORE::cGame::Initialise() [159]
+                0.00    0.00      16/17          __write_memory [2872]
+[119]    0.0    0.00    0.00      17         GFX::cTextureWrapper::SetUV(float, float, float, float) [119]
+-----------------------------------------------
+                0.00    0.00      17/17          GFX::cTexture::cTexture(std::string const&) [350]
+[120]    0.0    0.00    0.00      17         GFX::cImage::cImage(std::string const&) [120]
+                0.00    0.00      17/68          std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_last_of(wchar_t const*, unsigned int, unsigned int) const [62]
+-----------------------------------------------
+                0.00    0.00      17/17          cPlayState::Update(CORE::cGame*, float) [302]
+[121]    0.0    0.00    0.00      17         GFX::cTexture::~cTexture() [121]
+                0.00    0.00      17/18          __gnu_cxx::__atomic_add(int volatile*, int) [97]
+-----------------------------------------------
+                0.00    0.00      17/17          cPlayState::cPlayState() [117]
+[122]    0.0    0.00    0.00      17         __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<std::string const, GFX::cTextureWrapper>, false> >::~new_allocator() [122]
+-----------------------------------------------
+                0.00    0.00      17/17          std::__timepunct<char>::_M_initialize_timepunct(int*) [12]
+[123]    0.0    0.00    0.00      17         __cxxabiv1::__class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void**) const [123]
+-----------------------------------------------
+                0.00    0.00      17/17          GFX::cTexture::RegisterGL() [349]
+[124]    0.0    0.00    0.00      17         GFX::cImage::IsTransparent() const [124]
+-----------------------------------------------
+                0.00    0.00      17/17          __tcf_0 [2855]
+[125]    0.0    0.00    0.00      17         GFX::cTexture::operator==(GFX::cTexture const&) const [125]
+-----------------------------------------------
+                0.00    0.00      17/17          GFX::cTexture::RegisterGL() [349]
+[126]    0.0    0.00    0.00      17         std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_last_of(wchar_t, unsigned int) const [126]
+-----------------------------------------------
+                0.00    0.00      17/17          std::__timepunct<char>::_M_initialize_timepunct(int*) [12]
+[127]    0.0    0.00    0.00      17         std::domain_error::~domain_error() [127]
+-----------------------------------------------
+                0.00    0.00      17/17          std::future_error::~future_error() [1641]
+[128]    0.0    0.00    0.00      17         std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(std::string const&, std::_Ios_Openmode) [128]
+                0.00    0.00      17/17          std::basic_streambuf<char, std::char_traits<char> >::xsputn(char const*, int) [129]
+-----------------------------------------------
+                0.00    0.00      17/17          std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(std::string const&, std::_Ios_Openmode) [128]
+[129]    0.0    0.00    0.00      17         std::basic_streambuf<char, std::char_traits<char> >::xsputn(char const*, int) [129]
+                0.00    0.00      17/17          std::__numpunct_cache<char>::_M_cache(std::locale const&) [130]
+-----------------------------------------------
+                0.00    0.00      17/17          std::basic_streambuf<char, std::char_traits<char> >::xsputn(char const*, int) [129]
+[130]    0.0    0.00    0.00      17         std::__numpunct_cache<char>::_M_cache(std::locale const&) [130]
+                0.00    0.00      17/1578        std::__timepunct<char>::_M_initialize_timepunct(int*) [12]
+-----------------------------------------------
+                0.00    0.00       1/17          STATE::cGameStateManager::PushState(STATE::iGameState*) [168]
+                0.00    0.00      16/17          STATE::cGameStateManager::ReplaceState(STATE::iGameState*) [134]
+[131]    0.0    0.00    0.00      17         std::vector<int, std::allocator<int> >::_M_erase_at_end(int*) [131]
+-----------------------------------------------
+                0.00    0.00      17/17          std::future_error::~future_error() [1642]
+[132]    0.0    0.00    0.00      17         GFX::cTextureMesh::Vertex&& std::forward<GFX::cTextureMesh::Vertex>(std::remove_reference<GFX::cTextureMesh::Vertex>::type&) [132]
+-----------------------------------------------
+                0.00    0.00      16/16          __write_memory [2872]
+[133]    0.0    0.00    0.00      16         CORE::cGame::GetInput() [133]
+-----------------------------------------------
+                0.00    0.00      16/16          _pei386_runtime_relocator [2884]
+[134]    0.0    0.00    0.00      16         STATE::cGameStateManager::ReplaceState(STATE::iGameState*) [134]
+                0.00    0.00      96/104         void std::vector<int, std::allocator<int> >::_M_insert_aux<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [59]
+                0.00    0.00      16/4595        std::codecvt<wchar_t, char, int>::do_out(int&, wchar_t const*, wchar_t const*, wchar_t const*&, char*, char*, char*&) const <cycle 1> [7]
+                0.00    0.00      16/779         cPlayState::HandleInput() [28]
+                0.00    0.00      16/17          std::vector<int, std::allocator<int> >::_M_erase_at_end(int*) [131]
+                0.00    0.00      16/17          cPlayState::OnExit() [116]
+-----------------------------------------------
+                0.00    0.00       1/13          __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(int, std::_Ios_Openmode, unsigned int) <cycle 2> [143]
+                0.00    0.00       1/13          std::basic_filebuf<char, std::char_traits<char> >::_M_convert_to_external(char*, int) <cycle 2> [180]
+                0.00    0.00       1/13          std::__pad<char, std::char_traits<char> >::_S_pad(std::ios_base&, char, char*, char const*, int, int) <cycle 2> [58]
+                0.00    0.00       1/13          std::pair<std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> >, bool> std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::_M_insert_unique<std::pair<std::string, STATE::iGameState* (*)()> >(std::pair<std::string, STATE::iGameState* (*)()>&&) <cycle 2> [140]
+                0.00    0.00       1/13          std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::find(std::string const&) <cycle 2> [109]
+                0.00    0.00       1/13          std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::~_Rb_tree() [2298]
+                0.00    0.00       7/13          std::__pad<wchar_t, std::char_traits<wchar_t> >::_S_pad(std::ios_base&, wchar_t, wchar_t*, wchar_t const*, int, int) [136]
+[135]    0.0    0.00    0.00      13         std::basic_istream<wchar_t, std::char_traits<wchar_t> >& std::getline<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >(std::basic_istream<wchar_t, std::char_traits<wchar_t> >&, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&) [135]
+-----------------------------------------------
+                0.00    0.00       1/5           std::__pad<char, std::char_traits<char> >::_S_pad(std::ios_base&, char, char*, char const*, int, int) <cycle 2> [58]
+                0.00    0.00       1/5           std::__detail::_Equality_base<std::_Select1st<std::pair<std::string const, GFX::cTextureWrapper> >, true, std::_Hashtable<std::string, std::pair<std::string const, GFX::cTextureWrapper>, std::allocator<std::pair<std::string const, GFX::cTextureWrapper> >, std::_Select1st<std::pair<std::string const, GFX::cTextureWrapper> >, std::equal_to<std::string>, std::hash<std::string>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, false, false, true> >::_Equality_base() [2300]
+                0.00    0.00       1/5           std::__detail::_Hash_code_base<std::string, std::pair<std::string const, GFX::cTextureWrapper>, std::_Select1st<std::pair<std::string const, GFX::cTextureWrapper> >, std::equal_to<std::string>, std::hash<std::string>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_Hash_code_base(std::_Select1st<std::pair<std::string const, GFX::cTextureWrapper> > const&, std::equal_to<std::string> const&, std::hash<std::string> const&, std::__detail::_Mod_range_hashing const&, std::__detail::_Default_ranged_hash const&) [2301]
+                0.00    0.00       2/5           CORE::Input::Update() [158]
+[136]    0.0    0.00    0.00       5         std::__pad<wchar_t, std::char_traits<wchar_t> >::_S_pad(std::ios_base&, wchar_t, wchar_t*, wchar_t const*, int, int) [136]
+                0.00    0.00       7/13          std::basic_istream<wchar_t, std::char_traits<wchar_t> >& std::getline<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >(std::basic_istream<wchar_t, std::char_traits<wchar_t> >&, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&) [135]
+                0.00    0.00       3/24          std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) [79]
+-----------------------------------------------
+                0.00    0.00       1/4           __cxxabiv1::__si_class_type_info::__do_dyncast(int, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const [175]
+                0.00    0.00       1/4           __cxxabiv1::__si_class_type_info::__do_find_public_src(int, void const*, __cxxabiv1::__class_type_info const*, void const*) const [498]
+                0.00    0.00       2/4           void std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::_M_insert_aux<STATE::iGameState*>(__gnu_cxx::__normal_iterator<STATE::iGameState**, std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> > >, STATE::iGameState*&&) [181]
+[137]    0.0    0.00    0.00       4         std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::get_allocator() const [137]
+-----------------------------------------------
+                0.00    0.00       1/4           int* std::vector<int, std::allocator<int> >::_M_allocate_and_copy<std::move_iterator<int*> >(unsigned int, std::move_iterator<int*>, std::move_iterator<int*>) [182]
+                0.00    0.00       3/4           void std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::_M_insert_aux<STATE::iGameState*>(__gnu_cxx::__normal_iterator<STATE::iGameState**, std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> > >, STATE::iGameState*&&) [181]
+[138]    0.0    0.00    0.00       4         std::__basic_file<char>::sys_open(_iobuf*, std::_Ios_Openmode) [138]
+                0.00    0.00       1/2           std::__basic_file<char>::xsputn(char const*, int) [146]
+-----------------------------------------------
+                0.00    0.00       4/4           std::__throw_domain_error(char const*) [68]
+[139]    0.0    0.00    0.00       4         std::basic_ifstream<char, std::char_traits<char> >::close() [139]
+-----------------------------------------------
+                                   1             std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::find(std::string const&) <cycle 2> [109]
+                                   1             std::ios_base::sync_with_stdio(bool) <cycle 2> [61]
+                0.00    0.00       1/130         std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::end() [2287]
+                0.00    0.00       1/130         std::__detail::_Hash_node<std::pair<std::string const, GFX::cTextureWrapper>, false>::~_Hash_node() [2299]
+[140]    0.0    0.00    0.00       4         std::pair<std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> >, bool> std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::_M_insert_unique<std::pair<std::string, STATE::iGameState* (*)()> >(std::pair<std::string, STATE::iGameState* (*)()>&&) <cycle 2> [140]
+                0.00    0.00       1/13          std::basic_istream<wchar_t, std::char_traits<wchar_t> >& std::getline<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >(std::basic_istream<wchar_t, std::char_traits<wchar_t> >&, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&) [135]
+                0.00    0.00       1/54          std::__timepunct_cache<char>::~__timepunct_cache() [65]
+                0.00    0.00       1/2           __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(_iobuf*, std::_Ios_Openmode, unsigned int) [142]
+                                   1             std::ios_base::sync_with_stdio(bool) <cycle 2> [61]
+                                   1             std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::find(std::string const&) <cycle 2> [109]
+                                   1             wchar_t* std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_S_construct<wchar_t const*>(wchar_t const*, wchar_t const*, std::allocator<wchar_t> const&, std::forward_iterator_tag) <cycle 2> [145]
+-----------------------------------------------
+                0.00    0.00       2/2           CORE::cGame::Initialise() [159]
+[141]    0.0    0.00    0.00       2         CORE::cGame::SetupSDL() [141]
+                0.00    0.00       1/1           CORE::cSDLState::cSDLState(int, int) [165]
+                0.00    0.00       1/1           CORE::cSDLState::~cSDLState() [166]
+-----------------------------------------------
+                0.00    0.00       1/2           std::pair<std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> >, bool> std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::_M_insert_unique<std::pair<std::string, STATE::iGameState* (*)()> >(std::pair<std::string, STATE::iGameState* (*)()>&&) <cycle 2> [140]
+                0.00    0.00       1/2           std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::find(std::string const&) <cycle 2> [109]
+[142]    0.0    0.00    0.00       2         __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(_iobuf*, std::_Ios_Openmode, unsigned int) [142]
+                0.00    0.00       1/892         std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_first_of(wchar_t const*, unsigned int, unsigned int) const [20]
+-----------------------------------------------
+                                   1             wchar_t* std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_S_construct<wchar_t const*>(wchar_t const*, wchar_t const*, std::allocator<wchar_t> const&, std::forward_iterator_tag) <cycle 2> [145]
+                0.00    0.00       1/130         std::__basic_file<char>::xsputn_2(char const*, int, char const*, int) [22]
+[143]    0.0    0.00    0.00       2         __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(int, std::_Ios_Openmode, unsigned int) <cycle 2> [143]
+                0.00    0.00       1/13          std::basic_istream<wchar_t, std::char_traits<wchar_t> >& std::getline<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >(std::basic_istream<wchar_t, std::char_traits<wchar_t> >&, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&) [135]
+                0.00    0.00       1/1154        __cxa_call_unexpected [18]
+                                   1             std::basic_filebuf<char, std::char_traits<char> >::_M_convert_to_external(char*, int) <cycle 2> [180]
+-----------------------------------------------
+                                   1             std::codecvt<wchar_t, char, int>::do_out(int&, wchar_t const*, wchar_t const*, wchar_t const*&, char*, char*, char*&) const <cycle 1> [7]
+                0.00    0.00       1/4595        std::codecvt<wchar_t, char, int>::do_in(int&, char const*, char const*, char const*&, wchar_t*, wchar_t*, wchar_t*&) const [176]
+[144]    0.0    0.00    0.00       2         std::codecvt<wchar_t, char, int>::do_length(int&, char const*, char const*, unsigned int) const <cycle 1> [144]
+                0.00    0.00    1543/1969        __cxxabiv1::__si_class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__upcast_result&) const [11]
+                0.00    0.00       2/20          std::istreambuf_iterator<char, std::char_traits<char> >::_M_at_eof() const [80]
+                0.00    0.00       2/892         std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_first_of(wchar_t const*, unsigned int, unsigned int) const [20]
+                                3086             std::codecvt<wchar_t, char, int>::do_out(int&, wchar_t const*, wchar_t const*, wchar_t const*&, char*, char*, char*&) const <cycle 1> [7]
+-----------------------------------------------
+                                   1             std::pair<std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> >, bool> std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::_M_insert_unique<std::pair<std::string, STATE::iGameState* (*)()> >(std::pair<std::string, STATE::iGameState* (*)()>&&) <cycle 2> [140]
+                0.00    0.00       1/130         std::__basic_file<char>::xsputn(char const*, int) [146]
+[145]    0.0    0.00    0.00       2         wchar_t* std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_S_construct<wchar_t const*>(wchar_t const*, wchar_t const*, std::allocator<wchar_t> const&, std::forward_iterator_tag) <cycle 2> [145]
+                0.00    0.00       1/19          void __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> > >::construct<std::pair<std::string, STATE::iGameState* (*)()> >(std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> >*, std::pair<std::string, STATE::iGameState* (*)()>&&) [84]
+                0.00    0.00       1/1           __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(int, std::_Ios_Openmode, unsigned int) [174]
+                                   1             __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(int, std::_Ios_Openmode, unsigned int) <cycle 2> [143]
+-----------------------------------------------
+                0.00    0.00       1/2           std::__basic_file<char>::sys_open(_iobuf*, std::_Ios_Openmode) [138]
+                0.00    0.00       1/2           void std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::_M_insert_aux<STATE::iGameState*>(__gnu_cxx::__normal_iterator<STATE::iGameState**, std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> > >, STATE::iGameState*&&) [181]
+[146]    0.0    0.00    0.00       2         std::__basic_file<char>::xsputn(char const*, int) [146]
+                0.00    0.00       1/35          __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(_iobuf*, std::_Ios_Openmode, unsigned int) [74]
+                0.00    0.00       1/130         wchar_t* std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_S_construct<wchar_t const*>(wchar_t const*, wchar_t const*, std::allocator<wchar_t> const&, std::forward_iterator_tag) <cycle 2> [145]
+-----------------------------------------------
+                0.00    0.00       2/2           std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, int) [14]
+[147]    0.0    0.00    0.00       2         GFX::cTextureWrapper* std::move_backward<GFX::cTextureWrapper*, GFX::cTextureWrapper*>(GFX::cTextureWrapper*, GFX::cTextureWrapper*, GFX::cTextureWrapper*) [147]
+                0.00    0.00      20/1578        std::__timepunct<char>::_M_initialize_timepunct(int*) [12]
+-----------------------------------------------
+                0.00    0.00       2/2           void std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::_M_insert_aux<STATE::iGameState*>(__gnu_cxx::__normal_iterator<STATE::iGameState**, std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> > >, STATE::iGameState*&&) [181]
+[148]    0.0    0.00    0.00       2         std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&) [148]
+                0.00    0.00      18/18          std::__throw_length_error(char const*) [112]
+                0.00    0.00       4/40          std::__throw_domain_error(char const*) [68]
+                0.00    0.00       2/20          std::__throw_bad_function_call() [82]
+-----------------------------------------------
+                0.00    0.00       2/2           std::__pad<char, std::char_traits<char> >::_S_pad(std::ios_base&, char, char*, char const*, int, int) <cycle 2> [58]
+[149]    0.0    0.00    0.00       2         std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&) [149]
+                0.00    0.00      22/130         int std::__int_to_char<wchar_t, unsigned long>(wchar_t*, unsigned long, wchar_t const*, std::_Ios_Fmtflags, bool) [57]
+                0.00    0.00      20/1562        std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, int) [14]
+-----------------------------------------------
+                0.00    0.00       2/2           std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) [79]
+[150]    0.0    0.00    0.00       2         bool std::has_facet<std::collate<wchar_t> >(std::locale const&) [150]
+-----------------------------------------------
+                0.00    0.00       1/1           GFX::cTextureMesh::~cTextureMesh() [152]
+[151]    0.0    0.00    0.00       1         GFX::cTextureMesh::cTextureMesh(int) [151]
+                0.00    0.00      18/19          std::collate<char>::~collate() [90]
+                0.00    0.00      18/18          GFX::cTextureMesh::~cTextureMesh() [92]
+                0.00    0.00       1/763         GFX::cTextureMesh::Destroy() [30]
+-----------------------------------------------
+                0.00    0.00       1/1           GFX::G2D::cSpriteBatch::~cSpriteBatch() [154]
+[152]    0.0    0.00    0.00       1         GFX::cTextureMesh::~cTextureMesh() [152]
+                0.00    0.00       1/19          std::collate<char>::~collate() [90]
+                0.00    0.00       1/19          std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> >::_M_erase_at_end(GFX::cTextureWrapper*) [89]
+                0.00    0.00       1/1           GFX::cTextureMesh::cTextureMesh(int) [151]
+-----------------------------------------------
+                0.00    0.00       1/1           __dyn_tls_init@12 [37]
+[153]    0.0    0.00    0.00       1         GFX::G2D::cSpriteBatch::SetColor(Color4) [153]
+-----------------------------------------------
+                0.00    0.00       1/1           __dyn_tls_init@12 [37]
+[154]    0.0    0.00    0.00       1         GFX::G2D::cSpriteBatch::~cSpriteBatch() [154]
+                0.00    0.00       1/1           GFX::cTextureMesh::~cTextureMesh() [152]
+-----------------------------------------------
+                0.00    0.00       1/1           GFX::G2D::cTextureRegion::cTextureRegion(GFX::cTextureWrapper const&, float, float, float, float) [156]
+[155]    0.0    0.00    0.00       1         GFX::G2D::cTextureRegion::cTextureRegion(GFX::cTextureWrapper const&) [155]
+                0.00    0.00       2/429         std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_last_of(wchar_t const*, unsigned int) const [45]
+                0.00    0.00       1/19          Color4::set(float, float, float, float) [83]
+                0.00    0.00       1/143         std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_M_disjunct(wchar_t const*) const [53]
+-----------------------------------------------
+                0.00    0.00       1/1           __cpu_features_init [2745]
+[156]    0.0    0.00    0.00       1         GFX::G2D::cTextureRegion::cTextureRegion(GFX::cTextureWrapper const&, float, float, float, float) [156]
+                0.00    0.00       1/18          __gnu_cxx::__atomic_add(int volatile*, int) [97]
+                0.00    0.00       1/1           GFX::G2D::cTextureRegion::cTextureRegion(GFX::cTextureWrapper const&) [155]
+-----------------------------------------------
+                0.00    0.00       1/1           CORE::cGame::Initialise() [159]
+[157]    0.0    0.00    0.00       1         CORE::Input::Initialise() [157]
+-----------------------------------------------
+                0.00    0.00       1/1           CORE::cGame::cGame() [163]
+[158]    0.0    0.00    0.00       1         CORE::Input::Update() [158]
+                0.00    0.00       2/5           std::__pad<wchar_t, std::char_traits<wchar_t> >::_S_pad(std::ios_base&, wchar_t, wchar_t*, wchar_t const*, int, int) [136]
+                0.00    0.00       2/130         std::__pad<char, std::char_traits<char> >::_S_pad(std::ios_base&, char, char*, char const*, int, int) <cycle 2> [58]
+-----------------------------------------------
+                0.00    0.00       1/1           main [2975]
+[159]    0.0    0.00    0.00       1         CORE::cGame::Initialise() [159]
+                0.00    0.00       2/2           CORE::cGame::SetupSDL() [141]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<GFX::cTextureMesh::Vertex>::destroy(GFX::cTextureMesh::Vertex*) [171]
+                0.00    0.00       1/1           CORE::Input::Initialise() [157]
+                0.00    0.00       1/17          GFX::cTextureWrapper::SetUV(float, float, float, float) [119]
+                0.00    0.00       1/1           STATE::cGameStateManager::PushState(STATE::iGameState*) [168]
+-----------------------------------------------
+                0.00    0.00       1/1           main [2975]
+[160]    0.0    0.00    0.00       1         CORE::cGame::SetupGL() [160]
+-----------------------------------------------
+                0.00    0.00       1/1           __write_memory [2872]
+[161]    0.0    0.00    0.00       1         CORE::cGame::MainLoop() [161]
+                0.00    0.00    1524/1524        STATE::cGameStateManager::GetCurrent() const [15]
+                0.00    0.00     762/762         __gnu_cxx::new_allocator<GFX::cTextureMesh::Vertex>::construct(GFX::cTextureMesh::Vertex*, GFX::cTextureMesh::Vertex const&) [36]
+                0.00    0.00     762/779         cPlayState::HandleInput() [28]
+                0.00    0.00     762/762         __dyn_tls_init@12 [37]
+                0.00    0.00       1/1           STATE::cGameStateManager::ClearAll() [167]
+-----------------------------------------------
+                0.00    0.00       1/1           main [2975]
+[162]    0.0    0.00    0.00       1         CORE::cGame::Terminate() [162]
+-----------------------------------------------
+                0.00    0.00       1/1           main [2975]
+[163]    0.0    0.00    0.00       1         CORE::cGame::cGame() [163]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<GFX::cTextureMesh::Vertex>::deallocate(GFX::cTextureMesh::Vertex*, unsigned int) [170]
+                0.00    0.00       1/1           CORE::Input::Update() [158]
+                0.00    0.00       1/1           STATE::cGameStateManager::cGameStateManager() [169]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<GFX::cTextureWrapper>::destroy(GFX::cTextureWrapper*) [172]
+                0.00    0.00       1/1           CORE::cSDLState::SetGL() [164]
+-----------------------------------------------
+                0.00    0.00       1/1           CORE::cGame::cGame() [163]
+[164]    0.0    0.00    0.00       1         CORE::cSDLState::SetGL() [164]
+-----------------------------------------------
+                0.00    0.00       1/1           CORE::cGame::SetupSDL() [141]
+[165]    0.0    0.00    0.00       1         CORE::cSDLState::cSDLState(int, int) [165]
+-----------------------------------------------
+                0.00    0.00       1/1           CORE::cGame::SetupSDL() [141]
+[166]    0.0    0.00    0.00       1         CORE::cSDLState::~cSDLState() [166]
+-----------------------------------------------
+                0.00    0.00       1/1           CORE::cGame::MainLoop() [161]
+[167]    0.0    0.00    0.00       1         STATE::cGameStateManager::ClearAll() [167]
+                0.00    0.00       5/104         void std::vector<int, std::allocator<int> >::_M_insert_aux<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [59]
+                0.00    0.00       2/4595        std::codecvt<wchar_t, char, int>::do_out(int&, wchar_t const*, wchar_t const*, wchar_t const*&, char*, char*, char*&) const <cycle 1> [7]
+                0.00    0.00       1/779         cPlayState::HandleInput() [28]
+-----------------------------------------------
+                0.00    0.00       1/1           CORE::cGame::Initialise() [159]
+[168]    0.0    0.00    0.00       1         STATE::cGameStateManager::PushState(STATE::iGameState*) [168]
+                0.00    0.00       1/4595        std::codecvt<wchar_t, char, int>::do_out(int&, wchar_t const*, wchar_t const*, wchar_t const*&, char*, char*, char*&) const <cycle 1> [7]
+                0.00    0.00       1/17          std::vector<int, std::allocator<int> >::_M_erase_at_end(int*) [131]
+                0.00    0.00       1/104         void std::vector<int, std::allocator<int> >::_M_insert_aux<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [59]
+                0.00    0.00       1/17          cPlayState::OnExit() [116]
+-----------------------------------------------
+                0.00    0.00       1/1           CORE::cGame::cGame() [163]
+[169]    0.0    0.00    0.00       1         STATE::cGameStateManager::cGameStateManager() [169]
+                0.00    0.00       1/1           int* std::vector<int, std::allocator<int> >::_M_allocate_and_copy<std::move_iterator<int*> >(unsigned int, std::move_iterator<int*>, std::move_iterator<int*>) [182]
+-----------------------------------------------
+                0.00    0.00       1/1           CORE::cGame::cGame() [163]
+[170]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<GFX::cTextureMesh::Vertex>::deallocate(GFX::cTextureMesh::Vertex*, unsigned int) [170]
+-----------------------------------------------
+                0.00    0.00       1/1           CORE::cGame::Initialise() [159]
+[171]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<GFX::cTextureMesh::Vertex>::destroy(GFX::cTextureMesh::Vertex*) [171]
+-----------------------------------------------
+                0.00    0.00       1/1           CORE::cGame::cGame() [163]
+[172]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<GFX::cTextureWrapper>::destroy(GFX::cTextureWrapper*) [172]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl() [88]
+[173]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<std::string const, GFX::cTextureWrapper>, false>*>::deallocate(std::__detail::_Hash_node<std::pair<std::string const, GFX::cTextureWrapper>, false>**, unsigned int) [173]
+-----------------------------------------------
+                0.00    0.00       1/1           wchar_t* std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_S_construct<wchar_t const*>(wchar_t const*, wchar_t const*, std::allocator<wchar_t> const&, std::forward_iterator_tag) <cycle 2> [145]
+[174]    0.0    0.00    0.00       1         __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(int, std::_Ios_Openmode, unsigned int) [174]
+                0.00    0.00      17/1154        __cxa_call_unexpected [18]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::_M_insert_aux<STATE::iGameState*>(__gnu_cxx::__normal_iterator<STATE::iGameState**, std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> > >, STATE::iGameState*&&) [181]
+[175]    0.0    0.00    0.00       1         __cxxabiv1::__si_class_type_info::__do_dyncast(int, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const [175]
+                0.00    0.00       1/4           std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::get_allocator() const [137]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::_M_insert_aux<STATE::iGameState*>(__gnu_cxx::__normal_iterator<STATE::iGameState**, std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> > >, STATE::iGameState*&&) [181]
+[176]    0.0    0.00    0.00       1         std::codecvt<wchar_t, char, int>::do_in(int&, char const*, char const*, char const*&, wchar_t*, wchar_t*, wchar_t*&) const [176]
+                0.00    0.00       3/4595        std::codecvt<wchar_t, char, int>::do_out(int&, wchar_t const*, wchar_t const*, wchar_t const*&, char*, char*, char*&) const <cycle 1> [7]
+                0.00    0.00       1/4595        std::codecvt<wchar_t, char, int>::do_length(int&, char const*, char const*, unsigned int) const <cycle 1> [144]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_base() [1620]
+[177]    0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned int) [177]
+                0.00    0.00      18/19          wchar_t* std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_S_construct<__gnu_cxx::__normal_iterator<wchar_t*, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >(__gnu_cxx::__normal_iterator<wchar_t*, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, __gnu_cxx::__normal_iterator<wchar_t*, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<wchar_t> const&, std::forward_iterator_tag) [86]
+-----------------------------------------------
+                0.00    0.00       1/1           GFX::cTextureWrapper* std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<GFX::cTextureWrapper const*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > > >(unsigned int, __gnu_cxx::__normal_iterator<GFX::cTextureWrapper const*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >, __gnu_cxx::__normal_iterator<GFX::cTextureWrapper const*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >) [2216]
+[178]    0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned int) [178]
+                0.00    0.00      18/819         std::_Vector_base<STATE::iGameState*, std::allocator<STATE::iGameState*> >::~_Vector_base() [23]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::back() [2227]
+[179]    0.0    0.00    0.00       1         std::__basic_file<char>::seekoff(long long, std::_Ios_Seekdir) [179]
+-----------------------------------------------
+                                   1             __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(int, std::_Ios_Openmode, unsigned int) <cycle 2> [143]
+[180]    0.0    0.00    0.00       1         std::basic_filebuf<char, std::char_traits<char> >::_M_convert_to_external(char*, int) <cycle 2> [180]
+                0.00    0.00       1/13          std::basic_istream<wchar_t, std::char_traits<wchar_t> >& std::getline<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >(std::basic_istream<wchar_t, std::char_traits<wchar_t> >&, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&) [135]
+                                   1             std::__pad<char, std::char_traits<char> >::_S_pad(std::ios_base&, char, char*, char const*, int, int) <cycle 2> [58]
+-----------------------------------------------
+                0.00    0.00       1/1           int* std::vector<int, std::allocator<int> >::_M_allocate_and_copy<std::move_iterator<int*> >(unsigned int, std::move_iterator<int*>, std::move_iterator<int*>) [182]
+[181]    0.0    0.00    0.00       1         void std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::_M_insert_aux<STATE::iGameState*>(__gnu_cxx::__normal_iterator<STATE::iGameState**, std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> > >, STATE::iGameState*&&) [181]
+                0.00    0.00       3/4           std::__basic_file<char>::sys_open(_iobuf*, std::_Ios_Openmode) [138]
+                0.00    0.00       2/4           std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::get_allocator() const [137]
+                0.00    0.00       2/2           std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&) [148]
+                0.00    0.00       1/1           std::codecvt<wchar_t, char, int>::do_in(int&, char const*, char const*, char const*&, wchar_t*, wchar_t*, wchar_t*&) const [176]
+                0.00    0.00       1/104         void std::vector<int, std::allocator<int> >::_M_insert_aux<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [59]
+                0.00    0.00       1/1           __cxxabiv1::__si_class_type_info::__do_dyncast(int, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const [175]
+                0.00    0.00       1/2           std::__basic_file<char>::xsputn(char const*, int) [146]
+                0.00    0.00       1/24          std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) [79]
+                0.00    0.00       1/35          __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(_iobuf*, std::_Ios_Openmode, unsigned int) [74]
+-----------------------------------------------
+                0.00    0.00       1/1           STATE::cGameStateManager::cGameStateManager() [169]
+[182]    0.0    0.00    0.00       1         int* std::vector<int, std::allocator<int> >::_M_allocate_and_copy<std::move_iterator<int*> >(unsigned int, std::move_iterator<int*>, std::move_iterator<int*>) [182]
+                0.00    0.00      16/35          __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(_iobuf*, std::_Ios_Openmode, unsigned int) [74]
+                0.00    0.00       1/104         void std::vector<int, std::allocator<int> >::_M_insert_aux<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [59]
+                0.00    0.00       1/1           void std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::_M_insert_aux<STATE::iGameState*>(__gnu_cxx::__normal_iterator<STATE::iGameState**, std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> > >, STATE::iGameState*&&) [181]
+                0.00    0.00       1/4           std::__basic_file<char>::sys_open(_iobuf*, std::_Ios_Openmode) [138]
+-----------------------------------------------
+                                   1             std::__pad<char, std::char_traits<char> >::_S_pad(std::ios_base&, char, char*, char const*, int, int) <cycle 2> [58]
+[183]    0.0    0.00    0.00       1         std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::_M_erase(std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> >*) <cycle 2> [183]
+                                   2             std::ios_base::sync_with_stdio(bool) <cycle 2> [61]
+-----------------------------------------------
+                0.00    0.00       1/1           std::codecvt<wchar_t, char, int>::do_out(int&, wchar_t const*, wchar_t const*, wchar_t const*&, char*, char*, char*&) const <cycle 1> [7]
+[184]    0.0    0.00    0.00       1         GFX::cTextureWrapper&& std::forward<GFX::cTextureWrapper>(std::remove_reference<GFX::cTextureWrapper>::type&) [184]
+-----------------------------------------------
+                                   1             CORE::cSDLState::cSDLState() [370]
+[370]    0.0    0.00    0.00       0+1       CORE::cSDLState::cSDLState() [370]
+                                   1             CORE::cSDLState::cSDLState() [370]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+  [28] cPlayState::HandleInput() [142] __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(_iobuf*, std::_Ios_Openmode, unsigned int) [70] std::__basic_file<char>::sys_open(int, std::_Ios_Openmode)
+ [115] cPlayState::CreateInstance() [143] __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(int, std::_Ios_Openmode, unsigned int) [22] std::__basic_file<char>::xsputn_2(char const*, int, char const*, int)
+ [116] cPlayState::OnExit()  [100] __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf() [127] std::domain_error::~domain_error()
+ [117] cPlayState::cPlayState() [42] __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::~stdio_filebuf() [180] std::basic_filebuf<char, std::char_traits<char> >::_M_convert_to_external(char*, int)
+ [118] GFX::cCameraBase::~cCameraBase() [85] __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::~stdio_filebuf() [71] std::basic_ifstream<char, std::char_traits<char> >::open(std::string const&, std::_Ios_Openmode)
+  [54] GFX::cTextureMesh::Render() [21] __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::stdio_sync_filebuf(_iobuf*) [139] std::basic_ifstream<char, std::char_traits<char> >::close()
+  [30] GFX::cTextureMesh::Destroy() [4] __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::stdio_sync_filebuf(_iobuf*) [72] std::basic_ifstream<char, std::char_traits<char> >::is_open()
+ [151] GFX::cTextureMesh::cTextureMesh(int) [123] __cxxabiv1::__class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void**) const [128] std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(std::string const&, std::_Ios_Openmode)
+  [91] GFX::cTextureMesh::cTextureMesh() [11] __cxxabiv1::__si_class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__upcast_result&) const [129] std::basic_streambuf<char, std::char_traits<char> >::xsputn(char const*, int)
+  [92] GFX::cTextureMesh::~cTextureMesh() [175] __cxxabiv1::__si_class_type_info::__do_dyncast(int, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const [130] std::__numpunct_cache<char>::_M_cache(std::locale const&)
+ [152] GFX::cTextureMesh::~cTextureMesh() [124] GFX::cImage::IsTransparent() const [65] std::__timepunct_cache<char>::~__timepunct_cache()
+ [119] GFX::cTextureWrapper::SetUV(float, float, float, float) [125] GFX::cTexture::operator==(GFX::cTexture const&) const [58] std::__pad<char, std::char_traits<char> >::_S_pad(std::ios_base&, char, char*, char const*, int, int)
+  [93] GFX::G2D::cAnimation::SetTicksPerFrame(float) [15] STATE::cGameStateManager::GetCurrent() const [136] std::__pad<wchar_t, std::char_traits<wchar_t> >::_S_pad(std::ios_base&, wchar_t, wchar_t*, wchar_t const*, int, int)
+  [50] GFX::G2D::cSpriteBatch::RenderMesh() [46] __gnu_cxx::__normal_iterator<GFX::cTextureWrapper*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >::operator*() const [17] void std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> >::_M_insert_aux<GFX::cTextureWrapper const&>(__gnu_cxx::__normal_iterator<GFX::cTextureWrapper*, std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> > >, GFX::cTextureWrapper const&)
+  [55] GFX::G2D::cSpriteBatch::DrawTexture(GFX::cTextureWrapper const&, float, float, float, float) [19] __gnu_cxx::__normal_iterator<STATE::iGameState**, std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> > >::operator-(int const&) const [89] std::vector<GFX::cTextureWrapper, std::allocator<GFX::cTextureWrapper> >::_M_erase_at_end(GFX::cTextureWrapper*)
+  [56] GFX::G2D::cSpriteBatch::ChangeTexture(GFX::cTextureWrapper const&) [101] __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::base() const [181] void std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::_M_insert_aux<STATE::iGameState*>(__gnu_cxx::__normal_iterator<STATE::iGameState**, std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> > >, STATE::iGameState*&&)
+  [33] GFX::G2D::cSpriteBatch::End() [102] __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::operator*() const [59] void std::vector<int, std::allocator<int> >::_M_insert_aux<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&)
+  [34] GFX::G2D::cSpriteBatch::Begin() [52] __gnu_cxx::__concurrence_lock_error::what() const [131] std::vector<int, std::allocator<int> >::_M_erase_at_end(int*)
+ [153] GFX::G2D::cSpriteBatch::SetColor(Color4) [53] std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_M_disjunct(wchar_t const*) const [182] int* std::vector<int, std::allocator<int> >::_M_allocate_and_copy<std::move_iterator<int*> >(unsigned int, std::move_iterator<int*>, std::move_iterator<int*>)
+  [94] GFX::G2D::cSpriteBatch::cSpriteBatch(int) [45] std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_last_of(wchar_t const*, unsigned int) const [31] std::codecvt<char, char, int>::codecvt(unsigned int)
+ [154] GFX::G2D::cSpriteBatch::~cSpriteBatch() [62] std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_last_of(wchar_t const*, unsigned int, unsigned int) const [107] std::codecvt<char, char, int>::~codecvt()
+ [155] GFX::G2D::cTextureRegion::cTextureRegion(GFX::cTextureWrapper const&) [66] std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_last_of(std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > const&, unsigned int) const [32] std::codecvt<wchar_t, char, int>::codecvt(unsigned int)
+ [156] GFX::G2D::cTextureRegion::cTextureRegion(GFX::cTextureWrapper const&, float, float, float, float) [126] std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_last_of(wchar_t, unsigned int) const [108] std::codecvt<wchar_t, char, int>::~codecvt()
+  [76] GFX::cImage::ConvertPixelFormat() [10] std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_first_of(wchar_t const*, unsigned int) const [43] std::collate<char>::collate(int*, unsigned int)
+ [120] GFX::cImage::cImage(std::string const&) [20] std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_first_of(wchar_t const*, unsigned int, unsigned int) const [90] std::collate<char>::~collate()
+ [121] GFX::cTexture::~cTexture() [5] std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::find_first_of(std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > const&, unsigned int) const [140] std::pair<std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> >, bool> std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::_M_insert_unique<std::pair<std::string, STATE::iGameState* (*)()> >(std::pair<std::string, STATE::iGameState* (*)()>&&)
+ [157] CORE::Input::Initialise() [137] std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::get_allocator() const [109] std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::find(std::string const&)
+ [158] CORE::Input::Update()  [51] std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_M_check_length(unsigned int, unsigned int, char const*) const [183] std::_Rb_tree<std::string, std::pair<std::string const, STATE::iGameState* (*)()>, std::_Select1st<std::pair<std::string const, STATE::iGameState* (*)()> >, std::less<std::string>, std::allocator<std::pair<std::string const, STATE::iGameState* (*)()> > >::_M_erase(std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> >*)
+ [159] CORE::cGame::Initialise() [77] std::moneypunct<char, true>::do_positive_sign() const [75] std::ios_base::_M_grow_words(int, bool)
+  [35] CORE::cGame::EndGame() [80] std::istreambuf_iterator<char, std::char_traits<char> >::_M_at_eof() const [61] std::ios_base::sync_with_stdio(bool)
+ [160] CORE::cGame::SetupGL() [60] std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> >::_M_at_eof() const [9] int std::__int_to_char<char, unsigned long long>(char*, unsigned long long, char const*, std::_Ios_Fmtflags, bool)
+ [133] CORE::cGame::GetInput() [69] std::ctype<char>::do_tolower(char*, char const*) const [57] int std::__int_to_char<wchar_t, unsigned long>(wchar_t*, unsigned long, wchar_t const*, std::_Ios_Fmtflags, bool)
+ [161] CORE::cGame::MainLoop() [67] std::ctype<char>::do_toupper(char*, char const*) const [8] int std::__int_to_char<wchar_t, unsigned long long>(wchar_t*, unsigned long long, wchar_t const*, std::_Ios_Fmtflags, bool)
+ [141] CORE::cGame::SetupSDL() [103] std::ctype<char>::do_narrow(char const*, char const*, char, char*) const [110] GFX::cTextureMesh::Vertex* std::move_backward<GFX::cTextureMesh::Vertex*, GFX::cTextureMesh::Vertex*>(GFX::cTextureMesh::Vertex*, GFX::cTextureMesh::Vertex*, GFX::cTextureMesh::Vertex*)
+ [162] CORE::cGame::Terminate() [63] std::ctype<wchar_t>::_M_convert_to_wmask(unsigned short) const [147] GFX::cTextureWrapper* std::move_backward<GFX::cTextureWrapper*, GFX::cTextureWrapper*>(GFX::cTextureWrapper*, GFX::cTextureWrapper*, GFX::cTextureWrapper*)
+ [163] CORE::cGame::cGame()   [44] std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::back() const [111] STATE::iGameState** std::move_backward<STATE::iGameState**, STATE::iGameState**>(STATE::iGameState**, STATE::iGameState**, STATE::iGameState**)
+ [164] CORE::cSDLState::SetGL() [47] std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::size() const [14] std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, int)
+ [165] CORE::cSDLState::cSDLState(int, int) [48] std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::begin() const [73] std::_Rb_tree_rotate_left(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*&)
+ [166] CORE::cSDLState::~cSDLState() [104] std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::empty() const [68] std::__throw_domain_error(char const*)
+  [39] MATH::cos_deg(float)  [105] std::vector<STATE::iGameState*, std::allocator<STATE::iGameState*> >::max_size() const [81] std::__throw_future_error(int)
+  [40] MATH::CloseTof(float, float) [49] std::vector<int, std::allocator<int> >::_M_check_len(unsigned int, char const*) const [112] std::__throw_length_error(char const*)
+  [95] MATH::DegToRad(float) [176] std::codecvt<wchar_t, char, int>::do_in(int&, char const*, char const*, char const*&, wchar_t*, wchar_t*, wchar_t*&) const [113] std::__throw_invalid_argument(char const*)
+  [96] STATE::cGameTransition::SetOldAndNewState(STATE::iGameState*, STATE::iGameState*) [7] std::codecvt<wchar_t, char, int>::do_out(int&, wchar_t const*, wchar_t const*, wchar_t const*&, char*, char*, char*&) const [82] std::__throw_bad_function_call()
+ [134] STATE::cGameStateManager::ReplaceState(STATE::iGameState*) [144] std::codecvt<wchar_t, char, int>::do_length(int&, char const*, char const*, unsigned int) const [148] std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
+ [167] STATE::cGameStateManager::ClearAll() [29] std::collate<char>::do_compare(char const*, char const*, char const*, char const*) const [132] GFX::cTextureMesh::Vertex&& std::forward<GFX::cTextureMesh::Vertex>(std::remove_reference<GFX::cTextureMesh::Vertex>::type&)
+ [168] STATE::cGameStateManager::PushState(STATE::iGameState*) [86] wchar_t* std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_S_construct<__gnu_cxx::__normal_iterator<wchar_t*, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >(__gnu_cxx::__normal_iterator<wchar_t*, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, __gnu_cxx::__normal_iterator<wchar_t*, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<wchar_t> const&, std::forward_iterator_tag) [184] GFX::cTextureWrapper&& std::forward<GFX::cTextureWrapper>(std::remove_reference<GFX::cTextureWrapper>::type&)
+ [169] STATE::cGameStateManager::cGameStateManager() [145] wchar_t* std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_S_construct<wchar_t const*>(wchar_t const*, wchar_t const*, std::allocator<wchar_t> const&, std::forward_iterator_tag) [16] std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> >& std::forward<std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> >&>(std::remove_reference<std::_Rb_tree_iterator<std::pair<std::string const, STATE::iGameState* (*)()> >&>::type&)
+  [83] Color4::set(float, float, float, float) [87] wchar_t* std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_S_construct<wchar_t*>(wchar_t*, wchar_t*, std::allocator<wchar_t> const&, std::forward_iterator_tag) [114] bool&& std::forward<bool>(std::remove_reference<bool>::type&)
+  [97] __gnu_cxx::__atomic_add(int volatile*, int) [64] std::moneypunct<char, false>::moneypunct(unsigned int) [149] std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+ [170] __gnu_cxx::new_allocator<GFX::cTextureMesh::Vertex>::deallocate(GFX::cTextureMesh::Vertex*, unsigned int) [6] std::moneypunct<char, false>::moneypunct(std::__moneypunct_cache<char, false>*, unsigned int) [79] std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char)
+ [171] __gnu_cxx::new_allocator<GFX::cTextureMesh::Vertex>::destroy(GFX::cTextureMesh::Vertex*) [12] std::__timepunct<char>::_M_initialize_timepunct(int*) [135] std::basic_istream<wchar_t, std::char_traits<wchar_t> >& std::getline<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >(std::basic_istream<wchar_t, std::char_traits<wchar_t> >&, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&)
+  [36] __gnu_cxx::new_allocator<GFX::cTextureMesh::Vertex>::construct(GFX::cTextureMesh::Vertex*, GFX::cTextureMesh::Vertex const&) [106] std::__timepunct<char>::__timepunct(std::__timepunct_cache<char>*, unsigned int) [13] bool std::has_facet<std::ctype<wchar_t> >(std::locale const&)
+ [172] __gnu_cxx::new_allocator<GFX::cTextureWrapper>::destroy(GFX::cTextureWrapper*) [26] std::_Vector_base<STATE::iGameState*, std::allocator<STATE::iGameState*> >::_Vector_base() [25] bool std::has_facet<std::codecvt<wchar_t, char, int> >(std::locale const&)
+ [122] __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<std::string const, GFX::cTextureWrapper>, false> >::~new_allocator() [23] std::_Vector_base<STATE::iGameState*, std::allocator<STATE::iGameState*> >::~_Vector_base() [27] bool std::has_facet<std::collate<char> >(std::locale const&)
+  [98] __gnu_cxx::new_allocator<STATE::iGameState*>::allocate(unsigned int, void const*) [177] std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned int) [150] bool std::has_facet<std::collate<wchar_t> >(std::locale const&)
+ [173] __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<std::string const, GFX::cTextureWrapper>, false>*>::deallocate(std::__detail::_Hash_node<std::pair<std::string const, GFX::cTextureWrapper>, false>**, unsigned int) [88] std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl() [78] std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char> >(std::basic_istream<char, std::char_traits<char> >&, char*)
+  [99] __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<std::string const, GFX::cTextureWrapper>, false>*>::allocate(unsigned int, void const*) [24] std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [18] __cxa_call_unexpected
+  [41] __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> > >::deallocate(std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> >*, unsigned int) [178] std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned int) [37] __dyn_tls_init@12
+  [84] void __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> > >::construct<std::pair<std::string, STATE::iGameState* (*)()> >(std::_Rb_tree_node<std::pair<std::string const, STATE::iGameState* (*)()> >*, std::pair<std::string, STATE::iGameState* (*)()>&&) [146] std::__basic_file<char>::xsputn(char const*, int) [38] fpreset
+  [74] __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(_iobuf*, std::_Ios_Openmode, unsigned int) [179] std::__basic_file<char>::seekoff(long long, std::_Ios_Seekdir) [1] <cycle 1>
+ [174] __gnu_cxx::stdio_filebuf<char, std::char_traits<char> >::stdio_filebuf(int, std::_Ios_Openmode, unsigned int) [138] std::__basic_file<char>::sys_open(_iobuf*, std::_Ios_Openmode) [2] <cycle 2>

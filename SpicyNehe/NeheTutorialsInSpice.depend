@@ -1,0 +1,283 @@
+# depslib dependency file v1.0
+1336071488 source:d:\programming\nehe_spice\nehetutorialsinspice\src\core_cgame.cpp
+	<SDL2/SDL_opengl.h>
+	<SDL2/SDL_image.h>
+	<SDL2/SDL_mixer.h>
+	"CORE_cGame.hpp"
+	"STATE_iGameState.hpp"
+	<cassert>
+	<stdlib.h>
+
+1336015639 d:\programming\nehe_spice\nehetutorialsinspice\include\core_cgame.hpp
+	"SDL2/SDL.h"
+	"CORE_iApplication.hpp"
+	"CORE_cSDLState.hpp"
+	"CORE_Input.hpp"
+	"CORE_cTimer.hpp"
+	"STATE_cGameStateManager.hpp"
+	"cGenericFactory.hpp"
+
+1334338182 d:\programming\spice\include\core_iapplication.hpp
+
+1334677044 d:\programming\spice\include\core_csdlstate.hpp
+	<SDL2/SDL.h>
+
+1336163911 d:\programming\spice\include\core_input.hpp
+	<algorithm>
+	"SDL2/SDL.h"
+	"CORE_keycodes.hpp"
+
+1336068281 d:\programming\spice\include\core_keycodes.hpp
+
+1334963094 d:\programming\spice\include\core_ctimer.hpp
+	<SDL2/SDL.h>
+
+1334450096 d:\programming\spice\include\state_cgamestatemanager.hpp
+	<vector>
+
+1332821001 d:\programming\spice\include\cgenericfactory.hpp
+	<map>
+	<string>
+
+1335119283 d:\programming\spice\include\state_igamestate.hpp
+
+1335900469 d:\programming\nehe_spice\nehetutorialsinspice\include\lesson5blending_state.hpp
+	"STATE_iGameState.hpp"
+	"GFX_G2D_cSpriteBatch.hpp"
+
+1335736779 d:\programming\spice\include\gfx_g2d_cspritebatch.hpp
+	<SDL2/SDL_opengl.h>
+	"GFX_Color4.hpp"
+
+1334983167 d:\programming\spice\include\gfx_color4.hpp
+
+1336165384 source:d:\programming\nehe_spice\nehetutorialsinspice\src\lesson5blending_state.cpp
+	<SDL2/SDL_opengl.h>
+	<SDL2/SDL_mixer.h>
+	"Lesson5Blending_state.hpp"
+	"memory_macros.h"
+	"CORE_cGame.hpp"
+	"GFX_cImage.hpp"
+	"GFX_cTexture.hpp"
+	"GFX_G2D_cTextureRegion.hpp"
+	"GFX_G2D_cSpriteBatch.hpp"
+	"GFX_G2D_cAnimation.hpp"
+	"GFX_cTextureRegistry.hpp"
+	"GFX_GfxHelper.hpp"
+	<iostream>
+
+1333913145 d:\programming\spice\include\memory_macros.h
+	<string.h>
+
+1334958729 d:\programming\spice\include\gfx_cimage.hpp
+	<string>
+	<SDL2/SDL.h>
+	<SDL2/SDL_opengl.h>
+	<cassert>
+
+1335038972 d:\programming\spice\include\gfx_ctexture.hpp
+	<memory>
+	<cassert>
+	<string>
+	"GFX_cTextureWrapper.hpp"
+
+1334978677 d:\programming\spice\include\gfx_ctexturewrapper.hpp
+	<SDL2/SDL_opengl.h>
+
+1336005145 d:\programming\spice\include\gfx_g2d_ctextureregion.hpp
+	<vector>
+	"GFX_cTextureWrapper.hpp"
+
+1335046982 d:\programming\spice\include\gfx_g2d_canimation.hpp
+	<vector>
+	"MATH_MathHelper.hpp"
+
+1336161818 d:\programming\spice\include\math_mathhelper.hpp
+	<cmath>
+
+1334959794 d:\programming\spice\include\gfx_ctextureregistry.hpp
+	<unordered_map>
+	<string>
+	"GFX_cTextureWrapper.hpp"
+
+1334982153 d:\programming\spice\include\gfx_gfxhelper.hpp
+	<SDL2/SDL_opengl.h>
+	"GFX_cTextureWrapper.hpp"
+
+1336071936 source:d:\programming\spice\src\core_csdlstate.cpp
+	"CORE_cSDLState.hpp"
+
+1334501190 source:d:\programming\spice\src\core_ctimer.cpp
+	"SDL2/SDL.h"
+	"CORE_cTimer.hpp"
+
+1335046979 source:d:\programming\spice\src\gfx_g2d_canimation.cpp
+	"GFX_G2D_cAnimation.hpp"
+	"GFX_cTextureWrapper.hpp"
+
+1335733843 source:d:\programming\spice\src\gfx_g2d_cspritebatch.cpp
+	"GFX_G2D_cSpriteBatch.hpp"
+	"GFX_cTextureWrapper.hpp"
+	"GFX_cTextureMesh.hpp"
+	"MATH_MathHelper.hpp"
+	"memory_macros.h"
+
+1335736772 d:\programming\spice\include\gfx_ctexturemesh.hpp
+	<vector>
+	<SDL2/SDL_opengl.h>
+
+1336005133 source:d:\programming\spice\src\gfx_g2d_ctextureregion.cpp
+	"GFX_G2D_cTextureRegion.hpp"
+
+1334341728 source:d:\programming\spice\src\gfx_ccamerabase.cpp
+	"GFX_cCameraBase.hpp"
+
+1334342769 d:\programming\spice\include\gfx_ccamerabase.hpp
+	"MATH_LinearAlgebra.hpp"
+
+1336026719 d:\programming\spice\include\math_linearalgebra.hpp
+	"MATH_Vec4.hpp"
+	"MATH_Vec3.hpp"
+	"MATH_Vec2.hpp"
+	"MATH_Matrix4x4.hpp"
+
+1334341671 d:\programming\spice\include\math_vec3.hpp
+	"MATH_MathHelper.hpp"
+
+1335117354 d:\programming\spice\include\math_vec2.hpp
+	"MATH_MathHelper.hpp"
+
+1334341684 d:\programming\spice\include\math_matrix4x4.hpp
+	"MATH_MathHelper.hpp"
+
+1335015053 source:d:\programming\spice\src\gfx_cimage.cpp
+	"GFX_cImage.hpp"
+	<iostream>
+	<SDL2/SDL_image.h>
+
+1336013638 source:d:\programming\spice\src\gfx_ctexture.cpp
+	"GFX_cTexture.hpp"
+	"GFX_cImage.hpp"
+	<GL/glu.h>
+	<iostream>
+
+1336070548 source:d:\programming\spice\src\gfx_ctexturemesh.cpp
+	<SDL2/SDL_opengl.h>
+	"GFX_cTextureMesh.hpp"
+
+1334959906 source:d:\programming\spice\src\gfx_ctextureregistry.cpp
+	"GFX_cTextureRegistry.hpp"
+	"GFX_cTextureWrapper.hpp"
+
+1334338451 source:d:\programming\spice\src\math_matrix4x4.cpp
+	"MATH_Matrix4x4.hpp"
+
+1336013638 source:d:\programming\spice\src\state_cgamestatemanager.cpp
+	<cassert>
+	"memory_macros.h"
+	"STATE_cGameStateManager.hpp"
+	"STATE_iGameState.hpp"
+	"STATE_cGameTransition.hpp"
+
+1335119234 d:\programming\spice\include\state_cgametransition.hpp
+	"CORE_cGame.hpp"
+
+1336014244 d:\programming\spice\include\core_cgame.hpp
+	"SDL2/SDL.h"
+	"CORE_iApplication.hpp"
+	"CORE_cSDLState.hpp"
+	"CORE_Input.hpp"
+	"CORE_cTimer.hpp"
+	"STATE_cGameStateManager.hpp"
+	"cGenericFactory.hpp"
+
+1336012792 source:d:\programming\spice\src\demo_cplaystate.cpp
+	<SDL2/SDL_opengl.h>
+	<SDL2/SDL_mixer.h>
+	"demo_cPlayState.hpp"
+	"CORE_cGame.hpp"
+	"GFX_cImage.hpp"
+	"GFX_cTexture.hpp"
+	"GFX_G2D_cTextureRegion.hpp"
+	"GFX_G2D_cSpriteBatch.hpp"
+	"GFX_G2D_cAnimation.hpp"
+	"GFX_cTextureRegistry.hpp"
+	"GFX_GfxHelper.hpp"
+	<iostream>
+
+1335761443 d:\programming\spice\include\demo_cplaystate.hpp
+	"STATE_iGameState.hpp"
+	"GFX_G2D_cSpriteBatch.hpp"
+
+1336169974 source:d:\programming\nehe_spice\nehetutorialsinspice\main.cpp
+	<windows.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_opengl.h>
+	<iostream>
+	"CORE_cGame.hpp"
+	"STATE_iGameState.hpp"
+	"lesson5Blending_state.hpp"
+	"Bitmaps3D.hpp"
+	"WavingBitmap_State.hpp"
+	"Particle_State.hpp"
+
+1336165384 source:d:\programming\nehe_spice\nehetutorialsinspice\src\bitmaps3d.cpp
+	<SDL2/SDL_opengl.h>
+	<SDL2/SDL_mixer.h>
+	"Bitmaps3D.hpp"
+	"CORE_cGame.hpp"
+	"GFX_cImage.hpp"
+	"GFX_cTexture.hpp"
+	"GFX_G2D_cTextureRegion.hpp"
+	"GFX_G2D_cSpriteBatch.hpp"
+	"GFX_G2D_cAnimation.hpp"
+	"GFX_cTextureRegistry.hpp"
+	"GFX_GfxHelper.hpp"
+	<iostream>
+	<GL/glu.h>
+
+1336007311 d:\programming\nehe_spice\nehetutorialsinspice\include\bitmaps3d.hpp
+	"STATE_iGameState.hpp"
+	"GFX_G2D_cSpriteBatch.hpp"
+
+1336013638 d:\programming\spice\include\math_vec4.hpp
+	"MATH_MathHelper.hpp"
+
+1336170251 source:d:\programming\nehe_spice\nehetutorialsinspice\src\wavingbitmap_state.cpp
+	<SDL2/SDL_opengl.h>
+	<SDL2/SDL_mixer.h>
+	"WavingBitmap_State.hpp"
+	"CORE_cGame.hpp"
+	"GFX_cImage.hpp"
+	"GFX_cTexture.hpp"
+	"GFX_G2D_cTextureRegion.hpp"
+	"GFX_G2D_cSpriteBatch.hpp"
+	"GFX_G2D_cAnimation.hpp"
+	"GFX_cTextureRegistry.hpp"
+	"GFX_GfxHelper.hpp"
+	<iostream>
+	<GL/glu.h>
+
+1336164081 d:\programming\nehe_spice\nehetutorialsinspice\include\wavingbitmap_state.hpp
+	"STATE_iGameState.hpp"
+	"GFX_G2D_cSpriteBatch.hpp"
+
+1336170248 source:d:\programming\nehe_spice\nehetutorialsinspice\src\particle_state.cpp
+	<SDL2/SDL_opengl.h>
+	<SDL2/SDL_mixer.h>
+	"Particle_State.hpp"
+	"CORE_cGame.hpp"
+	"GFX_cImage.hpp"
+	"GFX_cTexture.hpp"
+	"GFX_G2D_cTextureRegion.hpp"
+	"GFX_G2D_cSpriteBatch.hpp"
+	"GFX_G2D_cAnimation.hpp"
+	"GFX_cTextureRegistry.hpp"
+	"GFX_GfxHelper.hpp"
+	<iostream>
+	<GL/glu.h>
+
+1336169551 d:\programming\nehe_spice\nehetutorialsinspice\include\particle_state.hpp
+	"STATE_iGameState.hpp"
+	"GFX_G2D_cSpriteBatch.hpp"
+

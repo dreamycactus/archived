@@ -1,0 +1,100 @@
+<names>
+the operator
+operator
+</names>
+<states>
+initial
+gotcookie
+</states>
+<look>
+He's just standing there.
+</look>
+
+<char>
+<id/>
+hello
+<message>
+He shooes you away.
+</message>
+<resps>
+<op>
+<outid/>
+pbye1
+<label/>
+Okay...
+</op>
+<op>
+<outid/>
+pcook
+<label/>
+Hey, I got that cookie for you... 
+<cond>
+<condType/>
+char
+<condTarget/>
+operator
+<condPara/>
+gotcookie
+<condVal/>
+true
+<condMess/>
+Program error. Shouldn't show cookies
+</cond>
+</op>
+</resps>
+</char>
+
+<player>
+<id/>
+pbye1
+<outid/>
+ebye1
+</player>
+
+<player>
+<id/>
+pcook
+<outid/>
+ebye2
+</player>
+
+<end>
+<id/>
+ebye1
+<message>
+Operator: (muttering) So hungry, I would love one of those new cookies they're bringing in...
+</message>
+<outid/>
+hello
+</end>
+
+<end>
+<id/>
+ebye2
+<message>
+Operator: Yeah I guess it was nom nom nom. I feel refreshed, let’s get this ride started. 
+*Beep* *Beep* *Beep*. You hear the rollercoaster starting. It came off the giant hill and looped around, finally coming to a stop at the loading zone.
+</message>
+<effect>
+<targetType/>
+obj
+<targetName/>
+rollercoaster
+<parameter/>
+running
+<targetEffect/>
+true
+</effect>
+<effect>
+<targetType/>
+obj
+<targetName/>
+rollercoaster
+<parameter/>
+look
+<targetEffect/>
+You can see in one of the passenger’s pockets, is a shiny key.
+</effect>
+<outid/>
+hello
+</end>

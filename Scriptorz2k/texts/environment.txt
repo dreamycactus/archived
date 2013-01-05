@@ -1,0 +1,327 @@
+<env>
+<names>
+The room
+room
+</names>
+<descrip>
+You are sitting in the middle of this room, a room like any other room. Yet, you know this room is different from any other room, because only in this room, do you exist. There are two doors leading out of the room: The front door and the back door which leads to the corn field. There is a pistol on the table beside you.
+</descrip>
+<states>
+initial
+</states>
+<goto>
+<place>
+<id/>
+end door
+<cond>
+<condType/>
+item
+<condTarget/>
+gold key
+<condPara/>
+ownership
+<condVal/>
+have
+<condMess/>
+The door is locked. You need some kind of special key to get in.
+</cond>
+</place>
+<place>
+<id/>
+the door in the back
+<cond>
+<condType/>
+item
+<condTarget/>
+gun
+<condPara/>
+ownership
+<condVal/>
+have
+<condMess/>
+There is a gun beside you, you'd feel better if you had it with you before you left this room.
+</cond>
+</place>
+</goto>
+<objs>
+the front door
+the back door
+</objs>
+<char>
+</char>
+<items>
+gun
+</items>
+</env>
+
+
+<env>
+<names>
+the corn field
+corn field
+the door in the back
+door behind me
+the field
+field
+the fields
+fields
+</names>
+<descrip>
+A quite sunny day. No clouds in sight. The corns sway back and fro under the gentle wind. A tractor is slowly coming down the road, towards your direction. On it the driver hums a slow tune. You'd like to think it was a tune about the sunny days. It's consolation that the room is behind you- you can return to it anytime. 
+</descrip>
+<states>
+initial
+</states>
+<quests>
+<add>
+<id/>
+main
+<descrip/>
++ Find my happYness.
+</add>
+</quests>
+<goto>
+<place>
+<id/>
+small house
+</place>
+</goto>
+<objs>
+corn
+tractor
+</objs>
+<char>
+driver
+</char>
+<items>
+</items>
+</env>
+
+<env>
+<names>
+small comfy home
+small home
+small house
+</names>
+<descrip>
+You can smell the smell of freshly baked gingersnaps, and other treats. The room is filled with a rich aroma, but you can't quite pinpoint its source. Several sofas surround an empty fireplace and two puppies sleep under a blanket nearby. The window pane is decorated with crystal stars, and the glass is tinted in various colours of delight. Though the place is far from spacious, you think this is the best home you have ever seen. 
+</descrip>
+<states>
+initial
+</states>
+<goto>
+<place>
+<id/>
+cornfield
+</place>
+</goto>
+<objs>
+puppies
+</objs>
+<char>
+</char>
+<items>
+broken key
+</items>
+</env>
+
+<env>
+<names>
+amusement park entrance
+</names>
+<descrip>
+The place is strangely quiet for an amusement park. There are no sounds of laughter or joy as you'd expect. The neon signs are flickering as their halogen tubes are failing. You wonder how you could possibly find your happiness in a place like this. A ticket man is standing the ticket booth. A child stands beside the lost and found box. Perhaps you should head into the park.
+</descrip>
+<states>
+initial
+</states>
+<quest>
+<id/>
+<descrip/>
+    + Get into the amusement park somehow.
+</quest>
+<goto>
+<place>
+<id/>
+amusement park
+<cond>
+<condType/>
+obj
+<condTarget/>
+television
+<condPara/>
+off
+<condVal/>
+true
+<condMess/>
+The ticket man catches you trying to get in. "Hey! What are you doing?" Better try another way...
+</cond>
+</place>
+</goto>
+<objs>
+television
+ticket booth
+wire
+lost and found
+</objs>
+<char>
+child
+ticket man
+driver
+</char>
+<items>
+</items>
+</env>
+
+<env>
+<names>
+the amusement park
+amusement park
+the park
+park
+</names>
+<descrip>
+No lights are on. The rollercoaster and other rides are frozen. There are people sitting in their seats, but they are not moving. A fountain with a statue is in front of you, but there is no water pumping from it. The candy shop behind you is open, but no one else is inside. There is a snoozing operator by the ride controls for the rollercoaster. You head swishing sounds and look to the right. You spot a gloomy looking caretaker who is sweeping the otherwise silent street.
+</descrip>
+<states>
+initial
+liberate
+</states>
+<goto>
+<place>
+<id/>
+candy shop
+</place>
+<place>
+<id/>
+amusement park entrance
+</place>
+<place>
+<id/>
+underground cavern
+<cond>
+<condType/>
+obj
+<condTaxrget/>
+statue
+<condPara/>
+unlocked
+<condVal/>
+true
+<condMess/>
+I don't see any entrance... maybe I need to put the right key in the statue's keyhole first.
+</cond>
+</place>
+</goto>
+<objs>
+fountain
+keyhole
+rollercoaster
+</objs>
+<char>
+caretaker
+operator
+</char>
+<items>
+shiny key
+</items>
+</env>
+
+<env>
+<names>
+the candy shop
+candy shop
+candy store
+</names>
+<descrip>
+A quiet place. Rolls after rolls of candy jars filled the shelves around them in any shape and colour possible. However, they were all perfectly untouched, and layers of dust rests upon the cap of the candy jar. Several light bulbs hang from the ceiling, flickering as the wind blew passed them. You could almost say it was abandoned. However, there was indeed a residence. A clown sat amidst the candy jars, a sad frown on his face, and his hand held tightly onto a balloon. 
+</descrip>
+<states>
+initial
+</states>
+<goto>
+<place>
+<id/>
+amusement park
+</place>
+</goto>
+<objs>
+candy jars
+balloons
+</objs>
+<char>
+clown
+</char>
+<items>
+cookie
+pin
+</items>
+</env>
+
+<env>
+<names>
+under the statue
+secret underground cavern
+underground cavern
+the underground cavern
+secret cavern
+cavern
+</names>
+<descrip>
+You hear the sound of laughter from deep within the cavern. The are messily laid about, and you swear you saw a rat or two scurry by. There is the strange smell of mold, or maybe rotten food, the identity of which you did not want to find out. You see a couple of kids on crutches playing around, but something is not right with them.
+</descrip>
+<states>
+initial
+</states>
+<goto>
+<place>
+<id/>
+the underground chamber
+</place>
+<place>
+<id/>
+the amusement park
+</place>
+</goto>
+<objs>
+pipes
+</objs>
+<char>
+kids
+</char>
+<items>
+</items>
+</env>
+
+<env>
+<names>
+the underground chamber
+underground chamber
+chamber
+the chamber
+</names>
+<descrip>
+It is warm and humid in this room, and you might have been quite at ease  were it not for the strong stench of decaying meat. Dead, skinned geese are hanging by some hook on the wall, laid around the circumference of the giant circle which seems to be the dwelling of the Mother Goose. The ground is covered with feathers, providing an uneasy carpet. In the middle of the room, alone under a single hanging light bulb, sat a motherly goose on her rocking chair, knitting a stocking with what you think is looks like hair. 
+</descrip>
+<states>
+initial
+</states>
+<goto>
+<place>
+<id/>
+under the statue
+</place>
+<place>
+<id/>
+underground chamber
+</place>
+</goto>
+<objs>
+dead geese
+</objs>
+<char>
+Mother Goose
+</char>
+<items>
+</items>
+</env>

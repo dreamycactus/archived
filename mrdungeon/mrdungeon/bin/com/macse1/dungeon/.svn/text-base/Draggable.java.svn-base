@@ -1,0 +1,28 @@
+package com.macse1.dungeon;
+
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.math.Vector3;
+import com.macse1.tiles.Tile;
+import com.macse1.tiles.TileBoard;
+
+public class Draggable {
+		// Members
+		public Vector3 pos = new Vector3();
+		protected Tile tile;
+		protected TextureRegion texture;
+		
+		public Draggable(TextureRegion t) {
+			texture = t;
+		}
+		public void render(SpriteBatch batch) {
+			batch.draw(texture, pos.x-texture.getRegionHeight()/2, pos.y-texture.getRegionHeight()/2);
+		}
+		public boolean canDrop(TileBoard map) {
+			return false;
+		}
+		public void drop(TileBoard map) {
+			
+		}
+	}
+

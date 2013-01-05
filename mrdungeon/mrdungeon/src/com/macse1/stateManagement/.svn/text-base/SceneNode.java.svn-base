@@ -1,0 +1,66 @@
+package com.macse1.stateManagement;
+
+import com.badlogic.gdx.Application.ApplicationType;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.GL10;
+import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.math.Matrix4;
+import com.badlogic.gdx.math.Rectangle;
+import com.badlogic.gdx.math.Vector3;
+
+public abstract class SceneNode {
+	// Members
+	public static int GAME_WIDTH = 480;
+	public static int GAME_HEIGHT = 320;
+	public static final int SCREEN_SCALE = 2;
+	
+	protected StateManager 				manager_;
+	protected OrthographicCamera      	cam_;
+	public 	  SpriteBatch 				batch_;
+	
+	protected String 					name_;
+	protected boolean 					updateable_;
+	protected boolean					active_;		//! To be used for disabling multiple calls to init()
+	
+	
+
+	// Methods
+	public SceneNode() {
+	}
+	public void setupGraphics() {
+		cam_ = new OrthographicCamera(GAME_WIDTH, GAME_HEIGHT);
+		cam_.up.set(0.f, 1.f, 0.f);
+		cam_.position.set((float)GAME_WIDTH/2.f, (float)GAME_HEIGHT/2.f, cam_.position.z);
+		cam_.update();
+		
+		batch_ = new SpriteBatch(100);
+		batch_.setProjectionMatrix(cam_.combined);
+	}
+	public void init() {
+		setupGraphics();
+		active_ = true;
+	}
+	public void exit() {
+		batch_.dispose();
+		active_ = false;
+	}
+	public void tick (float delta) {
+	}
+	public abstract void render(float delta);
+	
+	public void setUpdateable(boolean b)	 	{ updateable_ = b; }
+	public void pause() 						{ updateable_ = false; }
+	public void resume() 						{ updateable_ = true; }
+	public void pushState(String state_name)  	{ manager_.pushState(state_name); }
+	public void changeState(String state_name) 	{ manager_.changeState(state_name); }
+	public void changeState(SceneNode state) 	{ manager_.changeState(state); }
+	public void pushState(SceneNode state)  	{ manager_.pushState(state); }
+	
+	public void enterTransition(String trans, String new_s)	{ manager_.enterTransition(trans, new_s); }
+	
+	public String getName()						{ return name_; }
+	public OrthographicCamera getCamera()		{ return cam_; }
+	public void setName(String n)				{ name_ = n; }
+	public void setManager(StateManager m)		{ manager_ = m; }
+}

@@ -1,0 +1,14 @@
+package com.macse1.dungeon;
+
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.macse1.tiles.TileBoard;
+
+public class DungeonInterface {
+	// Members 
+	public DungeonInterface() {
+		
+	}
+	public void render(SpriteBatch batch, TileBoard map) {
+		
+	}
+}

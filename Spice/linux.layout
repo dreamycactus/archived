@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="include/CORE_Input.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="1887" topLine="29" />
+	</File>
+	<File name="include/CORE_cGame.hpp" open="0" top="0" tabpos="2">
+		<Cursor position="793" topLine="12" />
+	</File>
+	<File name="include/CORE_cSDLState.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="1076" topLine="9" />
+	</File>
+	<File name="include/CORE_cTimer.hpp" open="0" top="0" tabpos="5">
+		<Cursor position="660" topLine="0" />
+	</File>
+	<File name="include/CORE_iApplication.hpp" open="0" top="0" tabpos="5">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="include/GFX_cImage.hpp" open="1" top="0" tabpos="6">
+		<Cursor position="187" topLine="0" />
+	</File>
+	<File name="include/GFX_cTexture.hpp" open="1" top="0" tabpos="8">
+		<Cursor position="227" topLine="0" />
+	</File>
+	<File name="include/STATE_cGameStateManager.hpp" open="0" top="0" tabpos="8">
+		<Cursor position="467" topLine="0" />
+	</File>
+	<File name="include/STATE_cGameTransition.hpp" open="0" top="0" tabpos="5">
+		<Cursor position="923" topLine="19" />
+	</File>
+	<File name="include/STATE_iGameState.hpp" open="0" top="0" tabpos="6">
+		<Cursor position="415" topLine="2" />
+	</File>
+	<File name="include/cGenericFactory.hpp" open="0" top="0" tabpos="9">
+		<Cursor position="451" topLine="15" />
+	</File>
+	<File name="include/demo_cPlayState.hpp" open="0" top="0" tabpos="4">
+		<Cursor position="180" topLine="3" />
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="223" topLine="0" />
+	</File>
+	<File name="src/CORE_cGame.cpp" open="1" top="1" tabpos="2">
+		<Cursor position="29" topLine="0" />
+	</File>
+	<File name="src/CORE_cSDLState.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="885" topLine="0" />
+	</File>
+	<File name="src/CORE_cTimer.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="901" topLine="0" />
+	</File>
+	<File name="src/GFX_cImage.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="503" topLine="0" />
+	</File>
+	<File name="src/GFX_cTexture.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="305" topLine="0" />
+	</File>
+	<File name="src/STATE_cGameStateManager.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="2673" topLine="12" />
+	</File>
+	<File name="src/demo_cPlayState.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="490" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

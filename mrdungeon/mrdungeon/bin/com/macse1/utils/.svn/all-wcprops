@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2/trunk/mrdungeon/src/com/macse1/utils
+END
+Animation.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/2/trunk/mrdungeon/src/com/macse1/utils/Animation.java
+END
+Input.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/2/trunk/mrdungeon/src/com/macse1/utils/Input.java
+END
+KineticCamera.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/4/trunk/mrdungeon/src/com/macse1/utils/KineticCamera.java
+END
+MyMath.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/4/trunk/mrdungeon/src/com/macse1/utils/MyMath.java
+END
+MenuAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/4/trunk/mrdungeon/src/com/macse1/utils/MenuAction.java
+END
+Vec2i.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/5/trunk/mrdungeon/src/com/macse1/utils/Vec2i.java
+END

@@ -1,0 +1,147 @@
+package com.macse1.states;
+
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Input;
+import com.badlogic.gdx.InputProcessor;
+import com.badlogic.gdx.graphics.GL10;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.scenes.scene2d.actions.FadeIn;
+import com.badlogic.gdx.math.Vector3;
+import com.macse1.dungeon.DungeonInterface;
+import com.macse1.dungeon.Hero;
+import com.macse1.resources.Art;
+import com.macse1.stateManagement.GameState;
+import com.macse1.stateManagement.StateManager;
+import com.macse1.tiles.Tile;
+import com.macse1.tiles.TileBoard;
+import com.macse1.utils.Animation;
+import com.macse1.utils.KineticCamera;
+import com.macse1.utils.Vec2i;
+
+
+public class DungeonState extends GameState {
+	// Members
+	private float delay			= 0.f;
+	TileBoard map_;
+	Hero hero_;
+	DungeonInterface layer;
+	
+	boolean panning;
+	KineticCamera panner;
+	Vector3 cam_old = new Vector3();
+	
+	boolean dragging;
+	Vector3 drag_pos = new Vector3();
+	
+	// Methods
+	public DungeonState() {
+		super();
+	}
+	public void init() {
+		int test = 30;
+		setupGraphics();
+		panner = new KineticCamera(cam_.position.x, cam_.position.y, cam_.position.x+GAME_WIDTH*2f, cam_.position.y+GAME_HEIGHT*2f, GAME_WIDTH, GAME_HEIGHT);
+		map_ = new TileBoard(Art.tilemap);
+		Gdx.input.setInputProcessor(this);
+		active_ = true;
+		dragging = false;
+		panning = false;
+		panner.pos = cam_.position;
+		hero_ = new Hero();
+		hero_.pathfindGoal(map_);
+	}
+	
+	public void tick(float delta) {
+//		if (panning) {
+//			Input input = Gdx.input;
+//			Vector3 cam_new;
+//			Vector3 vel;
+//			
+//			cam_new = new Vector3(input.getX(), input.getY(), 0);
+//			cam_.unproject(cam_new);
+//			panner.vel = cam_new.cpy().sub(cam_old).mul(-panner.pan_vel);
+//			cam_old = cam_new;
+//		}
+		hero_.tick(delta);
+		panner.tick(delta);
+		cam_.position.set(panner.pos);
+		cam_.update();
+	}
+	public void render(float delta) {
+		
+		batch_.setProjectionMatrix(cam_.combined);
+
+		map_.render(delta, batch_, cam_);
+		
+		//board_.renderMinimap(cam_);
+		//layer.render();
+		batch_.begin();
+		batch_.draw(Art.test_image, 0.f, 0.f);
+		if (dragging) {
+			batch_.draw(Art.test_image1, drag_pos.x-64, drag_pos.y-64);
+		}
+		hero_.render(batch_);
+		batch_.end();
+		
+	}
+	
+	public boolean keyDown(int keycode) {
+		return false;
+	}
+	
+	public boolean keyUp(int keycode) {
+		return false;
+	}
+	
+	public boolean keyTyped(char character) {
+		return false;
+	}
+	
+	public boolean touchDown(int x, int y, int pointer, int button) {
+//		enterTransition("TFade", "SMiniGame1");
+		if (y<50) {
+			dragging = true;
+			drag_pos.x = x;
+			drag_pos.y = y;
+			cam_.unproject(drag_pos);
+		}
+		else {
+			panning = true;
+			panner.vel.mul(0);
+			cam_old.x = x;
+			cam_old.y = y;
+			cam_old = new Vector3(x, y, 0);
+			cam_.unproject(cam_old);
+		}
+		return false;
+	}
+	
+	public boolean touchUp(int x, int y, int pointer, int button) {
+		dragging = false;
+		panning = false;
+		panner.vel.mul(0);
+		Vector3 cam_new = new Vector3(x, y, 0);
+		cam_.unproject(cam_new);
+		panner.vel = cam_old.cpy().sub(cam_new).mul(panner.drift_vel);
+		return false;
+	}
+	
+	public boolean touchDragged(int x, int y, int pointer) {
+		if (dragging) {
+			drag_pos.x = x;
+			drag_pos.y = y;
+			cam_.unproject(drag_pos);
+		}
+		return false;
+	}
+	
+	public boolean touchMoved(int x, int y) {
+		return false;
+	}
+	
+	public boolean scrolled(int amount) {
+		return false;
+	}
+	
+}

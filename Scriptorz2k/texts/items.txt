@@ -1,0 +1,265 @@
+<item>
+<names>
+the gun
+gun
+the gun on the table
+gun on table
+the pistol
+pistol
+Chekov
+</names>
+<look>
+Surprisingly, you find the gun marked with the name Chekov. A strange name for a gentleman who owns this gun.
+</look>
+<states>
+initial
+</states>
+<use>
+<type/>
+char
+<useName/>
+mother goose
+<useDescrip/>
+The bang of the gun transpires down the tunnel, and you hear in return the sound of a sharp shrill cry. She flapped around in a mindless craze, and pecked at anything it could reach. Her eyes grew red, and blood seeped out from her nostrils. Then just as sudden as it came, she fell, motionless in the watery floor. Her blood slowly spreads through the surface of the floor, embedding itself into crevices. As the echo of the gunshot dies you hear the sound of faint laughter from above. 
+<effect>
+<targetName/>
+mother goose
+<targetType/>
+char
+<parameter/>
+dead
+<targetEffect/>
+true
+</effect>
+</use>
+</item>
+
+<item>
+<names>
+the broken key
+broken key
+</names>
+<look>
+It's an old metal key with a big chip at the end.
+</look>
+<states>
+initial
+</states>
+<use>
+<type/>
+
+<useName/>
+
+<useDescrip/>
+
+<effect>
+<targetName/>
+
+<targetType/>
+
+<parameter/>
+
+<targetEffect/>
+
+</effect>
+</use>
+</item>
+
+<item>
+<names>
+feather
+feather of Mother Goose.
+</names>
+<look>
+It's a bloodstained grey feather.
+</look>
+<states>
+initial
+</states>
+<use>
+<type/>
+
+<useName/>
+
+<useDescrip/>
+
+<effect>
+<targetName/>
+
+<targetType/>
+
+<parameter/>
+
+<targetEffect/>
+
+</effect>
+</use>
+</item>
+
+<item>
+<names>
+the wire cutters
+wire cutters
+</names>
+<look>
+It's a pair of wire cutters. Home hardware.
+</look>
+<states>
+initial
+</states>
+<use>
+<type/>
+obj
+<useName/>
+wire
+<useDescrip/>
+You cut the wire. You hear a scream of frustration coming from the direction of the ticket booth
+<effect>
+<targetName/>
+television
+<targetType/>
+obj
+<parameter/>
+off
+<targetEffect/>
+true
+</effect>
+<effect>
+<targetName/>
+television
+<targetType/>
+obj
+<parameter/>
+look
+<targetEffect/>
+A black screen.
+</effect>
+<effect>
+<targetName/>
+ticket man
+<targetType/>
+char
+<parameter/>
+look
+<targetEffect/>
+The ticket man is freaking out in the booth trying to figure out what's wrong with the TV. Both eyes are staring at the screen now. That's for sure.
+</effect>
+</use>
+</item>
+
+<item>
+<names>
+cookie
+chocochip cookie
+</names>
+<look>
+It's just a regular chocolate chip cookie...
+</look>
+<states>
+initial
+</states>
+<use>
+<type/>
+char
+<useName/>
+operator
+<useDescrip/>
+You give the cookie to the man. He chews on it delightedly.
+<effect>
+<targetName/>
+operator
+<targetType/>
+char
+<parameter/>
+gotcookie
+<targetEffect/>
+true
+</effect>
+<effect>
+<targetName/>
+cookie
+<targetType/>
+item
+<parameter/>
+ownership
+<targetEffect/>
+destroy
+</effect>
+</use>
+</item>
+
+<item>
+<names>
+the pin
+pin
+pins
+the pins
+</names>
+<look>
+It's a sharp pin. Quite stiff.
+</look>
+<states>
+initial
+</states>
+<use>
+<type/>
+obj
+<useName/>
+balloons
+<useDescrip/>
+The loud sound jerked the clown awake from his sleep, "Wha...wha!" he looked around surprised.
+<cond>
+<condType/>
+char
+<condTarget/>
+Mother Goose
+<condPara/>
+dead
+<condVal/>
+false
+<condMess/>
+Choco is awake... and besides. He doesn't like it when you do that.
+</cond>
+<effect>
+<targetName/>
+clown
+<targetType/>
+char
+<parameter/>
+awake
+<targetEffect/>
+true
+</effect>
+</use>
+</item>
+
+<item>
+<names>
+the shiny key
+shiny key
+</names>
+<look>
+It's a shiny hexagonal shaped key.
+</look>
+<states>
+initial
+</states>
+<use>
+<type/>
+obj
+<useName/>
+keyhole
+<useDescrip/>
+The statue shook a bit, and water stopped running from the eyes of the angel, slowly. the structure moved aside, revealing a set of staircase underneath leading to an underground cavern.
+<effect>
+<targetName/>
+statue
+<targetType/>
+obj
+<parameter/>
+unlocked
+<targetEffect/>
+true
+</effect>
+</use>
+</item>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2/trunk/mrdungeon/src/com/macse1/stateManagement
+END
+SceneNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/2/trunk/mrdungeon/src/com/macse1/stateManagement/SceneNode.java
+END
+GameState.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/2/trunk/mrdungeon/src/com/macse1/stateManagement/GameState.java
+END
+StateManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/2/trunk/mrdungeon/src/com/macse1/stateManagement/StateManager.java
+END
+TransitionState.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/2/trunk/mrdungeon/src/com/macse1/stateManagement/TransitionState.java
+END

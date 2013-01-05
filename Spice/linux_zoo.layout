@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="include/CORE_Input.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="1565" topLine="0" />
+	</File>
+	<File name="include/CORE_cGame.hpp" open="0" top="0" tabpos="2">
+		<Cursor position="793" topLine="12" />
+	</File>
+	<File name="include/CORE_cSDLState.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="612" topLine="0" />
+	</File>
+	<File name="include/CORE_cTimer.hpp" open="0" top="0" tabpos="5">
+		<Cursor position="422" topLine="0" />
+	</File>
+	<File name="include/CORE_iApplication.hpp" open="0" top="0" tabpos="5">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="include/CORE_keycodes.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="358" topLine="0" />
+	</File>
+	<File name="include/GFX_cCameraBase.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="102" topLine="0" />
+	</File>
+	<File name="include/GFX_cImage.hpp" open="0" top="0" tabpos="6">
+		<Cursor position="168" topLine="0" />
+	</File>
+	<File name="include/GFX_cTexture.hpp" open="0" top="0" tabpos="8">
+		<Cursor position="795" topLine="0" />
+	</File>
+	<File name="include/MATH_Matrix4x4.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="2447" topLine="0" />
+	</File>
+	<File name="include/STATE_cGameStateManager.hpp" open="0" top="0" tabpos="8">
+		<Cursor position="467" topLine="0" />
+	</File>
+	<File name="include/STATE_cGameTransition.hpp" open="0" top="0" tabpos="5">
+		<Cursor position="923" topLine="19" />
+	</File>
+	<File name="include/STATE_iGameState.hpp" open="0" top="0" tabpos="6">
+		<Cursor position="426" topLine="0" />
+	</File>
+	<File name="include/cGenericFactory.hpp" open="0" top="0" tabpos="9">
+		<Cursor position="451" topLine="15" />
+	</File>
+	<File name="include/demo_cPlayState.hpp" open="0" top="0" tabpos="4">
+		<Cursor position="180" topLine="3" />
+	</File>
+	<File name="main.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="575" topLine="0" />
+	</File>
+	<File name="src/CORE_cGame.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="57" topLine="0" />
+	</File>
+	<File name="src/CORE_cSDLState.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="925" topLine="0" />
+	</File>
+	<File name="src/CORE_cTimer.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="323" topLine="18" />
+	</File>
+	<File name="src/GFX_cCameraBase.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="151" topLine="0" />
+	</File>
+	<File name="src/GFX_cImage.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="1077" topLine="0" />
+	</File>
+	<File name="src/GFX_cTexture.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="85" topLine="0" />
+	</File>
+	<File name="src/STATE_cGameStateManager.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="2673" topLine="12" />
+	</File>
+	<File name="src/demo_cPlayState.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="2023" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

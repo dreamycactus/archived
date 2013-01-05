@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/2/trunk/mrdungeon/libs
+END
+gdx-backend-jogl-natives.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2/trunk/mrdungeon/libs/gdx-backend-jogl-natives.jar
+END
+gdx-natives.jar
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2/trunk/mrdungeon/libs/gdx-natives.jar
+END
+gdx-backend-jogl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2/trunk/mrdungeon/libs/gdx-backend-jogl.jar
+END
+gdx.jar
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/2/trunk/mrdungeon/libs/gdx.jar
+END
+gdx-sources.jar
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2/trunk/mrdungeon/libs/gdx-sources.jar
+END

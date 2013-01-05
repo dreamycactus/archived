@@ -1,0 +1,189 @@
+<names>
+driver
+Santa Claus
+Santa
+</names>
+<states>
+normal
+</states>
+<look>
+Large white beard and a pot belly. Big round nose, and a cherry red lips holding onto a pipe, which puffed out the smoke at the same time as the tractor. You’d like to think he works as Santa Claus part time.
+</look>
+
+<char>
+<id/>
+hello
+<message>
+Santa: Lost little one? Alone in a strange world?
+</message>
+<resps>
+<op>
+<outid/>
+lost
+<label/>
+Yes, I am lost.
+</op>
+<op>
+<outid/>
+bye1
+<label/>
+No.
+</op>
+</resps>
+</char>
+
+<char>
+<id/>
+lost
+<message>
+Santa: Well, I think me just done today's work, and I'm not a tad hungry yet. If you want, I'll give you a ride to the amusement park, maybe you'll find something different fun there? Or perhaps to the city(not in this version)?
+</message>
+<resps>
+<op>
+<outid/>
+amuse
+<label/>
+Let's go to the amusement park!
+</op>
+</resps>
+</char>
+
+<char>
+<id/>
+hello2
+<message>
+Santa: Hi it's you again. Changed your mind?
+</message>
+<resps>
+<op>
+<outid/>
+lost
+<label/>
+Yes, actually I am lost.
+</op>
+<op>
+<outid/>
+bye1
+<label/>
+No.
+</op>
+</resps>
+</char>
+
+<char>
+<id/>
+hello3
+<message>
+Santa: You ready to go back?
+</message>
+<resps>
+<op>
+<outid/>
+endb
+<label/>
+Yes, take me back to the cornfield.
+</op>
+<op>
+<outid/>
+endw
+<label/>
+Not yet.
+</op>
+</resps>
+</char>
+
+
+<player>
+<id/>
+lost
+<outid/>
+lost
+</player>
+
+<player>
+<id/>
+amuse
+<outid/>
+amuseEnd
+</player>
+
+<player>
+<id/>
+bye1
+<outid/>
+bye2
+</player>
+
+<player>
+<id/>
+city1
+<outid/>
+city2
+</player>
+
+
+<end>
+<id/>
+amuseEnd
+<message>
+Santa: To the amusement park then. Let's go! 
+Santa takes you on his tractor to the amusement park.
+...
+You arrive at the amusement park.
+</message>
+<effect>
+<targetType/>
+env
+<targetName/>
+amusement park entrance
+<parameter/>
+goto
+<targetEffect/>
+amusement park entrance
+</effect>
+<outid/>
+hello3
+</end>
+
+<end>
+<id/>
+city2
+<message>
+Santa: To the city then. Let's go!
+Santa takes you on his tractor to the city.
+</message>
+<outid/>
+hello
+</end>
+
+<end>
+<id/>
+bye2
+<message>
+Santa: I got nothing to offer you I'm a afraid. If you need anything. I'll be just driving my tractors around.
+</message>
+<outid/>
+hello2
+</end>
+
+<end>
+<id/>
+endw
+<message>
+Santa: Okay, I'll wait a bit longer.
+</message>
+<outid/>
+hello3
+</end>
+
+<end>
+<id/>
+endb
+<message>
+Santa: Okay, let's go!
+Santa takes you back to the cornfield.
+</message>
+<outid/>
+hello2
+</end>
+

@@ -1,0 +1,233 @@
+<obj>
+<names>
+the front door
+front door
+</names>
+<look>
+The door in front is the  salvation. You are sure that the place it leads to is wonderful, but it's locked. You will need to find the right key.
+</look>
+<states>
+initial
+</states>
+</obj>
+
+<obj>
+<names>
+the back door
+back door
+</names>
+<look>
+The door in the back leads to a corn field. Genetically engineered to provide the riches oil for all the tubby souls out there.
+</look>
+<states>
+initial
+</states>
+</obj>
+
+<obj>
+<names>
+the corn
+corn
+</names>
+<look>
+The door in the back leads to a corn field. Genetically engineered to provide the riches oil for all the tubby souls out there.
+</look>
+<states>
+initial
+</states>
+</obj>
+
+<obj>
+<names>
+the tractor
+tractor
+</names>
+<look>
+Written on the side, with white paint, it said, "Deus Ex Machina". 
+</look>
+<states>
+initial
+</states>
+<use>
+<cond>
+<condType/>
+env
+<condTarget/>
+shack
+<condPara/>
+doggone
+<condVal/>
+true
+<condMess/>
+Dogs don't like cranes.
+</cond>
+<useDescrip/>
+I drove it around.
+<effect>
+<targetType/>
+env
+<targetName/>
+clock tower
+<parameter/>
+goto
+<targetEffect/>
+clock tower
+</effect>
+</use>
+</obj>
+
+<obj>
+<names>
+the television
+television
+</names>
+<look>
+There’s a lot of conversation, some soap opera probably.
+</look>
+<states>
+initial
+off
+</states>
+</obj>
+
+<obj>
+<names>
+the ticket booth
+ticket booth
+</names>
+<look>
+Painted in blue, poorly made. There is an exposed red wire sticking out from beind the booth.
+</look>
+<states>
+initial
+</states>
+</obj>
+
+<obj>
+<names>
+the wire
+the red wire
+wire
+red wire
+</names>
+<look>
+It's a red wire. Looks important.
+</look>
+<states>
+initial
+</states>
+</obj>
+
+<obj>
+<names>
+the lost and found
+lost and found
+</names>
+<look>
+Going to have to get that child off the box before I can get in the box.
+</look>
+<states>
+initial
+childoff
+</states>
+</obj>
+
+<obj>
+<names>
+the fountain
+fountain
+</names>
+<look>
+There is a statue of a woman holding a bowl from which water is supposed to flow. Maybe the plumbing is damaged, someone should fix it.
+</look>
+<states>
+initial
+working
+</states>
+</obj>
+
+<obj>
+<names>
+the statue
+statue
+the statue of a woman holding a bowl
+statue of the woman
+</names>
+<look>
+There is a statue holding a bowl from which water is supposed to flow. Maybe the plumbing is damaged, someone should fix it.
+</look>
+<states>
+initial
+fixed
+unlocked
+</states>
+</obj>
+
+<obj>
+<names>
+the keyhole
+keyhole
+</names>
+<look>
+It’s a hexagonal key hole- you won’t be able to pick this one with just a hair pin. Need to find the real key.
+</look>
+<states>
+initial
+fixed
+</states>
+</obj>
+
+<obj>
+<names>
+the rollercoaster
+rollercoaster
+</names>
+<look>
+The roller coaster stopped half way on the hill. No one sitting in it seemed to care. You don’t think they cared about anything. There is something gleaming in one of the passenger’s pocket.
+</look>
+<states>
+initial
+running
+</states>
+</obj>
+
+<obj>
+<names>
+the candy jars
+candy jars
+</names>
+<look>
+The candies inside them look good, but you probably shouldn’t touch them without permission.
+</look>
+<states>
+initial
+</states>
+</obj>
+
+<obj>
+<names>
+the balloons
+balloons
+the balloon
+balloon
+</names>
+<look>
+Very tempting to pop one. You wonder if you should. There is a pin conveniently placed on the side.
+</look>
+<states>
+initial
+</states>
+</obj>
+
+<obj>
+<names>
+the pipes
+pipes
+</names>
+<look>
+The pipes run along the walls and lead to another chamber.
+</look>
+<states>
+initial
+</states>
+</obj>

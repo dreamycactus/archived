@@ -1,0 +1,89 @@
+<names>
+Sam
+Lost Sam
+the child
+child
+</names>
+<states>
+normal
+offbox
+</states>
+<look>
+Seemed scared, probably is. Sitting on top of the lost and found.
+</look>
+
+<char>
+<id/>
+hello
+<message>
+Child: Sam I am, lost I am, so Lost Sam I am. How are you doing? Miss you are. Are you here to help this poor soul I am?
+</message>
+<resps>
+<op>
+<outid/>
+phelp
+<label/>
+What's the matter little boy?
+</op>
+<op>
+<outid/>
+pbye1
+<label/>
+Sorry little boy, I'm busy.
+</op>
+</resps>
+</char>
+
+<player>
+<id/>
+pbye1
+<outid/>
+ebye1
+</player>
+
+<player>
+<id/>
+phelp
+<outid/>
+ebye2
+</player>
+
+<end>
+<id/>
+ebye1
+<message>
+Then Lost Forever Sam I am.
+</message>
+<outid/>
+hello
+</end>
+
+<end>
+<id/>
+ebye2
+<message>
+Please help find my parents inside, it’s big and dark, I’m scared to go inside. Tell them I’ll be outside here. Until then, Lost Sam I am. Here, these wire cutters might help you.
+</message>
+<effect>
+<targetType/>
+item
+<targetName/>
+wire cutters
+<parameter/>
+ownership
+<targetEffect/>
+create
+</effect>
+<effect>
+<targetType/>
+quest
+<targetName/>
+helpchild
+<parameter/>
+add
+<targetEffect/>
+    +Help the child find his parents.
+</effect>
+<outid/>
+hello2
+</end>
